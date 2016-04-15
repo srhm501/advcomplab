@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # finds energy from file
-# call as "./energy.sh file"
-
+# call as "./getenergy.sh file"
 
 FILENAME=$1
 STRING=$(grep "Total energy corrected for finite basis set" $FILENAME)
