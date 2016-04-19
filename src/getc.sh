@@ -16,7 +16,7 @@ set zlabel "Z"
 set grid
 set title ""
 set term png
-set output "pos.png"
+set output "../dat/pos.png"
 splot 	"../dat/Mg.dat" pt 7 ps 5, \
 	"../dat/O.dat" pt 7 ps 5, \
       	"../dat/Ca.dat" pt 7 ps 5
