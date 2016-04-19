@@ -4,9 +4,9 @@
 for file in *.cell
 do
 name=${file::-5}
-grep "^     O" $name > O_$name.dat
-grep "^    Mg" $name > Mg_$name.dat
-grep "^    Ca" $name > Ca_$name.dat
+grep "^     O" $name | awk '{$1="O";sub("O","");print}' > O_$name.dat
+grep "^    Mg" $name | awk '{$1="O";sub("O","");print}' > Mg_$name.dat
+grep "^    Ca" $name | awk '{$1="O";sub("O","");print}' > Ca_$name.dat
 done
 
 for FILE in *.dat; do
@@ -15,12 +15,12 @@ for FILE in *.dat; do
     set ylabel "Y"
     set zlabel "Z"
     set grid
-    set title "Position of Deuterium ion in a Toroidal and Poloidal Field"
+    set title ""
     set term dumb
     splot "${FILE}" 
     set term png
     set output "${FILE}.png"
-    splot "${FILE}" with vectors
+    splot "${FILE}"
 EOF
 display "${FILE}.png"
 done
