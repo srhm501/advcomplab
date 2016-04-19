@@ -4,23 +4,22 @@
 for file in *.cell
 do
 name=${file::-5}
-grep "^     O" $name | awk '{$1="O";sub("O","");print}' > O_$name.dat
-grep "^    Mg" $name | awk '{$1="Mg";sub("Mg","");print}' > Mg_$name.dat
-grep "^    Ca" $name | awk '{$1="Ca";sub("Ca","");print}' > Ca_$name.dat
+grep "^     O" $file | awk '{$1="O";sub("O","");print}' > O.dat
+grep "^    Mg" $file | awk '{$1="Mg";sub("Mg","");print}' > Mg.dat
+grep "^    Ca" $file | awk '{$1="Ca";sub("Ca","");print}' > Ca.dat
 done
 
-for FILE in *.dat; do
-  gnuplot <<- EOF
-    set xlabel "X"
-    set ylabel "Y"
-    set zlabel "Z"
-    set grid
-    set title ""
-    set term dumb
-    splot "${FILE}" 
-    set term png
-    set output "${FILE}.png"
-    splot "${FILE}"
+gnuplot <<- EOF
+set xlabel "X"
+set ylabel "Y"
+set zlabel "Z"
+set grid
+set title ""
+#set term dumb
+#splot "${FILE}" 
+set term png
+set output "pos.png"
+splot "Mg.dat", "O.dat"
 EOF
-display "${FILE}.png"
+display "pos.png"
 done
