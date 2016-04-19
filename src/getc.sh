@@ -23,4 +23,4 @@ splot 	"../dat/Mg.dat" pt 7 ps 5, \
 set term wxt
 replot
 EOF
-display "pos.png"
+display "../dat/pos.png"
