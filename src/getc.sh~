@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # call as "./getcoords.sh file.cell"
-for file in *.cell
+for file in ../*.cell
 do
 name=${file::-5}
-grep "^     O" $file | awk '{$1="O";sub("O","");print}' > O.dat
-grep "^    Mg" $file | awk '{$1="Mg";sub("Mg","");print}' > Mg.dat
-grep "^    Ca" $file | awk '{$1="Ca";sub("Ca","");print}' > Ca.dat
+grep "^     O" $file | awk '{$1="O";sub("O","");print}' > ../dat/O.dat
+grep "^    Mg" $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg.dat
+grep "^    Ca" $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca.dat
 done
 
 gnuplot <<- EOF
@@ -15,11 +15,11 @@ set ylabel "Y"
 set zlabel "Z"
 set grid
 set title ""
-#set term dumb
-#splot "${FILE}" 
 set term png
 set output "pos.png"
-splot "Mg.dat", "O.dat"
+splot 	"../dat/Mg.dat" pt 7 ps 50, \
+	"../dat/O.dat" pt 7 ps 50, \
+      	"../dat/Ca.dat" pt 7 ps 50
 EOF
 display "pos.png"
 done

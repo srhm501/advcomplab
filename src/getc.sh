@@ -9,7 +9,7 @@ grep "^    Mg" $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg.dat
 grep "^    Ca" $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca.dat
 done
 
-gnuplot <<- EOF
+gnuplot << EOF
 set xlabel "X"
 set ylabel "Y"
 set zlabel "Z"
@@ -17,7 +17,10 @@ set grid
 set title ""
 set term png
 set output "pos.png"
-splot "../dat/Mg.dat", "../dat/O.dat", "../dat/Ca.dat"
+splot 	"../dat/Mg.dat" pt 7 ps 5, \
+	"../dat/O.dat" pt 7 ps 5, \
+      	"../dat/Ca.dat" pt 7 ps 5
+set term wxt
+replot
 EOF
 display "pos.png"
-done
