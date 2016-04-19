@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # call as "./getcoords.sh file.cell"
-for file in *.cell
+for file in ../*.cell
 do
 name=${file::-5}
 grep "^     O" $file | awk '{$1="O";sub("O","");print}' > ../dat/O.dat
@@ -17,7 +17,7 @@ set grid
 set title ""
 set term png
 set output "pos.png"
-splot "../dat/Mg.dat", "../dat/O.dat"
+splot "../dat/Mg.dat", "../dat/O.dat", "../dat/Ca.dat"
 EOF
 display "pos.png"
 done
