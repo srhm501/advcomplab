@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# call as "./getcoords.sh file.cell"
 for file in ../*.cell
 do
 name=${file::-5}
