@@ -24,13 +24,4 @@ symmetry_generate
        0       0       0
 %ENDBLOCK CELL_CONSTRAINTS
 
-! The following section is commented out; CASTEP will generate these files for you
-! the first time you use the appropriate element. You can then uncomment this block
-! to speed up the initial stages of the calculation. 
-!%BLOCK SPECIES_POT
-!       O   O_OTF.usp
-!      Mg  Mg_OTF.usp
-!      Ca  Ca_OTF.usp
-!%ENDBLOCK SPECIES_POT
-
 
