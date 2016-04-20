@@ -4,11 +4,11 @@
 # call as "./getenergy.sh config"
 
 CONF=$1
-CASTEP_PATH=../castep/castep.mpi
+CASTEP_PATH=../castep
 
-mpirun -np 1 $CASTEP_PATH $CONF
+mpirun -np 1 $CASTEP_PATH/castep.mpi $CONF
 
-FILE=$CONF.castep
+FILE=$CASTEP_PATH/$CONF.castep
 
 STRING=$(grep "Total energy corrected for finite basis set" $FILE)
 ENERGY=$(echo $STRING | awk '{print $9}')
