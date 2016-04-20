@@ -1,30 +1,36 @@
 #!/bin/bash
 
-CASTEP_PATH=../castep
+# set up directory map
+old="$(pwd)"
+current="$(dirname "$0")"
+root=..
+castep_path=$root/castep
+cd $current
 
 # check if we can plot
 [ -f ./Jmol.jar ] ; type -p java
 plot=$?
 
-for cell in ../*.cell
+for cell in $root/*.cell
 do
     conf=${cell::-5}
-    file=$CASTEP_PATH/$conf.castep
+    file=$castep_path/$conf.castep
     echo $conf
     cp ../param.master $conf.param
 
     if [ ! -f $file ] ; then
-	mpirun -np 1 $CASTEP_PATH/castep.mpi $conf
+	mpirun -np 1 $castep_path/castep.mpi $conf
     fi
 
     if [[ plot -eq 0 ]] ; then
 	./jmol -I $file
     fi
 
-#STRING=$(grep "Total energy corrected for finite basis set" $FILE)
-#ENERGY=$(echo $STRING | awk '{print $9}')
-#echo $ENERGY
     ./cleanup.sh
 done
 
+#STRING=$(grep "Total energy corrected for finite basis set" $FILE)
+#ENERGY=$(echo $STRING | awk '{print $9}')
+#echo $ENERGY
 
+cd $old
