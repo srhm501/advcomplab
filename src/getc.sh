@@ -7,9 +7,9 @@
 for file in ../*.cell
 do
     name=${file::-5}
-    grep "^     O" $file | awk '{$1="O";sub("O","");print}'   > ../dat/O.dat
-    grep "^    Mg" $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg.dat
-    grep "^    Ca" $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca.dat
+    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/O.dat
+    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg.dat
+    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca.dat
 done
 
 gnuplot << EOF
