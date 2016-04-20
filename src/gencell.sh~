@@ -1,0 +1,5 @@
+#!/bin/bash
+
+head -n6 ../cell.master > $1
+
+tail -n18 ../cell.master | head -n10 >> $1
