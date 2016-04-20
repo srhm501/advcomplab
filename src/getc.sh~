@@ -17,7 +17,7 @@ gnuplot << EOF
     set ylabel "Y"
     set zlabel "Z"
     set grid
-    set title "Atom positions"
+    set title "Nuclear positions"
     set term png
     set output "../dat/pos.png"
     splot "../dat/Mg.dat" pt 7 ps 5, \
