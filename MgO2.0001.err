@@ -1,4 +1,4 @@
-ERROR: cell_read - failure to open freeform cell file ../MgO2.cell
+Error: io_freeform_block: block "POSITIONS_FRAC" not closed
 Current trace stack:
  cell_read
  castep

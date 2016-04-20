@@ -2403,7 +2403,11 @@ Peak Memory Use     = 604568 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:23:31 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:13:05 +0100
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
@@ -2562,7 +2566,11 @@ Peak Memory Use     = 604568 kB
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
+<<<<<<< HEAD
+ random number generator seed                   : randomised (142331576)
+=======
  random number generator seed                   : randomised (141305641)
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -2734,6 +2742,29 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
+Initial  -5.72431762E+003  0.00000000E+000                        11.10  <-- SCF
+      1  -6.91748672E+003  9.88749882E+000   1.49146138E+002      11.77  <-- SCF
+      2  -7.07964342E+003  8.79590148E+000   2.02695874E+001      12.32  <-- SCF
+      3  -7.08382631E+003  8.69463254E+000   5.22861108E-001      12.93  <-- SCF
+      4  -7.09395644E+003  8.46701207E+000   1.26626557E+000      13.60  <-- SCF
+      5  -7.08100758E+003  8.77802002E+000  -1.61860632E+000      14.15  <-- SCF
+      6  -7.08091034E+003  9.06733668E+000  -1.21558108E-002      14.74  <-- SCF
+      7  -7.08043582E+003  8.73210796E+000  -5.93146664E-002      15.33  <-- SCF
+      8  -7.08043125E+003  8.75274674E+000  -5.71755359E-004      15.94  <-- SCF
+      9  -7.08043074E+003  8.74585950E+000  -6.30791217E-005      16.51  <-- SCF
+     10  -7.08043057E+003  8.74978850E+000  -2.17412890E-005      17.06  <-- SCF
+     11  -7.08043055E+003  8.74871556E+000  -2.04454053E-006      17.56  <-- SCF
+     12  -7.08043055E+003  8.74859379E+000   4.63307524E-008      17.93  <-- SCF
+     13  -7.08043055E+003  8.74863547E+000   5.81785697E-010      18.29  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7080.314330291     eV
+Final free energy (E-TS)    =  -7080.430552261     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7080.372441276     eV
+=======
 Initial  -5.72427902E+003  0.00000000E+000                        11.18  <-- SCF
       1  -6.92087820E+003  9.95940237E+000   1.49574898E+002      11.81  <-- SCF
       2  -7.07941943E+003  8.82832387E+000   1.98176536E+001      12.36  <-- SCF
@@ -2755,12 +2786,33 @@ Final free energy (E-TS)    =  -7080.430551613     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7080.372440626     eV
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
  
 Calculating total energy with cut-off of  275.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
+Initial  -7.08031433E+003  0.00000000E+000                        18.47  <-- SCF
+      1  -7.08364389E+003  8.64191864E+000   4.16195111E-001      18.98  <-- SCF
+      2  -7.08365263E+003  8.64193495E+000   1.09295964E-003      19.61  <-- SCF
+      3  -7.08385130E+003  9.07830441E+000   2.48331074E-002      20.19  <-- SCF
+      4  -7.08362271E+003  8.78444576E+000  -2.85731044E-002      20.77  <-- SCF
+      5  -7.08361281E+003  8.76432551E+000  -1.23858144E-003      21.38  <-- SCF
+      6  -7.08361165E+003  8.73978428E+000  -1.44933322E-004      21.98  <-- SCF
+      7  -7.08361120E+003  8.74674077E+000  -5.59429885E-005      22.55  <-- SCF
+      8  -7.08361120E+003  8.74778281E+000  -1.55922820E-007      23.06  <-- SCF
+      9  -7.08361120E+003  8.74795244E+000  -1.32975445E-008      23.43  <-- SCF
+     10  -7.08361120E+003  8.74788284E+000  -1.41047745E-009      23.80  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7083.505650464     eV
+Final free energy (E-TS)    =  -7083.611197847     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7083.558424156     eV
+=======
 Initial  -7.08031433E+003  0.00000000E+000                        18.52  <-- SCF
       1  -7.08364389E+003  8.64191602E+000   4.16195455E-001      19.03  <-- SCF
       2  -7.08365264E+003  8.64193232E+000   1.09293431E-003      19.66  <-- SCF
@@ -2779,12 +2831,35 @@ Final free energy (E-TS)    =  -7083.611197200     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7083.558423509     eV
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
  
 Calculating total energy with cut-off of  280.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
+Initial  -7.08350565E+003  0.00000000E+000                        23.98  <-- SCF
+      1  -7.08597089E+003  8.66598057E+000   3.08155419E-001      24.46  <-- SCF
+      2  -7.08598022E+003  8.66617247E+000   1.16638507E-003      25.01  <-- SCF
+      3  -7.08605180E+003  8.87765083E+000   8.94713492E-003      25.60  <-- SCF
+      4  -7.08596460E+003  8.73893540E+000  -1.09004919E-002      26.20  <-- SCF
+      5  -7.08596118E+003  8.72598266E+000  -4.27336588E-004      26.81  <-- SCF
+      6  -7.08596055E+003  8.72456334E+000  -7.83088368E-005      27.37  <-- SCF
+      7  -7.08596054E+003  8.72569063E+000  -1.16055844E-006      27.92  <-- SCF
+      8  -7.08596054E+003  8.72588559E+000  -3.95107701E-008      28.30  <-- SCF
+      9  -7.08596054E+003  8.72584419E+000   4.28266972E-010      28.67  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7085.882561896     eV
+Final free energy (E-TS)    =  -7085.960543278     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7085.921552587     eV
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =    -137.587049eV
+ Total energy corrected for finite basis set =   -7086.115897 eV
+=======
 Initial  -7.08350565E+003  0.00000000E+000                        24.05  <-- SCF
       1  -7.08597089E+003  8.66598058E+000   3.08155417E-001      24.52  <-- SCF
       2  -7.08598022E+003  8.66617247E+000   1.16638621E-003      25.08  <-- SCF
@@ -2805,6 +2880,7 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921551940     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =    -137.587049eV
  Total energy corrected for finite basis set =   -7086.115896 eV
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
  
  ***************** Symmetrised Forces *****************
  *                                                    *
@@ -2829,9 +2905,15 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921551940     eV
  * --------------------------------------------- *
  *             x             y             z     *
  *                                               *
+<<<<<<< HEAD
+ *  x     -5.360585      0.000000      0.000000  *
+ *  y      0.000000   -133.934615      0.000000  *
+ *  z      0.000000      0.000000   -138.726280  *
+=======
  *  x     -5.360587      0.000000      0.000000  *
  *  y      0.000000   -133.934617      0.000000  *
  *  z      0.000000      0.000000   -138.726281  *
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
  *                                               *
  *  Pressure:   92.6738                          *
  *                                               *
@@ -2857,10 +2939,17 @@ Charge spilling parameter for spin component 1 = 0.36%
      -----------------------------
 Species   Ion     s      p      d      f     Total  Charge (e)
 ==============================================================
+<<<<<<< HEAD
+  O        1     1.95   4.49   0.00   0.00   6.44    -0.44
+  O        2     1.93   4.53   0.00   0.00   6.46    -0.46
+  O        3     1.93   4.53   0.00   0.00   6.46    -0.46
+  O        4     1.95   4.49   0.00   0.00   6.44    -0.44
+=======
   O        1     1.95   4.50   0.00   0.00   6.44    -0.44
   O        2     1.93   4.52   0.00   0.00   6.46    -0.46
   O        3     1.93   4.52   0.00   0.00   6.46    -0.46
   O        4     1.95   4.50   0.00   0.00   6.44    -0.44
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
   Mg       1     2.66   7.10   0.00   0.00   9.76     0.24
   Mg       2     2.66   7.10   0.00   0.00   9.76     0.24
   Ca       1     1.67   5.85   1.81   0.00   9.34     0.66
@@ -2903,11 +2992,22 @@ Writing model to ../MgO.check
  A BibTeX formatted list of references used in this run has been written to 
  ../MgO.bib
  
+<<<<<<< HEAD
+Initialisation time =      9.70 s
+Calculation time    =     20.71 s
+Finalisation time   =      0.51 s
+Total time          =     30.91 s
+Peak Memory Use     = 604564 kB
+=======
 Initialisation time =      9.83 s
 Calculation time    =     20.63 s
 Finalisation time   =      0.53 s
 Total time          =     30.99 s
 Peak Memory Use     = 604568 kB
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8c7b5fbdd54feacc85555f204b68751aaf27e881
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -2966,12 +3066,17 @@ Peak Memory Use     = 604568 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:28:03 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:26:30 +0100
+>>>>>>> 8c7b5fbdd54feacc85555f204b68751aaf27e881
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -3414,3 +3519,72 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921552587     eV
  
  Converged in 24 iterations to a total energy of -1001.5365 eV
  
+=======
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+ Run started: Wed, 20 Apr 2016 14:27:25 +0100
+ 
+ Atomic calculation performed for O: 1s2 2s2 2p4
+ 
+ Converged in 60 iterations to an ae energy of -2027.926 eV
+ 
+=======
+>>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
+>>>>>>> 227952b1065e3297e759a5124686fc9c4562cae9
+>>>>>>> 8c7b5fbdd54feacc85555f204b68751aaf27e881
