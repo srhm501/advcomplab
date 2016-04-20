@@ -7,5 +7,6 @@ echo Committed
 git pull
 git commit -a
 git push
+echo
 echo All done! Well done! Good Job!
 echo You can do it! Keep going!

@@ -892,7 +892,11 @@ Peak Memory Use     = 520780 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:30:12 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:30:47 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -930,6 +934,7 @@ Peak Memory Use     = 520780 kB
  
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -1252,6 +1257,8 @@ Calculation time    =     10.07 s
 Finalisation time   =      0.78 s
 Total time          =     17.09 s
 Peak Memory Use     = 520756 kB
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -1310,7 +1317,11 @@ Peak Memory Use     = 520756 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:31:48 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:31:46 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -1411,7 +1422,11 @@ Peak Memory Use     = 520756 kB
  write BibTeX reference list                    : on
  write OTFG pseudopotential files               : on
  checkpoint writing                             : both castep_bin and check files
+<<<<<<< HEAD
  random number generator seed                   : randomised (143148356)
+=======
+ random number generator seed                   : randomised (143147103)
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
 
  *********************** Exchange-Correlation Parameters ***********************
   
@@ -1562,6 +1577,7 @@ Peak Memory Use     = 520756 kB
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -4.69989473E+003  0.00000000E+000                         7.15  <-- SCF
       1  -5.64004774E+003  1.15723148E+001   1.17519127E+002       7.99  <-- SCF
       2  -5.78961988E+003  6.22270816E+000   1.86965168E+001       8.69  <-- SCF
@@ -1670,3 +1686,11 @@ Calculation time    =     10.07 s
 Finalisation time   =      3.17 s
 Total time          =     19.41 s
 Peak Memory Use     = 520756 kB
+=======
+Initial  -4.70791443E+003  0.00000000E+000                         7.47  <-- SCF
+      1  -5.63711209E+003  1.15780035E+001   1.16149707E+002       8.30  <-- SCF
+      2  -5.78968613E+003  6.12339349E+000   1.90717550E+001       8.97  <-- SCF
+      3  -5.79149496E+003  6.06595615E+000   2.26104124E-001       9.60  <-- SCF
+      4  -5.79146220E+003  1.01843177E+001  -4.09545814E-003      10.35  <-- SCF
+      5  -5.78401140E+003  8.51466108E+000  -9.31349951E-001      11.09  <-- SCF
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653

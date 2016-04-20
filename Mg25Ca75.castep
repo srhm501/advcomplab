@@ -348,7 +348,11 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:30:45 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:30:54 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -421,6 +425,7 @@
  
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -646,6 +651,8 @@ Initial  -5.26800910E+003  0.00000000E+000                        11.80  <-- SCF
       1  -6.31726394E+003  1.15738533E+001   1.31156855E+002      12.60  <-- SCF
       2  -6.47365281E+003  5.57617034E+000   1.95486088E+001      13.27  <-- SCF
       3  -6.47592251E+003  5.33426525E+000   2.83712461E-001      13.96  <-- SCF
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -704,13 +711,18 @@ Initial  -5.26800910E+003  0.00000000E+000                        11.80  <-- SCF
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:32:24 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:32:06 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -1111,3 +1123,5 @@ Calculation time    =     12.31 s
 Finalisation time   =      0.89 s
 Total time          =     23.27 s
 Peak Memory Use     = 622780 kB
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653

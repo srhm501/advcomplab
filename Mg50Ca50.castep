@@ -478,7 +478,11 @@ Initial  -5.81798453E+003  0.00000000E+000                        11.48  <-- SCF
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:30:59 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:31:02 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -551,6 +555,7 @@ Initial  -5.81798453E+003  0.00000000E+000                        11.48  <-- SCF
  
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -777,6 +782,8 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
       1  -7.00226460E+003  1.00546556E+001   1.47450741E+002      12.86  <-- SCF
       2  -7.15747196E+003  4.55360155E+000   1.94009200E+001      13.86  <-- SCF
       3  -7.15995591E+003  4.60541702E+000   3.10493237E-001      14.91  <-- SCF
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -835,7 +842,11 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:32:47 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:32:06 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -873,6 +884,7 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -1126,3 +1138,5 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
 |                                                                             |
 | Requirements will fluctuate during execution and may exceed these estimates |
 +-----------------------------------------------------------------------------+
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653

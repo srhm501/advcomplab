@@ -888,7 +888,11 @@ Peak Memory Use     = 505224 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:30:29 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:30:49 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -956,6 +960,7 @@ Peak Memory Use     = 505224 kB
    ------------------------------------------------------------                
    |      Author: Chris J. Pickard, Cambridge University      |                
    ============================================================                
+<<<<<<< HEAD
  
  Pseudo atomic calculation performed for O 2s2 2p4
  
@@ -1246,6 +1251,8 @@ Calculation time    =      9.04 s
 Finalisation time   =      0.77 s
 Total time          =     15.45 s
 Peak Memory Use     = 505224 kB
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -1304,7 +1311,11 @@ Peak Memory Use     = 505224 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:32:07 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:31:58 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -1342,6 +1353,7 @@ Peak Memory Use     = 505224 kB
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -1662,3 +1674,5 @@ Calculation time    =      8.85 s
 Finalisation time   =      1.93 s
 Total time          =     16.48 s
 Peak Memory Use     = 505220 kB
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
