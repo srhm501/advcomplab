@@ -8,7 +8,7 @@ castep_path=$root/castep
 cd $current
 
 # check if we can plot
-[ -f ./Jmol.jar ] ; type -p java
+[ -f ./Jmol.jar ] && [ $(type -p java) ]
 plot=$?
 
 for cell in $root/*.cell
