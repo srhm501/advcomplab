@@ -4,7 +4,9 @@
 # call as "./getenergy.sh config"
 
 CONF=$1
-mpirun -np 1 ../castep/castep.mpi $CONF
+CASTEP_PATH=../castep/castep.mpi
+
+mpirun -np 1 $CASTEP_PATH $CONF
 
 FILE=$CONF.castep
 
