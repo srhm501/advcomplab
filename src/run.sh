@@ -16,3 +16,5 @@ do
 #ENERGY=$(echo $STRING | awk '{print $9}')
 #echo $ENERGY
 done
+
+../cleanup.sh
