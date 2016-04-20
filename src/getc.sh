@@ -7,9 +7,9 @@
 for file in ../*.cell
 do
     name=${file::-5}
-    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/O.dat
-    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg.dat
-    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca.dat
+    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/O_$name.dat
+    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg_$name.dat
+    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca_$name.dat
 done
 
 gnuplot << EOF
@@ -20,9 +20,9 @@ gnuplot << EOF
     set title "Atom positions"
     set term png
     set output "../dat/pos.png"
-    splot "../dat/Mg.dat" pt 7 ps 5, \
-          "../dat/O.dat"  pt 7 ps 5, \
-          "../dat/Ca.dat" pt 7 ps 5
+    splot "../dat/Mg_$name.dat" pt 7 ps 5, \
+          "../dat/O_$name.dat"  pt 7 ps 5, \
+          "../dat/Ca_$name.dat" pt 7 ps 5
     set term wxt
     replot
 EOF
