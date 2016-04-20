@@ -10,8 +10,8 @@
      O    0.0000000000    0.5000000000    0.0000000000
      O    0.0000000000    0.0000000000    0.5000000000
     Ca    0.0000000000    0.0000000000    0.0000000000
-    Mg    0.0000000000    0.5000000000    0.5000000000
-    Mg    0.5000000000    0.0000000000    0.5000000000
+    Ca    0.0000000000    0.5000000000    0.5000000000
+    Ca    0.5000000000    0.0000000000    0.5000000000
     Mg    0.5000000000    0.5000000000    0.0000000000
 %ENDBLOCK POSITIONS_FRAC
 
@@ -23,12 +23,3 @@ symmetry_generate
        1       1       1
        0       0       0
 %ENDBLOCK CELL_CONSTRAINTS
-
-! The following section is commented out; CASTEP will generate these files for you
-! the first time you use the appropriate element. You can then uncomment this block
-! to speed up the initial stages of the calculation. 
-!%BLOCK SPECIES_POT
-!       O   O_OTF.usp
-!      Mg  Mg_OTF.usp
-!      Ca  Ca_OTF.usp
-!%ENDBLOCK SPECIES_POT
