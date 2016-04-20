@@ -1,4 +1,0 @@
-ERROR: cell_read - failure to open freeform cell file ../Mg50Ca50_v2.cell.cell
-Current trace stack:
- cell_read
- castep
