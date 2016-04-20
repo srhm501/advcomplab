@@ -27,5 +27,5 @@ do
         set term wxt
         replot
 EOF
-    display "../dat/pos_$name.png"
+    display "../dat/pos_$name.png" &
 done
