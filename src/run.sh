@@ -15,6 +15,7 @@ do
 #STRING=$(grep "Total energy corrected for finite basis set" $FILE)
 #ENERGY=$(echo $STRING | awk '{print $9}')
 #echo $ENERGY
+    ../cleanup.sh
 done
 
-../cleanup.sh
+
