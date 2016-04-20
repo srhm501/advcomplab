@@ -425,7 +425,10 @@
  
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
+<<<<<<< HEAD
 >>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -484,7 +487,11 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:49:11 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:47:17 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -522,6 +529,7 @@
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -787,3 +795,5 @@ Initial  -9.54526927E+003  0.00000000E+000                        11.79  <-- SCF
       4  -1.15783446E+004  1.58867871E+001  -9.25292745E-001      19.14  <-- SCF
       5  -1.15731658E+004  1.56443365E+001  -5.17886878E-001      21.10  <-- SCF
       6  -1.15728153E+004  1.56438717E+001  -3.50491800E-002      23.01  <-- SCF
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb

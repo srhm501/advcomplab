@@ -11,20 +11,8 @@ done
 jmol_path=`echo $0 | sed -e 's/jmol//g' `
 if [ -f ./Jmol.jar ] ; then
   jarpath=./Jmol.jar
-elif [ -f ${jmol_path}/Jmol.jar ] ; then
-  jarpath=${jmol_path}/Jmol.jar
-elif [ -f ${PATH}/Jmol.jar ] ; then
-  jarpath=${PATH}/Jmol.jar
-elif [ -f ${HOME}/Downloads/Jmol.jar ] ; then
-  jarpath=${HOME}/Downloads/Jmol.jar
-elif [ -f ./build/Jmol.jar ] ; then
-  jarpath=./build/Jmol.jar
-elif [ -f $JMOL_HOME/Jmol.jar ] ; then
-  jarpath=$JMOL_HOME/Jmol.jar
-elif [ -f /usr/share/jmol/Jmol.jar ] ; then
-  jarpath=/usr/share/jmol/Jmol.jar
 else
   echo Jmol.jar not found
-  exit
+  exit 1
 fi
 $command -Xmx512m -jar $jarpath $@

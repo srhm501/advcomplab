@@ -885,6 +885,7 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
 <<<<<<< HEAD
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -1140,6 +1141,8 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
 +-----------------------------------------------------------------------------+
 =======
 >>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -1198,7 +1201,11 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:47:45 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:46:08 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -1339,7 +1346,11 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
  write BibTeX reference list                    : on
  write OTFG pseudopotential files               : on
  checkpoint writing                             : both castep_bin and check files
+<<<<<<< HEAD
  random number generator seed                   : randomised (144745893)
+=======
+ random number generator seed                   : randomised (144608317)
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
 
  *********************** Exchange-Correlation Parameters ***********************
   
@@ -1493,6 +1504,7 @@ Initial  -5.82265867E+003  0.00000000E+000                        11.62  <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -5.81346027E+003  0.00000000E+000                        11.85  <-- SCF
       1  -7.00504670E+003  9.65851646E+000   1.48948303E+002      13.30  <-- SCF
       2  -7.15745763E+003  4.72357886E+000   1.90513666E+001      14.40  <-- SCF
@@ -1512,6 +1524,27 @@ Final free energy (E-TS)    =  -7152.310890316     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7152.310890316     eV
+=======
+Initial  -5.82597938E+003  0.00000000E+000                        12.17  <-- SCF
+      1  -6.99862635E+003  9.67662389E+000   1.46580871E+002      13.46  <-- SCF
+      2  -7.15749212E+003  4.55909903E+000   1.98582210E+001      14.48  <-- SCF
+      3  -7.15995603E+003  4.60516362E+000   3.07989051E-001      15.52  <-- SCF
+      4  -7.15762896E+003  8.78371239E+000  -2.90884179E-001      16.60  <-- SCF
+      5  -7.15242772E+003  6.95923273E+000  -6.50155157E-001      17.73  <-- SCF
+      6  -7.15233055E+003  7.06870796E+000  -1.21453869E-002      18.97  <-- SCF
+      7  -7.15232090E+003  7.12519703E+000  -1.20623594E-003      20.07  <-- SCF
+      8  -7.15231113E+003  7.15711451E+000  -1.22128993E-003      21.11  <-- SCF
+      9  -7.15231090E+003  7.16837431E+000  -2.87112900E-005      22.15  <-- SCF
+     10  -7.15231089E+003  7.16989603E+000  -1.45815952E-006      22.93  <-- SCF
+     11  -7.15231089E+003  7.17042452E+000  -1.25058403E-007      23.69  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7152.310890737     eV
+Final free energy (E-TS)    =  -7152.310890737     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7152.310890737     eV
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  
 
 Writing analysis data to ../Mg50Ca50.castep_bin
@@ -1601,8 +1634,76 @@ Writing model to ../Mg50Ca50.check
  A BibTeX formatted list of references used in this run has been written to 
  ../Mg50Ca50.bib
  
+<<<<<<< HEAD
 Initialisation time =     10.19 s
 Calculation time    =     16.13 s
 Finalisation time   =      0.94 s
 Total time          =     27.26 s
 Peak Memory Use     = 625184 kB
+=======
+Initialisation time =     10.44 s
+Calculation time    =     15.26 s
+Finalisation time   =      0.99 s
+Total time          =     26.69 s
+Peak Memory Use     = 625188 kB
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+ Run started: Wed, 20 Apr 2016 14:55:09 +0100
+ Warning: parameters_read - missing parameters file, using defaults
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb

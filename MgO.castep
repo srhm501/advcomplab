@@ -3717,9 +3717,12 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921552587     eV
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> acad02d9e7e135b58b88f80c4433ef1a20de39a3
 >>>>>>> 227952b1065e3297e759a5124686fc9c4562cae9
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -3778,6 +3781,7 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921552587     eV
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 20 Apr 2016 14:31:19 +0100
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -3940,6 +3944,9 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921552587     eV
  Fundamental constants values: CODATA 2010
  
  Run started: Wed, 20 Apr 2016 14:48:39 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:47:01 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
@@ -4098,7 +4105,11 @@ NB est. 0K energy (E-0.5TS)      =  -7085.921552587     eV
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
+<<<<<<< HEAD
  random number generator seed                   : randomised (144839854)
+=======
+ random number generator seed                   : randomised (144701752)
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -4270,6 +4281,7 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -5.72849110E+003  0.00000000E+000                        11.61  <-- SCF
       1  -6.92123299E+003  9.98523037E+000   1.49092736E+002      12.27  <-- SCF
       2  -7.07953686E+003  8.90843607E+000   1.97879840E+001      12.85  <-- SCF
@@ -4444,3 +4456,70 @@ Calculation time    =     20.69 s
 Finalisation time   =      0.54 s
 Total time          =     31.47 s
 Peak Memory Use     = 604572 kB
+=======
+Initial  -5.72363442E+003  0.00000000E+000                        12.21  <-- SCF
+      1  -6.92089862E+003  1.01335990E+001   1.49658025E+002      12.88  <-- SCF
+      2  -7.07948306E+003  8.87101952E+000   1.98230549E+001      13.44  <-- SCF
+      3  -7.08381535E+003  8.70084873E+000   5.41535698E-001      14.05  <-- SCF
+      4  -7.09401204E+003  8.47611823E+000   1.27458695E+000      14.68  <-- SCF
+      5  -7.08103728E+003  8.76697351E+000  -1.62184582E+000      15.26  <-- SCF
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+ Run started: Wed, 20 Apr 2016 14:55:09 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
