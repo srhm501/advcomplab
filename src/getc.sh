@@ -7,23 +7,25 @@
 for file in ../*.cell
 do
     name=${file::-5}
-    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/O.dat
-    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg.dat
-    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca.dat
-done
+    name=${name:3}
+    echo $name
+    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/$name.dat
+    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/$name.dat
+    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/$name.dat
 
 gnuplot << EOF
     set xlabel "X"
     set ylabel "Y"
     set zlabel "Z"
     set grid
-    set title "Nuclear positions"
+    set title "Atom positions"
     set term png
-    set output "../dat/pos.png"
-    splot "../dat/Mg.dat" pt 7 ps 5, \
-          "../dat/O.dat"  pt 7 ps 5, \
-          "../dat/Ca.dat" pt 7 ps 5
+    set output "../dat/pos_$name.png"
+    splot "../dat/$name.dat" pt 7 ps 5, \
+          "../dat/$name.dat"  pt 7 ps 5, \
+          "../dat/$name.dat" pt 7 ps 5
     set term wxt
     replot
 EOF
-display "../dat/pos.png"
+display "../dat/pos_$name.png"
+done
