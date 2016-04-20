@@ -13,19 +13,19 @@ do
     grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/$name.dat
     grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/$name.dat
 
-gnuplot << EOF
-    set xlabel "X"
-    set ylabel "Y"
-    set zlabel "Z"
-    set grid
-    set title "Atom positions"
-    set term png
-    set output "../dat/pos_$name.png"
-    splot "../dat/$name.dat" pt 7 ps 5, \
-          "../dat/$name.dat"  pt 7 ps 5, \
-          "../dat/$name.dat" pt 7 ps 5
-    set term wxt
-    replot
-EOF
-display "../dat/pos_$name.png"
+    gnuplot << EOF
+        set xlabel "X"
+        set ylabel "Y"
+        set zlabel "Z"
+        set grid
+        set title "Atom positions"
+        set term png
+        set output "../dat/pos_$name.png"
+        splot "../dat/$name.dat" pt 7 ps 5, \
+              "../dat/$name.dat"  pt 7 ps 5, \
+              "../dat/$name.dat" pt 7 ps 5
+        set term wxt
+        replot
+    EOF
+    display "../dat/pos_$name.png"
 done
