@@ -9,6 +9,7 @@ for cell in ../*.cell
 do
     conf=${cell::-5}
     echo $conf
+    cp ../param.master ../$conf.param
     mpirun -np 1 $CASTEP_PATH/castep.mpi $conf
     file=$CASTEP_PATH/$conf.castep
     ./jmol -I $file &
