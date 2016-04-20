@@ -9,9 +9,9 @@ do
     name=${file::-5}
     name=${name:3}
     echo $name
-    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/$name.dat
-    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/$name.dat
-    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/$name.dat
+    grep "O "  $file | awk '{$1="O";sub("O","");print}'   > ../dat/O_$name.dat
+    grep "Mg " $file | awk '{$1="Mg";sub("Mg","");print}' > ../dat/Mg_$name.dat
+    grep "Ca " $file | awk '{$1="Ca";sub("Ca","");print}' > ../dat/Ca_$name.dat
 
     gnuplot << EOF
         set xlabel "X"
@@ -21,9 +21,9 @@ do
         set title "Atom positions"
         set term png
         set output "../dat/pos_$name.png"
-        splot "../dat/$name.dat" pt 7 ps 5, \
-              "../dat/$name.dat"  pt 7 ps 5, \
-              "../dat/$name.dat" pt 7 ps 5
+        splot "../dat/O_$name.dat" pt 7 ps 5, \
+              "../dat/Mg_$name.dat"  pt 7 ps 5, \
+              "../dat/Ca_$name.dat" pt 7 ps 5
         set term wxt
         replot
 EOF
