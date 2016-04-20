@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# finds energy from file
-# call as "./getenergy.sh config"
-
 CASTEP_PATH=../castep
+
+# check if we can plot
+[ -f ./Jmol.jar ] ; type -p java
+plot=$?
 
 for cell in ../*.cell
 do
@@ -12,11 +13,11 @@ do
     cp ../param.master ../$conf.param
     mpirun -np 1 $CASTEP_PATH/castep.mpi $conf
     file=$CASTEP_PATH/$conf.castep
-    ./jmol -I $file &
-    
-    if [$? -ne 1] ; then
-        exit 1
+
+    if [[ plot -eq 0 ]] ; then
+	./jmol -I $file
     fi
+    
 #STRING=$(grep "Total energy corrected for finite basis set" $FILE)
 #ENERGY=$(echo $STRING | awk '{print $9}')
 #echo $ENERGY
