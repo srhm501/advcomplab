@@ -11,7 +11,7 @@ cd $current
 [ -f ./Jmol.jar ] && [ $(type -p java) ]
 plot=$?
 
-for cell in $root/cell/*.cell
+for cell in $root/*.cell
 do
     conf=${cell::-5}
     file=$castep_path/$conf.castep
@@ -19,7 +19,7 @@ do
     cp ../param.master $conf.param
 
     if [ ! -f $file ] ; then
-	mpirun -np 1 $castep_path/castep.mpi $conf
+	time mpirun -np 1 $castep_path/castep.mpi $conf
     fi
 
     if [[ plot -eq 0 ]] ; then
