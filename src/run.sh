@@ -1,26 +1,36 @@
 #!/bin/bash
 
-# finds energy from file
-# call as "./getenergy.sh config"
+# set up directory map
+old="$(pwd)"
+current="$(dirname "$0")"
+root=..
+castep_path=$root/castep
+cd $current
 
-CASTEP_PATH=../castep
+# check if we can plot
+[ -f ./Jmol.jar ] && [ $(type -p java) ]
+plot=$?
 
-for cell in ../*.cell
+for cell in $root/cell/*.cell
 do
     conf=${cell::-5}
+    file=$castep_path/$conf.castep
     echo $conf
-    cp ../param.master ../$conf.param
-    mpirun -np 1 $CASTEP_PATH/castep.mpi $conf
-    file=$CASTEP_PATH/$conf.castep
-    ./jmol -I $file &
-    
-    if [$? -ne 1] ; then
-        exit 1
+    cp ../param.master $conf.param
+
+    if [ ! -f $file ] ; then
+	mpirun -np 1 $castep_path/castep.mpi $conf
     fi
-#STRING=$(grep "Total energy corrected for finite basis set" $FILE)
-#ENERGY=$(echo $STRING | awk '{print $9}')
-#echo $ENERGY
+
+    if [[ plot -eq 0 ]] ; then
+	./jmol -I $file
+    fi
+
     ./cleanup.sh
 done
 
+#STRING=$(grep "Total energy corrected for finite basis set" $FILE)
+#ENERGY=$(echo $STRING | awk '{print $9}')
+#echo $ENERGY
 
+cd $old
