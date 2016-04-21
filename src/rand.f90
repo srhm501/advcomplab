@@ -1,6 +1,8 @@
 module random
-use quantities, only : dp
 implicit none
+
+integer, parameter :: dp = selected_real_kind(15,300)
+
 contains
 
 subroutine init_random_seed()
