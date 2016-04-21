@@ -1,5 +1,5 @@
 FC=gfortran
-FFLAGS=-c -std=f2008 -fcheck=all -Wall -Wextra
+FFLAGS=-c -std=f95 -fcheck=all -Wall -Wextra
 
 SRCS=src/rand.f90 src/genatoms.f90
 OBJS=$(SRCS:*.f90=*.o)
