@@ -9,7 +9,8 @@ program genatoms
 
   call init_random_seed()
 
-  do i=1,num_atoms
+  ! half the atoms are O
+  do i=1,num_atoms/2
      call random_number(r)
 
      if (r < 0.5_dp) then
