@@ -7,12 +7,12 @@ program genatoms
   real(dp) :: r
   integer  :: i
 
-  real(dp) :: coords(3,num_atoms/2) = reshape((/ &
+  real(dp) :: positions_frac(3,num_atoms/2) = reshape((/ &
        0.0_dp, 0.0_dp, 0.0_dp, &
        0.0_dp, 0.5_dp, 0.5_dp, &
        0.5_dp, 0.0_dp, 0.5_dp, &
        0.5_dp, 0.5_dp, 0.0_dp  &
-       /), shape(coords))
+       /), shape(positions_frac))
 
   10 format (a,3(x,f17.15))
 
@@ -23,9 +23,9 @@ program genatoms
      call random_number(r)
 
      if (r < 0.5_dp) then
-        write(*,10) 'Mg', coords(:,i)
+        write(*,10) 'Mg', positions_frac(:,i)
      else
-        write(*,10) 'Ca', coords(:,i)
+        write(*,10) 'Ca', positions_frac(:,i)
      end if
   end do
 end program
