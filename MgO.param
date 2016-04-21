@@ -1,5 +1,5 @@
 comment            : MgO
-task               : Geometry Optimisation  ! don't change the geometry
+task               : GeometryOptimisation 
 xc_functional      : LDA
 spin_polarized     : false
 cut_off_energy     : 280 eV       ! is this good enough?
