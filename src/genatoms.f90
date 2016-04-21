@@ -2,10 +2,19 @@ program genatoms
   use random
   implicit none
 
-  integer, parameter :: num_atoms = 24
+  integer, parameter :: num_atoms = 8
 
   real(dp) :: r
   integer  :: i
+
+  real(dp) :: coords(3,num_atoms/2) = reshape((/ &
+       0.0_dp, 0.0_dp, 0.0_dp, &
+       0.0_dp, 0.5_dp, 0.5_dp, &
+       0.5_dp, 0.0_dp, 0.5_dp, &
+       0.5_dp, 0.5_dp, 0.0_dp  &
+       /), shape(coords))
+
+  10 format (a,3(x,f17.15))
 
   call init_random_seed()
 
@@ -14,9 +23,9 @@ program genatoms
      call random_number(r)
 
      if (r < 0.5_dp) then
-        print *, 'Mg'
+        write(*,10) 'Mg', coords(:,i)
      else
-        print *, 'Ca'
+        write(*,10) 'Ca', coords(:,i)
      end if
   end do
 end program
