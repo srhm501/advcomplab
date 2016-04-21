@@ -14,7 +14,7 @@ program genatoms
        0.5_dp, 0.5_dp, 0.0_dp  &
        /), shape(positions_frac))
 
-  10 format (a,3(x,f17.15))
+  10 format (4x,a2,3(4x,f12.10))
 
   call init_random_seed()
 
