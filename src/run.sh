@@ -4,7 +4,6 @@
 old="$(pwd)"
 current="$(dirname "$0")"
 root=..
-castep_path=$root/castep
 cd $current
 
 # check if we can plot
@@ -14,12 +13,12 @@ plot=$?
 for cell in $root/*.cell
 do
     conf=${cell::-5}
-    file=$castep_path/$conf.castep
+    file=$root/$conf.castep
     echo $conf
     cp ../param.master $conf.param
 
     #if [ ! -f $file ] ; then
-	time mpirun -np 1 $castep_path/castep.mpi $conf
+    time mpirun -np 1 $root/castep.mpi $conf
    # fi
 
     if [[ plot -eq 0 ]] ; then
