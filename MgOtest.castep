@@ -129,7 +129,351 @@
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
    ============================================================                
+<<<<<<< HEAD
    | Pseudopotential Report - Date of generation 21-04-2016   |                
+=======
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+   ------------------------------------------------------------                
+   | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            2s              2.000           -0.873        |                
+   |            2p              4.000           -0.338        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.873   1.100     qc      0         |                
+   |          2      0    0.250   1.100     qc      0         |                
+   |          3      1   -0.338   1.100     qc      0         |                
+   |          4      1    0.250   1.100     qc      0         |                
+   |         loc     2    0.000   1.100     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 0.769                       |                
+   | Partial core correction Rc = 0.769                       |                
+   ------------------------------------------------------------                
+   | "2|1.1|15|18|20|20:21(qc=7)"                             |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
+ 
+ Converged in 47 iterations to an ae energy of -5427.407 eV
+ 
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:33:02 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:32:10 +0100
+ Warning: parameters_read - missing parameters file, using defaults
+ 
+ Atomic calculation performed for O: 1s2 2s2 2p4
+ 
+ Converged in 60 iterations to an ae energy of -2027.926 eV
+ 
+<<<<<<< HEAD
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:49:11 +0100
+=======
+ Run started: Wed, 20 Apr 2016 14:47:17 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
+ Warning: parameters_read - missing parameters file, using defaults
+ 
+ Atomic calculation performed for O: 1s2 2s2 2p4
+ 
+ Converged in 60 iterations to an ae energy of -2027.926 eV
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+   ------------------------------------------------------------                
+   | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            2s              2.000           -0.873        |                
+   |            2p              4.000           -0.338        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.873   1.100     qc      0         |                
+   |          2      0    0.250   1.100     qc      0         |                
+   |          3      1   -0.338   1.100     qc      0         |                
+   |          4      1    0.250   1.100     qc      0         |                
+   |         loc     2    0.000   1.100     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 0.769                       |                
+   | Partial core correction Rc = 0.769                       |                
+   ------------------------------------------------------------                
+   | "2|1.1|15|18|20|20:21(qc=7)"                             |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
+ 
+ Converged in 47 iterations to an ae energy of -5427.407 eV
+ 
+<<<<<<< HEAD
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+ Run started: Wed, 20 Apr 2016 15:21:09 +0100
+ Warning: parameters_read - missing parameters file, using defaults
+ 
+ Atomic calculation performed for O: 1s2 2s2 2p4
+ 
+ Converged in 60 iterations to an ae energy of -2027.926 eV
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+   ------------------------------------------------------------                
+   | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            2s              2.000           -0.873        |                
+   |            2p              4.000           -0.338        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.873   1.100     qc      0         |                
+   |          2      0    0.250   1.100     qc      0         |                
+   |          3      1   -0.338   1.100     qc      0         |                
+   |          4      1    0.250   1.100     qc      0         |                
+   |         loc     2    0.000   1.100     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 0.769                       |                
+   | Partial core correction Rc = 0.769                       |                
+   ------------------------------------------------------------                
+   | "2|1.1|15|18|20|20:21(qc=7)"                             |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
+ 
+ Converged in 47 iterations to an ae energy of -5427.407 eV
+ 
+=======
+<<<<<<< HEAD
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff
+   ============================================================                
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+   ------------------------------------------------------------                
+   | Element: Mg Ionic charge: 10.00 Level of theory: LDA     |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            2s              2.000           -2.914        |                
+   |            2p              6.000           -1.717        |                
+   |            3s              2.000           -0.176        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -2.914   1.804     qc      0         |                
+   |          2      0   -0.176   1.804     qc      0         |                
+   |          3      0    0.250   1.804     qc      0         |                
+   |          4      1   -1.717   1.804     qc      0         |                
+   |          5      1    0.250   1.804     qc      0         |                
+   |          6      2    0.000   1.804     qc      0         |                
+   |          7      2    0.250   1.804     qc      0         |                
+   |         loc     3    0.000   1.804     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 1.261                       |                
+   | Partial core correction Rc = 1.261                       |                
+   ------------------------------------------------------------                
+   | "3|1.8|7|8|9|20U:30:21:32"                               |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Atomic calculation performed for Ca: 1s2 2s2 2p6 3s2 3p6 4s2
+ 
+ Converged in 44 iterations to an ae energy of -18468.059 eV
+ 
+   ============================================================                
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
    ------------------------------------------------------------                
    | Element: Ca Ionic charge: 10.00 Level of theory: LDA     |                
    | Atomic Solver: Koelling-Harmon                           |                
@@ -195,6 +539,7 @@
  write BibTeX reference list                    : on
  write OTFG pseudopotential files               : on
  checkpoint writing                             : both castep_bin and check files
+<<<<<<< HEAD
   
  output         length unit                     : A
  output           mass unit                     : amu
@@ -218,6 +563,13 @@
  random number generator seed                   : randomised (122302931)
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
+=======
+<<<<<<< HEAD
+ random number generator seed                   : randomised (152109616)
+=======
+ random number generator seed                   : randomised (144911364)
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
 
  *********************** Exchange-Correlation Parameters ***********************
   
@@ -388,6 +740,7 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -9.49852459E+003  0.00000000E+000                        11.15  <-- SCF
       1  -1.13660416E+004  1.49089499E+001   1.86751701E+002      11.98  <-- SCF
       2  -1.15606750E+004  1.47989153E+001   1.94633430E+001      12.63  <-- SCF
@@ -457,6 +810,33 @@ NB est. 0K energy (E-0.5TS)      =  -11554.01756843     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =     -81.910213eV
  Total energy corrected for finite basis set =  -11554.124795 eV
+=======
+<<<<<<< HEAD
+Initial  -9.54254152E+003  0.00000000E+000                        13.34  <-- SCF
+      1  -1.13845755E+004  1.47235232E+001   1.84203402E+002      15.39  <-- SCF
+      2  -1.15838096E+004  1.47459684E+001   1.99234033E+001      16.97  <-- SCF
+      3  -1.15875913E+004  1.47541468E+001   3.78171187E-001      18.75  <-- SCF
+      4  -1.15783398E+004  1.58859349E+001  -9.25144068E-001      20.60  <-- SCF
+      5  -1.15731643E+004  1.56434814E+001  -5.17553809E-001      22.68  <-- SCF
+      6  -1.15728157E+004  1.56441187E+001  -3.48631401E-002      24.66  <-- SCF
+      7  -1.15727516E+004  1.56504856E+001  -6.40458835E-003      26.62  <-- SCF
+      8  -1.15727483E+004  1.56532737E+001  -3.28136308E-004      28.58  <-- SCF
+      9  -1.15727479E+004  1.56534628E+001  -4.14168312E-005      30.29  <-- SCF
+     10  -1.15727479E+004  1.56537305E+001  -3.37272193E-006      31.66  <-- SCF
+     11  -1.15727479E+004  1.56538372E+001  -3.12412539E-008      32.94  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -11572.72105810     eV
+Final free energy (E-TS)    =  -11572.74789292     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -11572.73447551     eV
+ 
+
+Writing analysis data to ../MgOtest.castep_bin
+
+Writing model to ../MgOtest.check
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
  
  ***************** Symmetrised Forces *****************
  *                                                    *
@@ -466,6 +846,7 @@ NB est. 0K energy (E-0.5TS)      =  -11554.01756843     eV
  *                                                    *
  * O         1      0.00000      0.00000      0.00000 *
  * O         2      0.00000      0.00000      0.00000 *
+<<<<<<< HEAD
  * Mg        1      0.00000    -10.21805    -10.21805 *
  * Mg        2      0.00000     10.21805    -10.21805 *
  * Mg        3      0.00000     10.21805     10.21805 *
@@ -494,23 +875,50 @@ NB est. 0K energy (E-0.5TS)      =  -11554.01756843     eV
  Pseudo atomic calculation performed for O 2s2 2p4
  
  Converged in 28 iterations to a total energy of -424.4682 eV
+=======
+ * Mg        1      0.00000     -9.93571     -9.93571 *
+ * Mg        2      0.00000      9.93571     -9.93571 *
+ * Mg        3      0.00000      9.93571      9.93571 *
+ * Mg        4      0.00000     -9.93571      9.93571 *
+ * Ca        1      0.00000    -17.81295    -17.81295 *
+ * Ca        2      0.00000     17.81295    -17.81295 *
+ * Ca        3      0.00000    -17.81295     17.81295 *
+ * Ca        4      0.00000     17.81295     17.81295 *
+ *                                                    *
+ ******************************************************
+ 
+ Pseudo atomic calculation performed for O 2s2 2p4
+ 
+ Converged in 24 iterations to a total energy of -431.6155 eV
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
  
  
  Pseudo atomic calculation performed for Mg 2s2 2p6 3s2
  
+<<<<<<< HEAD
  Converged in 19 iterations to a total energy of -1684.3182 eV
+=======
+ Converged in 20 iterations to a total energy of -1684.7622 eV
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
  
  
  Pseudo atomic calculation performed for Ca 3s2 3p6 4s2
  
+<<<<<<< HEAD
  Converged in 24 iterations to a total energy of -1001.5365 eV
  
 Charge spilling parameter for spin component 1 = 0.54%
+=======
+ Converged in 19 iterations to a total energy of -1001.6194 eV
+ 
+Charge spilling parameter for spin component 1 = 0.55%
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
  
      Atomic Populations (Mulliken)
      -----------------------------
 Species   Ion     s      p      d      f     Total  Charge (e)
 ==============================================================
+<<<<<<< HEAD
   O        1     1.89   5.42   0.00   0.00   7.31    -1.31
   O        2     1.69   4.42   0.00   0.00   6.12    -0.12
   Mg       1     2.16   7.95   0.00   0.00  10.10    -0.10
@@ -521,10 +929,23 @@ Species   Ion     s      p      d      f     Total  Charge (e)
   Ca       2     1.49   5.71   2.34   0.00   9.54     0.46
   Ca       3     1.49   5.71   2.34   0.00   9.54     0.46
   Ca       4     1.49   5.71   2.34   0.00   9.54     0.46
+=======
+  O        1     1.88   5.43   0.00   0.00   7.31    -1.31
+  O        2     1.65   4.46   0.00   0.00   6.12    -0.12
+  Mg       1     2.15   7.96   0.00   0.00  10.11    -0.11
+  Mg       2     2.15   7.96   0.00   0.00  10.11    -0.11
+  Mg       3     2.15   7.96   0.00   0.00  10.11    -0.11
+  Mg       4     2.15   7.96   0.00   0.00  10.11    -0.11
+  Ca       1     1.49   5.71   2.33   0.00   9.53     0.47
+  Ca       2     1.49   5.71   2.33   0.00   9.53     0.47
+  Ca       3     1.49   5.71   2.33   0.00   9.53     0.47
+  Ca       4     1.49   5.71   2.33   0.00   9.53     0.47
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
 ==============================================================
  
             Bond              Population      Length (A)
 ============================================================
+<<<<<<< HEAD
           O 2 -- Ca 4             -0.69        1.48492
           O 2 -- Ca 3             -0.69        1.48492
           O 2 -- Ca 2             -0.69        1.48492
@@ -566,6 +987,49 @@ Species   Ion     s      p      d      f     Total  Charge (e)
          Mg 1 -- Ca 3              0.07        2.96985
          Mg 1 -- Ca 2              0.07        2.96985
          Mg 1 -- Mg 3              1.22        2.96985
+=======
+          O 2 -- Ca 4             -0.65        1.48492
+          O 2 -- Ca 3             -0.65        1.48492
+          O 2 -- Ca 2             -0.65        1.48492
+          O 2 -- Ca 1             -0.65        1.48492
+          O 1 -- Mg 4             -0.27        1.48492
+          O 1 -- Mg 3             -0.27        1.48492
+          O 1 -- Mg 2             -0.27        1.48492
+          O 1 -- Mg 1             -0.27        1.48492
+         Ca 3 -- Ca 4            -12.12        2.10000
+         Ca 2 -- Ca 4            -12.12        2.10000
+         Ca 1 -- Ca 3            -12.12        2.10000
+         Ca 1 -- Ca 2            -12.12        2.10000
+         Mg 4 -- Ca 3             -6.80        2.10000
+         Mg 3 -- Ca 4             -6.80        2.10000
+         Mg 3 -- Mg 4             -1.99        2.10000
+         Mg 2 -- Ca 2             -6.80        2.10000
+         Mg 2 -- Mg 3             -1.99        2.10000
+         Mg 1 -- Ca 1             -6.80        2.10000
+         Mg 1 -- Mg 4             -1.99        2.10000
+         Mg 1 -- Mg 2             -1.99        2.10000
+          O 1 -- O 2              -0.36        2.10000
+          O 2 -- Mg 3              0.29        2.57196
+          O 1 -- Ca 4              0.02        2.57196
+          O 2 -- Mg 4              0.29        2.57196
+          O 2 -- Mg 2              0.29        2.57196
+          O 2 -- Mg 1              0.29        2.57196
+          O 1 -- Ca 3              0.02        2.57196
+          O 1 -- Ca 2              0.02        2.57196
+          O 1 -- Ca 1              0.02        2.57196
+         Ca 2 -- Ca 3              3.96        2.96985
+         Ca 1 -- Ca 4              3.96        2.96985
+         Mg 4 -- Ca 4              0.02        2.96985
+         Mg 4 -- Ca 1              0.02        2.96985
+         Mg 3 -- Ca 3              0.02        2.96985
+         Mg 3 -- Ca 2              0.02        2.96985
+         Mg 2 -- Ca 4              0.02        2.96985
+         Mg 2 -- Ca 1              0.02        2.96985
+         Mg 2 -- Mg 4              1.40        2.96985
+         Mg 1 -- Ca 3              0.02        2.96985
+         Mg 1 -- Ca 2              0.02        2.96985
+         Mg 1 -- Mg 3              1.40        2.96985
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
 ============================================================
  
 
@@ -576,8 +1040,27 @@ Writing model to ../MgOtest.check
  A BibTeX formatted list of references used in this run has been written to 
  ../MgOtest.bib
  
+<<<<<<< HEAD
 Initialisation time =      9.76 s
 Calculation time    =     24.74 s
 Finalisation time   =      0.52 s
 Total time          =     35.02 s
 Peak Memory Use     = 604572 kB
+=======
+Initialisation time =     11.65 s
+Calculation time    =     24.24 s
+Finalisation time   =      1.21 s
+Total time          =     37.10 s
+Peak Memory Use     = 633008 kB
+=======
+Initial  -9.54526927E+003  0.00000000E+000                        11.79  <-- SCF
+      1  -1.13841532E+004  1.50163479E+001   1.83888396E+002      13.90  <-- SCF
+      2  -1.15838125E+004  1.47188682E+001   1.99659304E+001      15.54  <-- SCF
+      3  -1.15875976E+004  1.47542854E+001   3.78502522E-001      17.29  <-- SCF
+      4  -1.15783446E+004  1.58867871E+001  -9.25292745E-001      19.14  <-- SCF
+      5  -1.15731658E+004  1.56443365E+001  -5.17886878E-001      21.10  <-- SCF
+      6  -1.15728153E+004  1.56438717E+001  -3.50491800E-002      23.01  <-- SCF
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2

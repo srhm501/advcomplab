@@ -5,7 +5,11 @@ START COMMENT
  871 EXTREME
  
    ============================================================                
+<<<<<<< HEAD
    | Pseudopotential Report - Date of generation 21-04-2016   |                
+=======
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+>>>>>>> 8448f8dfc798ae5f57dd343f5e229d23078ebbf2
    ------------------------------------------------------------                
    | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
    | Atomic Solver: Koelling-Harmon                           |                
