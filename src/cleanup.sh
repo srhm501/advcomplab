@@ -1,6 +1,6 @@
 #!/bin/bash
 
-old=$(pwd)
+old="$(pwd)"
 current="$(dirname "$0")"
 cd $current
 
