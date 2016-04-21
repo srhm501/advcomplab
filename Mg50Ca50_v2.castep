@@ -217,7 +217,11 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:31:14 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:31:10 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -255,6 +259,8 @@
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+<<<<<<< HEAD
+=======
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -508,6 +514,7 @@
 |                                                                             |
 | Requirements will fluctuate during execution and may exceed these estimates |
 +-----------------------------------------------------------------------------+
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -566,6 +573,10 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:33:01 +0100
+ Warning: parameters_read - missing parameters file, using defaults
+=======
  Run started: Wed, 20 Apr 2016 14:32:08 +0100
  Warning: parameters_read - missing parameters file, using defaults
  
@@ -573,6 +584,10 @@
  
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
+<<<<<<< HEAD
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -631,7 +646,11 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:48:13 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:46:35 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -772,7 +791,11 @@
  write BibTeX reference list                    : on
  write OTFG pseudopotential files               : on
  checkpoint writing                             : both castep_bin and check files
+<<<<<<< HEAD
+ random number generator seed                   : randomised (144813208)
+=======
  random number generator seed                   : randomised (144635070)
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
 
  *********************** Exchange-Correlation Parameters ***********************
   
@@ -926,6 +949,27 @@
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
+Initial  -5.82701931E+003  0.00000000E+000                        11.70  <-- SCF
+      1  -7.00436200E+003  1.08341642E+001   1.47167836E+002      12.94  <-- SCF
+      2  -7.15762444E+003  4.48977567E+000   1.91578045E+001      13.99  <-- SCF
+      3  -7.15995644E+003  4.59920114E+000   2.91500602E-001      15.07  <-- SCF
+      4  -7.15762676E+003  8.78352534E+000  -2.91210715E-001      16.20  <-- SCF
+      5  -7.15242816E+003  6.95618829E+000  -6.49824601E-001      17.35  <-- SCF
+      6  -7.15233056E+003  7.06164933E+000  -1.22005847E-002      18.59  <-- SCF
+      7  -7.15232080E+003  7.11975611E+000  -1.21918039E-003      19.74  <-- SCF
+      8  -7.15231112E+003  7.15106515E+000  -1.21017032E-003      20.82  <-- SCF
+      9  -7.15231090E+003  7.16219373E+000  -2.72277218E-005      21.90  <-- SCF
+     10  -7.15231089E+003  7.16361707E+000  -1.41715552E-006      22.70  <-- SCF
+     11  -7.15231089E+003  7.16414429E+000  -1.22337409E-007      23.48  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7152.310890316     eV
+Final free energy (E-TS)    =  -7152.310890316     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7152.310890316     eV
+=======
 Initial  -5.81298192E+003  0.00000000E+000                        11.66  <-- SCF
       1  -7.00448531E+003  1.06988671E+001   1.48937923E+002      12.90  <-- SCF
       2  -7.15765623E+003  4.55672186E+000   1.91463645E+001      13.91  <-- SCF
@@ -945,6 +989,7 @@ Final free energy (E-TS)    =  -7152.310890582     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7152.310890582     eV
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  
 
 Writing analysis data to ../Mg50Ca50_v2.castep_bin
@@ -1012,7 +1057,11 @@ Species   Ion     s      p      d      f     Total  Charge (e)
           O 1 -- Ca 2              0.23        2.10000
           O 1 -- Mg 2              0.56        2.10000
           O 1 -- Mg 1              0.56        2.10000
+<<<<<<< HEAD
+         Ca 1 -- Ca 2             -0.51        2.96985
+=======
          Ca 1 -- Ca 2             -0.50        2.96985
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
          Mg 2 -- Ca 2             -0.44        2.96985
          Mg 2 -- Ca 1             -0.44        2.96985
          Mg 1 -- Ca 2             -0.44        2.96985
@@ -1034,6 +1083,13 @@ Writing model to ../Mg50Ca50_v2.check
  A BibTeX formatted list of references used in this run has been written to 
  ../Mg50Ca50_v2.bib
  
+<<<<<<< HEAD
+Initialisation time =     10.04 s
+Calculation time    =     15.46 s
+Finalisation time   =      1.01 s
+Total time          =     26.51 s
+Peak Memory Use     = 625180 kB
+=======
 Initialisation time =     10.02 s
 Calculation time    =     15.32 s
 Finalisation time   =      1.13 s
@@ -1099,6 +1155,7 @@ Peak Memory Use     = 625180 kB
  
  Run started: Wed, 20 Apr 2016 14:55:09 +0100
  Warning: parameters_read - missing parameters file, using defaults
+<<<<<<< HEAD
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -1565,3 +1622,6 @@ Calculation time    =     15.25 s
 Finalisation time   =      0.90 s
 Total time          =     26.11 s
 Peak Memory Use     = 625180 kB
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff

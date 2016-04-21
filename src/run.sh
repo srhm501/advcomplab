@@ -11,7 +11,7 @@ cd $current
 [ -f ./Jmol.jar ] && [ $(type -p java) ]
 plot=$?
 
-for cell in $root/*.cell
+for cell in $root/cell/*.cell
 do
     conf=${cell::-5}
     file=$castep_path/$conf.castep

@@ -351,6 +351,9 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:31:19 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:31:21 +0100
  +-------------------------------------------------+
  |                                                 |
@@ -411,6 +414,10 @@
  Fundamental constants values: CODATA 2010
  
  Run started: Wed, 20 Apr 2016 14:32:09 +0100
+<<<<<<< HEAD
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -469,6 +476,9 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:48:39 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:47:01 +0100
  +-------------------------------------------------+
  |                                                 |
@@ -529,6 +539,7 @@
  Fundamental constants values: CODATA 2010
  
  Run started: Wed, 20 Apr 2016 14:55:09 +0100
+<<<<<<< HEAD
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -588,3 +599,6 @@
  Fundamental constants values: CODATA 2010
  
  Run started: Wed, 20 Apr 2016 15:20:37 +0100
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff

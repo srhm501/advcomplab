@@ -312,13 +312,51 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:31:23 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:31:22 +0100
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
+<<<<<<< HEAD
+   ============================================================                
+   | Pseudopotential Report - Date of generation 20-04-2016   |                
+   ------------------------------------------------------------                
+   | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
+   | Atomic Solver: Koelling-Harmon                           |                
+   |                                                          |                
+   |               Reference Electronic Structure             |                
+   |         Orbital         Occupation         Energy        |                
+   |            2s              2.000           -0.873        |                
+   |            2p              4.000           -0.338        |                
+   |                                                          |                
+   |                 Pseudopotential Definition               |                
+   |        Beta     l      e      Rc     scheme   norm       |                
+   |          1      0   -0.873   1.100     qc      0         |                
+   |          2      0    0.250   1.100     qc      0         |                
+   |          3      1   -0.338   1.100     qc      0         |                
+   |          4      1    0.250   1.100     qc      0         |                
+   |         loc     2    0.000   1.100     pn      0         |                
+   |                                                          |                
+   | Augmentation charge Rinner = 0.769                       |                
+   | Partial core correction Rc = 0.769                       |                
+   ------------------------------------------------------------                
+   | "2|1.1|15|18|20|20:21(qc=7)"                             |                
+   ------------------------------------------------------------                
+   |      Author: Chris J. Pickard, Cambridge University      |                
+   ============================================================                
+ 
+ Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
+ 
+ Converged in 47 iterations to an ae energy of -5427.407 eV
+ 
+=======
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -377,6 +415,9 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:33:02 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:32:10 +0100
  Warning: parameters_read - missing parameters file, using defaults
  
@@ -384,6 +425,10 @@
  
  Converged in 60 iterations to an ae energy of -2027.926 eV
  
+<<<<<<< HEAD
+>>>>>>> 69bcd84d4a6168dd1074f1626c779cc471f70653
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -442,7 +487,11 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
+ Run started: Wed, 20 Apr 2016 14:49:11 +0100
+=======
  Run started: Wed, 20 Apr 2016 14:47:17 +0100
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
  Warning: parameters_read - missing parameters file, using defaults
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -480,6 +529,7 @@
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+<<<<<<< HEAD
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -576,6 +626,9 @@
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+=======
+<<<<<<< HEAD
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff
    ============================================================                
    | Pseudopotential Report - Date of generation 20-04-2016   |                
    ------------------------------------------------------------                
@@ -679,7 +732,11 @@
  write BibTeX reference list                    : on
  write OTFG pseudopotential files               : on
  checkpoint writing                             : both castep_bin and check files
+<<<<<<< HEAD
  random number generator seed                   : randomised (152109616)
+=======
+ random number generator seed                   : randomised (144911364)
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff
 
  *********************** Exchange-Correlation Parameters ***********************
   
@@ -834,6 +891,7 @@
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -9.54254152E+003  0.00000000E+000                        13.34  <-- SCF
       1  -1.13845755E+004  1.47235232E+001   1.84203402E+002      15.39  <-- SCF
       2  -1.15838096E+004  1.47459684E+001   1.99234033E+001      16.97  <-- SCF
@@ -968,3 +1026,14 @@ Calculation time    =     24.24 s
 Finalisation time   =      1.21 s
 Total time          =     37.10 s
 Peak Memory Use     = 633008 kB
+=======
+Initial  -9.54526927E+003  0.00000000E+000                        11.79  <-- SCF
+      1  -1.13841532E+004  1.50163479E+001   1.83888396E+002      13.90  <-- SCF
+      2  -1.15838125E+004  1.47188682E+001   1.99659304E+001      15.54  <-- SCF
+      3  -1.15875976E+004  1.47542854E+001   3.78502522E-001      17.29  <-- SCF
+      4  -1.15783446E+004  1.58867871E+001  -9.25292745E-001      19.14  <-- SCF
+      5  -1.15731658E+004  1.56443365E+001  -5.17886878E-001      21.10  <-- SCF
+      6  -1.15728153E+004  1.56438717E+001  -3.50491800E-002      23.01  <-- SCF
+=======
+>>>>>>> 49ef0b40004d9519d68ec3ece56c5c17391cb7cb
+>>>>>>> 90b46f01f6119975364d93cd28f36f97f1cfb2ff
