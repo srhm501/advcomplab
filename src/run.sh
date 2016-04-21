@@ -18,9 +18,9 @@ do
     echo $conf
     cp ../param.master $conf.param
 
-    if [ ! -f $file ] ; then
+    #if [ ! -f $file ] ; then
 	time mpirun -np 1 $castep_path/castep.mpi $conf
-    fi
+   # fi
 
     if [[ plot -eq 0 ]] ; then
 	./jmol -I $file
