@@ -19,7 +19,7 @@ do
     cp ../param.master $conf.param
 
     #if [ ! -f $file ] ; then
-    time mpirun -np 1 $castep_path/castep.mpi $conf
+    time mpirun -np 1 $castep_path/castep.mpi $conf 
    # fi
 
     if [[ plot -eq 0 ]] ; then
