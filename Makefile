@@ -1,16 +1,16 @@
 FC=gfortran
-FFLAGS=-c -O2 -std=f95 -fcheck=all -Wall -Wextra
+FFLAGS=-c -O2 -std=f2008 -fcheck=all -Wall -Wextra
 
 SRCS=src/rand.f90 src/genatoms.f90
-OBJS=$(SRCS:*.f90=*.o)
+OBJS=$(SRCS:%.f90=%.o)
 
 PROG=genatoms
 
 $(PROG): $(OBJS)
-	$(FC) -o $(PROG) $^
+	$(FC) $^ -o $@
 
 %.o: %.f90
-	$(FC) $(FFLAGS) $<
+	$(FC) $(FFLAGS) $< -o $@
 
 clean:
 	rm $(PROG) *.mod src/*.o 2>/dev/null
