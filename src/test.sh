@@ -12,7 +12,7 @@ do
 
     cp ../param.master $file.param
 
-    time mpirun -np 1 ../castep.mpi $file
+    mpirun -np 1 ../castep.mpi $file
 
     str=$(grep "Total energy corrected for finite basis" $file.castep)
     echo $file $(echo $str | awk '{print $9}') >> ../energies.dat
