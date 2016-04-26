@@ -56,7 +56,7 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
- Run started: Tue, 26 Apr 2016 12:27:16 +0100
+ Run started: Tue, 26 Apr 2016 12:41:24 +0100
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
@@ -215,7 +215,7 @@
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
- random number generator seed                   : randomised (122716566)
+ random number generator seed                   : randomised (124124878)
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -386,71 +386,71 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -5.17722853E+003  0.00000000E+000                        12.54  <-- SCF
-      1  -6.28162511E+003  1.12961335E+001   1.38049573E+002      12.90  <-- SCF
-      2  -6.43193211E+003  6.73242763E+000   1.87883743E+001      13.17  <-- SCF
-      3  -6.43383905E+003  6.54079475E+000   2.38368012E-001      13.44  <-- SCF
-      4  -6.43077781E+003  9.61039886E+000  -3.82655324E-001      13.77  <-- SCF
-      5  -6.42838580E+003  8.49504429E+000  -2.99000740E-001      14.09  <-- SCF
-      6  -6.42829351E+003  8.78936531E+000  -1.15363727E-002      14.44  <-- SCF
-      7  -6.42829117E+003  8.77355828E+000  -2.93164826E-004      14.78  <-- SCF
-      8  -6.42829054E+003  8.77599091E+000  -7.78889998E-005      15.11  <-- SCF
-      9  -6.42829054E+003  8.77635204E+000  -9.61932669E-007      15.44  <-- SCF
-     10  -6.42829054E+003  8.77620368E+000   9.59453361E-009      15.69  <-- SCF
-     11  -6.42829054E+003  8.77629169E+000  -8.56533944E-011      15.91  <-- SCF
+Initial  -5.17983525E+003  0.00000000E+000                        10.99  <-- SCF
+      1  -6.28233465E+003  1.04323321E+001   1.37812426E+002      11.32  <-- SCF
+      2  -6.43192068E+003  6.50233586E+000   1.86982542E+001      11.59  <-- SCF
+      3  -6.43383834E+003  6.54074465E+000   2.39706477E-001      11.85  <-- SCF
+      4  -6.43077926E+003  9.61073584E+000  -3.82385115E-001      12.17  <-- SCF
+      5  -6.42838572E+003  8.49415468E+000  -2.99191873E-001      12.48  <-- SCF
+      6  -6.42829347E+003  8.78922542E+000  -1.15319268E-002      12.83  <-- SCF
+      7  -6.42829115E+003  8.77361861E+000  -2.89693508E-004      13.17  <-- SCF
+      8  -6.42829054E+003  8.77603485E+000  -7.53976996E-005      13.49  <-- SCF
+      9  -6.42829054E+003  8.77632887E+000  -8.70431546E-007      13.82  <-- SCF
+     10  -6.42829054E+003  8.77620432E+000   1.14055325E-008      14.06  <-- SCF
+     11  -6.42829054E+003  8.77628963E+000  -1.03828155E-010      14.28  <-- SCF
 ------------------------------------------------------------------------ <-- SCF
  
-Final energy, E             =  -6428.290537091     eV
-Final free energy (E-TS)    =  -6428.290537091     eV
+Final energy, E             =  -6428.290537864     eV
+Final free energy (E-TS)    =  -6428.290537864     eV
 (energies not corrected for finite basis set)
  
-NB est. 0K energy (E-0.5TS)      =  -6428.290537091     eV
+NB est. 0K energy (E-0.5TS)      =  -6428.290537864     eV
  
 Calculating total energy with cut-off of  275.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -6.42829054E+003  0.00000000E+000                        16.06  <-- SCF
-      1  -6.43153546E+003  8.47247771E+000   4.05615962E-001      16.31  <-- SCF
-      2  -6.43154400E+003  8.47754633E+000   1.06686831E-003      16.64  <-- SCF
-      3  -6.43153555E+003  8.74652685E+000  -1.05628582E-003      16.95  <-- SCF
-      4  -6.43151603E+003  8.60309619E+000  -2.43960465E-003      17.26  <-- SCF
-      5  -6.43151604E+003  8.61298726E+000   1.46738176E-006      17.58  <-- SCF
-      6  -6.43151604E+003  8.61001813E+000  -1.13589906E-006      17.88  <-- SCF
-      7  -6.43151603E+003  8.61259549E+000  -1.21721236E-006      18.17  <-- SCF
-      8  -6.43151602E+003  8.61185092E+000  -7.01081734E-008      18.39  <-- SCF
-      9  -6.43151602E+003  8.61184310E+000   1.16608492E-009      18.60  <-- SCF
+Initial  -6.42829054E+003  0.00000000E+000                        14.43  <-- SCF
+      1  -6.43153546E+003  8.47247138E+000   4.05615655E-001      14.69  <-- SCF
+      2  -6.43154400E+003  8.47754744E+000   1.06698640E-003      15.03  <-- SCF
+      3  -6.43153555E+003  8.74651069E+000  -1.05623683E-003      15.36  <-- SCF
+      4  -6.43151603E+003  8.60309371E+000  -2.43946303E-003      15.68  <-- SCF
+      5  -6.43151605E+003  8.61298610E+000   1.46275126E-006      16.01  <-- SCF
+      6  -6.43151604E+003  8.61001756E+000  -1.13515206E-006      16.31  <-- SCF
+      7  -6.43151603E+003  8.61259205E+000  -1.21605082E-006      16.61  <-- SCF
+      8  -6.43151603E+003  8.61185106E+000  -6.97625629E-008      16.84  <-- SCF
+      9  -6.43151603E+003  8.61183892E+000   1.34251545E-009      17.06  <-- SCF
 ------------------------------------------------------------------------ <-- SCF
  
-Final energy, E             =  -6431.516024966     eV
-Final free energy (E-TS)    =  -6431.516024966     eV
+Final energy, E             =  -6431.516025740     eV
+Final free energy (E-TS)    =  -6431.516025740     eV
 (energies not corrected for finite basis set)
  
-NB est. 0K energy (E-0.5TS)      =  -6431.516024966     eV
+NB est. 0K energy (E-0.5TS)      =  -6431.516025740     eV
  
 Calculating total energy with cut-off of  280.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -6.43151602E+003  0.00000000E+000                        18.75  <-- SCF
-      1  -6.43383543E+003  8.61193396E+000   2.89925854E-001      18.99  <-- SCF
-      2  -6.43383941E+003  8.61193396E+000   4.97279182E-004      19.31  <-- SCF
-      3  -6.43383536E+003  8.79048538E+000  -5.06004440E-004      19.64  <-- SCF
-      4  -6.43382647E+003  8.68869406E+000  -1.11194966E-003      19.97  <-- SCF
-      5  -6.43382637E+003  8.69963293E+000  -1.18341635E-005      20.30  <-- SCF
-      6  -6.43382637E+003  8.69726574E+000  -2.49381888E-008      20.62  <-- SCF
-      7  -6.43382636E+003  8.69938471E+000  -1.15964826E-006      20.92  <-- SCF
-      8  -6.43382636E+003  8.69872723E+000  -5.66232742E-008      21.15  <-- SCF
-      9  -6.43382636E+003  8.69872886E+000   1.36948757E-009      21.38  <-- SCF
+Initial  -6.43151603E+003  0.00000000E+000                        17.21  <-- SCF
+      1  -6.43383543E+003  8.61193529E+000   2.89925946E-001      17.45  <-- SCF
+      2  -6.43383941E+003  8.61193529E+000   4.97156497E-004      17.76  <-- SCF
+      3  -6.43383536E+003  8.79048479E+000  -5.06069683E-004      18.08  <-- SCF
+      4  -6.43382647E+003  8.68869324E+000  -1.11185164E-003      18.41  <-- SCF
+      5  -6.43382637E+003  8.69963305E+000  -1.18365747E-005      18.72  <-- SCF
+      6  -6.43382637E+003  8.69726581E+000  -2.49382855E-008      19.03  <-- SCF
+      7  -6.43382636E+003  8.69938470E+000  -1.15978621E-006      19.32  <-- SCF
+      8  -6.43382636E+003  8.69872724E+000  -5.66565302E-008      19.55  <-- SCF
+      9  -6.43382636E+003  8.69872890E+000   1.36968092E-009      19.76  <-- SCF
 ------------------------------------------------------------------------ <-- SCF
  
-Final energy, E             =  -6433.826361803     eV
-Final free energy (E-TS)    =  -6433.826361803     eV
+Final energy, E             =  -6433.826362577     eV
+Final free energy (E-TS)    =  -6433.826362577     eV
 (energies not corrected for finite basis set)
  
-NB est. 0K energy (E-0.5TS)      =  -6433.826361803     eV
+NB est. 0K energy (E-0.5TS)      =  -6433.826362577     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =    -137.843491eV
  Total energy corrected for finite basis set =   -6433.982005 eV
@@ -478,9 +478,9 @@ NB est. 0K energy (E-0.5TS)      =  -6433.826361803     eV
  * --------------------------------------------- *
  *             x             y             z     *
  *                                               *
- *  x    -83.489596      0.000000      0.000000  *
- *  y      0.000000    -83.489596      0.000000  *
- *  z      0.000000      0.000000    -83.489596  *
+ *  x    -83.489593      0.000000      0.000000  *
+ *  y      0.000000    -83.489593      0.000000  *
+ *  z      0.000000      0.000000    -83.489593  *
  *                                               *
  *  Pressure:   83.4896                          *
  *                                               *
@@ -552,567 +552,8 @@ Writing model to ../testcell1.check
  A BibTeX formatted list of references used in this run has been written to 
  ../testcell1.bib
  
-Initialisation time =     11.13 s
-Calculation time    =     11.83 s
+Initialisation time =      9.64 s
+Calculation time    =     11.66 s
 Finalisation time   =      0.32 s
-Total time          =     23.27 s
-Peak Memory Use     = 604572 kB
- +-------------------------------------------------+
- |                                                 |
- |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
- |     C     A  A  S       T    E      P   P       |
- |     C     AAAA   SS     T    EEE    PPPP        |
- |     C     A  A     S    T    E      P           |
- |      CCC  A  A  SSS     T    EEEEE  P           |
- |                                                 |
- +-------------------------------------------------+
- |                                                 |
- | Welcome to Academic Release CASTEP version 9.0  |
- | Ab Initio Total Energy Program                  |
- |                                                 |
- | Authors:                                        |
- | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
- | S. Clark, K. Refson, J. R. Yates, M. Payne      |
- |                                                 |
- | Contributors:                                   |
- | P. Lindan, P. Haynes, J. White, V. Milman,      |
- | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
- | B. Montanari, D. Quigley, M. Glover,            |
- | L. Bernasconi, A. Perlov, M. Plummer,           |
- | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
- | J. Aarons, B. Walker, R. Gillen, D. Jones       |
- | T. Green, I. J. Bush, C. J. Armstrong,          |
- | E. J. Higgins, M. D. Hodgson                    |
- |                                                 |
- | Copyright (c) 2000 - 2015                       |
- |                                                 |
- |     Distributed under the terms of an           |
- |     Agreement between the United Kingdom        |
- |     Car-Parrinello (UKCP) Consortium,           |
- |     Daresbury Laboratory and Accelrys, Inc.     |
- |                                                 |
- | Please cite                                     |
- |                                                 |
- |     "First principles methods using CASTEP"     |
- |                                                 |
- |         Zeitschrift fuer Kristallographie       |
- |           220(5-6) pp. 567-570 (2005)           |
- |                                                 |
- | S. J. Clark, M. D. Segall, C. J. Pickard,       |
- | P. J. Hasnip, M. J. Probert, K. Refson,         |
- | M. C. Payne                                     |
- |                                                 |
- |       in all publications arising from          |
- |              your use of CASTEP                 |
- |                                                 |
- +-------------------------------------------------+
- 
- 
- Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
- from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
- Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
- MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
- FFT Lib : default
- Fundamental constants values: CODATA 2010
- 
- Run started: Tue, 26 Apr 2016 12:30:03 +0100
- 
- Atomic calculation performed for O: 1s2 2s2 2p4
- 
- Converged in 60 iterations to an ae energy of -2027.926 eV
- 
-   ============================================================                
-   | Pseudopotential Report - Date of generation 26-04-2016   |                
-   ------------------------------------------------------------                
-   | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
-   | Atomic Solver: Koelling-Harmon                           |                
-   |                                                          |                
-   |               Reference Electronic Structure             |                
-   |         Orbital         Occupation         Energy        |                
-   |            2s              2.000           -0.873        |                
-   |            2p              4.000           -0.338        |                
-   |                                                          |                
-   |                 Pseudopotential Definition               |                
-   |        Beta     l      e      Rc     scheme   norm       |                
-   |          1      0   -0.873   1.100     qc      0         |                
-   |          2      0    0.250   1.100     qc      0         |                
-   |          3      1   -0.338   1.100     qc      0         |                
-   |          4      1    0.250   1.100     qc      0         |                
-   |         loc     2    0.000   1.100     pn      0         |                
-   |                                                          |                
-   | Augmentation charge Rinner = 0.769                       |                
-   | Partial core correction Rc = 0.769                       |                
-   ------------------------------------------------------------                
-   | "2|1.1|15|18|20|20:21(qc=7)"                             |                
-   ------------------------------------------------------------                
-   |      Author: Chris J. Pickard, Cambridge University      |                
-   ============================================================                
- 
- Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
- 
- Converged in 47 iterations to an ae energy of -5427.407 eV
- 
-   ============================================================                
-   | Pseudopotential Report - Date of generation 26-04-2016   |                
-   ------------------------------------------------------------                
-   | Element: Mg Ionic charge: 10.00 Level of theory: LDA     |                
-   | Atomic Solver: Koelling-Harmon                           |                
-   |                                                          |                
-   |               Reference Electronic Structure             |                
-   |         Orbital         Occupation         Energy        |                
-   |            2s              2.000           -2.914        |                
-   |            2p              6.000           -1.717        |                
-   |            3s              2.000           -0.176        |                
-   |                                                          |                
-   |                 Pseudopotential Definition               |                
-   |        Beta     l      e      Rc     scheme   norm       |                
-   |          1      0   -2.914   1.804     qc      0         |                
-   |          2      0   -0.176   1.804     qc      0         |                
-   |          3      0    0.250   1.804     qc      0         |                
-   |          4      1   -1.717   1.804     qc      0         |                
-   |          5      1    0.250   1.804     qc      0         |                
-   |          6      2    0.000   1.804     qc      0         |                
-   |          7      2    0.250   1.804     qc      0         |                
-   |         loc     3    0.000   1.804     pn      0         |                
-   |                                                          |                
-   | Augmentation charge Rinner = 1.261                       |                
-   | Partial core correction Rc = 1.261                       |                
-   ------------------------------------------------------------                
-   | "3|1.8|7|8|9|20U:30:21:32"                               |                
-   ------------------------------------------------------------                
-   |      Author: Chris J. Pickard, Cambridge University      |                
-   ============================================================                
- 
- Atomic calculation performed for Ca: 1s2 2s2 2p6 3s2 3p6 4s2
- 
- Converged in 44 iterations to an ae energy of -18468.059 eV
- 
-   ============================================================                
-   | Pseudopotential Report - Date of generation 26-04-2016   |                
-   ------------------------------------------------------------                
-   | Element: Ca Ionic charge: 10.00 Level of theory: LDA     |                
-   | Atomic Solver: Koelling-Harmon                           |                
-   |                                                          |                
-   |               Reference Electronic Structure             |                
-   |         Orbital         Occupation         Energy        |                
-   |            3s              2.000           -1.721        |                
-   |            3p              6.000           -1.028        |                
-   |            4s              2.000           -0.142        |                
-   |                                                          |                
-   |                 Pseudopotential Definition               |                
-   |        Beta     l      e      Rc     scheme   norm       |                
-   |          1      0   -1.721   2.005     qc      0         |                
-   |          2      0   -0.142   2.005     qc      0         |                
-   |          3      0    0.250   2.005     qc      0         |                
-   |          4      1   -1.028   2.005     qc      0         |                
-   |          5      1    0.250   2.005     qc      0         |                
-   |          6      2    0.000   2.005     qc      0         |                
-   |          7      2    0.250   2.005     qc      0         |                
-   |         loc     3    0.000   2.005     pn      0         |                
-   |                                                          |                
-   | Augmentation charge Rinner = 1.401                       |                
-   | Partial core correction Rc = 1.401                       |                
-   ------------------------------------------------------------                
-   | "3|2.0|7|8|9|30U:40:31:32"                               |                
-   ------------------------------------------------------------                
-   |      Author: Chris J. Pickard, Cambridge University      |                
-   ============================================================                
- 
- Pseudo atomic calculation performed for O 2s2 2p4
- 
- Converged in 28 iterations to a total energy of -424.4682 eV
- 
- 
- Pseudo atomic calculation performed for Mg 2s2 2p6 3s2
- 
- Converged in 19 iterations to a total energy of -1684.3182 eV
- 
- 
- Pseudo atomic calculation performed for Ca 3s2 3p6 4s2
- 
- Converged in 24 iterations to a total energy of -1001.5365 eV
- 
- Calculation not parallelised.
-
- ************************************ Title ************************************
- MgO
-
- ***************************** General Parameters ******************************
-  
- output verbosity                               : normal  (1)
- write checkpoint data to                       : ../testcell1.check
- type of calculation                            : single point energy
- stress calculation                             : on
- density difference calculation                 : off
- electron localisation func (ELF) calculation   : off
- Hirshfeld analysis                             : off
- unlimited duration calculation
- timing information                             : on
- memory usage estimate                          : on
- write final potential to formatted file        : off
- write final density to formatted file          : off
- write BibTeX reference list                    : on
- write OTFG pseudopotential files               : on
- checkpoint writing                             : both castep_bin and check files
-  
- output         length unit                     : A
- output           mass unit                     : amu
- output           time unit                     : ps
- output         charge unit                     : e
- output           spin unit                     : hbar/2
- output         energy unit                     : eV
- output          force unit                     : eV/A
- output       velocity unit                     : A/ps
- output       pressure unit                     : GPa
- output     inv_length unit                     : 1/A
- output      frequency unit                     : cm-1
- output force constant unit                     : eV/A**2
- output         volume unit                     : A**3
- output   IR intensity unit                     : (D/A)**2/amu
- output         dipole unit                     : D
- output         efield unit                     : eV/A/e
- output        entropy unit                     : J/mol/K
-  
- wavefunctions paging                           : none
- random number generator seed                   : randomised (123003754)
- data distribution                              : optimal for this architecture
- optimization strategy                          : maximize speed(+++)
-
- *********************** Exchange-Correlation Parameters ***********************
-  
- using functional                               : Local Density Approximation
- relativistic treatment                         : Koelling-Harmon
- DFT+D: Semi-empirical dispersion correction    : off
-
- ************************* Pseudopotential Parameters **************************
-  
- pseudopotential representation                 : reciprocal space
- <beta|phi> representation                      : reciprocal space
- spin-orbit coupling                            : off
-
- **************************** Basis Set Parameters *****************************
-  
- plane wave basis set cut-off                   :   280.0000   eV
- size of standard grid                          :     2.0000
- size of   fine   gmax                          :    17.1454   1/A
- finite basis set correction                    : automatic
- number of sample energies                      :          3
-           sample  spacing                      :     5.0000   eV
-
- **************************** Electronic Parameters ****************************
-  
- number of  electrons                           :  64.00    
- net charge of system                           :  0.000    
- treating system as non-spin-polarized
- number of bands                                :         38
-
- ********************* Electronic Minimization Parameters **********************
-  
- Method: Treating system as metallic with density mixing treatment of electrons,
-         and number of  SD  steps               :          1
-         and number of  CG  steps               :          4
-  
- total energy / atom convergence tol.           : 0.1000E-06   eV
- eigen-energy convergence tolerance             : 0.2500E-07   eV
- max force / atom convergence tol.              : ignored
- convergence tolerance window                   :          3   cycles
- max. number of SCF cycles                      :         60
- number of fixed-spin iterations                :         10
- smearing scheme                                : Gaussian
- smearing width                                 : 0.2000       eV
- Fermi energy convergence tolerance             : 0.2721E-13   eV
- periodic dipole correction                     : NONE
-
- ************************** Density Mixing Parameters **************************
-  
- density-mixing scheme                          : Pulay
- max. length of mixing history                  :         30
- charge density mixing amplitude                : 0.8000    
- cut-off energy for mixing                      :  280.0       eV
-
- *********************** Population Analysis Parameters ************************
-  
- Population analysis with cutoff                :  3.000       A
-
- *******************************************************************************
-  
- 
-                           -------------------------------
-                                      Unit Cell
-                           -------------------------------
-        Real Lattice(A)                      Reciprocal Lattice(1/A)
-   4.2000000   0.0000000   0.0000000        1.4959965   0.0000000   0.0000000
-   0.0000000   4.2000000   0.0000000        0.0000000   1.4959965   0.0000000
-   0.0000000   0.0000000   4.2000000        0.0000000   0.0000000   1.4959965
- 
-                       Lattice parameters(A)       Cell Angles
-                    a =    4.200000          alpha =   90.000000
-                    b =    4.200000          beta  =   90.000000
-                    c =    4.200000          gamma =   90.000000
- 
-                       Current cell volume =   74.088000       A**3
- 
-                           -------------------------------
-                                     Cell Contents
-                           -------------------------------
-                         Total number of ions in cell =    8
-                      Total number of species in cell =    3
-                        Max number of any one species =    4
- 
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            x  Element    Atom        Fractional coordinates of atoms  x
-            x            Number           u          v          w      x
-            x----------------------------------------------------------x
-            x  O            1         0.500000   0.500000   0.500000   x 
-            x  O            2         0.500000   0.000000   0.000000   x 
-            x  O            3         0.000000   0.500000   0.000000   x 
-            x  O            4         0.000000   0.000000   0.500000   x 
-            x  Mg           1         0.000000   0.000000   0.000000   x 
-            x  Mg           2         0.000000   0.500000   0.500000   x 
-            x  Mg           3         0.500000   0.500000   0.000000   x 
-            x  Ca           1         0.500000   0.000000   0.500000   x 
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- 
- 
-                         No user defined ionic velocities
- 
-                           -------------------------------
-                                   Details of Species
-                           -------------------------------
- 
-                               Mass of species in AMU
-                                    O   15.9994000
-                                    Mg   24.3050000
-                                    Ca   40.0780000
- 
-                          Electric Quadrupole Moment (Barn)
-                                    O   -0.0255800 Isotope 17
-                                    Mg    0.1994000 Isotope 25
-                                    Ca   -0.0408000 Isotope 43
- 
-                          Files used for pseudopotentials:
-                                    O 2|1.1|15|18|20|20:21(qc=7)
-                                    Mg 3|1.8|7|8|9|20U:30:21:32
-                                    Ca 3|2.0|7|8|9|30U:40:31:32
- 
-                           -------------------------------
-                              k-Points For BZ Sampling
-                           -------------------------------
-                       MP grid size for SCF calculation is  3  3  3
-                            with an offset of   0.000  0.000  0.000
-                       Number of kpoints used =             4
- 
-                           -------------------------------
-                               Symmetry and Constraints
-                           -------------------------------
- 
-                      Maximum deviation from symmetry = 0.940008E-15     ANG
- 
-                      Number of symmetry operations   =          48
-                      Number of ionic constraints     =           3
-                      Point group of crystal =    32: Oh, m-3m, 4/m -3 2/m
-                      Space group of crystal =   221: Pm-3m, -P 4 2 3
- 
-             Set iprint > 1 for details on symmetry rotations/translations
- 
-                         Centre of mass is constrained
-             Set iprint > 1 for details of linear ionic constraints
- 
-                         Number of cell constraints= 5
-                         Cell constraints are:  1 1 1 0 0 0
- 
-                         External pressure/stress (GPa)
-                          0.00000   0.00000   0.00000
-                                    0.00000   0.00000
-                                              0.00000
-  
-+---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
-|                                                     Memory          Disk    |
-| Baseline code, static data and system overhead      146.0 MB         0.0 MB |
-| BLAS internal memory storage                          0.0 MB         0.0 MB |
-| Model and support data                               98.2 MB         0.0 MB |
-| Electronic energy minimisation requirements           6.8 MB         0.0 MB |
-| Force calculation requirements                        1.8 MB         0.0 MB |
-| Stress calculation requirements                       2.1 MB         0.0 MB |
-|                                               ----------------------------- |
-| Approx. total storage required per process          251.0 MB         0.0 MB |
-|                                                                             |
-| Requirements will fluctuate during execution and may exceed these estimates |
-+-----------------------------------------------------------------------------+
-Calculating finite basis set correction with  3 cut-off energies.
-Calculating total energy with cut-off of  270.000eV.
------------------------------------------------------------------------- <-- SCF
-SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
-                               energy          per atom          (sec)   <-- SCF
------------------------------------------------------------------------- <-- SCF
-Initial  -6.28462948E+003  0.00000000E+000                        10.97  <-- SCF
-      1  -7.64996304E+003  8.58997905E+000   1.70666696E+002      11.31  <-- SCF
-      2  -7.79969215E+003  4.49774996E+000   1.87161383E+001      11.57  <-- SCF
-      3  -7.80159837E+003  4.45914472E+000   2.38277864E-001      11.82  <-- SCF
-      4  -7.79816942E+003  7.86736080E+000  -4.28618484E-001      12.16  <-- SCF
-      5  -7.79650204E+003  6.60865729E+000  -2.08423507E-001      12.52  <-- SCF
-      6  -7.79642786E+003  6.96156090E+000  -9.27244421E-003      12.88  <-- SCF
-      7  -7.79642470E+003  6.93970520E+000  -3.94220402E-004      13.21  <-- SCF
-      8  -7.79642408E+003  6.94893583E+000  -7.79611421E-005      13.56  <-- SCF
-      9  -7.79642407E+003  6.94946554E+000  -1.71156460E-006      13.88  <-- SCF
-     10  -7.79642407E+003  6.94979843E+000   1.00920194E-008      14.14  <-- SCF
-     11  -7.79642407E+003  6.94982127E+000   1.76817222E-009      14.38  <-- SCF
------------------------------------------------------------------------- <-- SCF
- 
-Final energy, E             =  -7796.424065858     eV
-Final free energy (E-TS)    =  -7796.424065858     eV
-(energies not corrected for finite basis set)
- 
-NB est. 0K energy (E-0.5TS)      =  -7796.424065858     eV
- 
-Calculating total energy with cut-off of  275.000eV.
------------------------------------------------------------------------- <-- SCF
-SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
-                               energy          per atom          (sec)   <-- SCF
------------------------------------------------------------------------- <-- SCF
-Initial  -7.79642407E+003  0.00000000E+000                        14.55  <-- SCF
-      1  -7.79969110E+003  6.71764770E+000   4.08379077E-001      14.80  <-- SCF
-      2  -7.79969724E+003  6.71768149E+000   7.67861822E-004      15.15  <-- SCF
-      3  -7.79968501E+003  6.96939991E+000  -1.52830093E-003      15.48  <-- SCF
-      4  -7.79967035E+003  6.84526955E+000  -1.83259186E-003      15.81  <-- SCF
-      5  -7.79967036E+003  6.85245535E+000   8.22985656E-007      16.15  <-- SCF
-      6  -7.79967036E+003  6.84975812E+000   3.55188772E-007      16.44  <-- SCF
-      7  -7.79967035E+003  6.85211905E+000  -1.42761529E-006      16.72  <-- SCF
-      8  -7.79967035E+003  6.85161221E+000  -5.62595856E-008      16.95  <-- SCF
-      9  -7.79967035E+003  6.85157995E+000   9.69062783E-010      17.17  <-- SCF
------------------------------------------------------------------------- <-- SCF
- 
-Final energy, E             =  -7799.670351788     eV
-Final free energy (E-TS)    =  -7799.670351788     eV
-(energies not corrected for finite basis set)
- 
-NB est. 0K energy (E-0.5TS)      =  -7799.670351788     eV
- 
-Calculating total energy with cut-off of  280.000eV.
------------------------------------------------------------------------- <-- SCF
-SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
-                               energy          per atom          (sec)   <-- SCF
------------------------------------------------------------------------- <-- SCF
-Initial  -7.79967035E+003  0.00000000E+000                        17.33  <-- SCF
-      1  -7.80207206E+003  6.85166605E+000   3.00213111E-001      17.57  <-- SCF
-      2  -7.80207538E+003  6.85166605E+000   4.15717910E-004      17.90  <-- SCF
-      3  -7.80206948E+003  7.01761186E+000  -7.38266183E-004      18.24  <-- SCF
-      4  -7.80206276E+003  6.92839427E+000  -8.39267095E-004      18.59  <-- SCF
-      5  -7.80206268E+003  6.93688953E+000  -9.79785370E-006      18.93  <-- SCF
-      6  -7.80206269E+003  6.93468687E+000   6.64856342E-007      19.23  <-- SCF
-      7  -7.80206268E+003  6.93670134E+000  -1.19980858E-006      19.53  <-- SCF
-      8  -7.80206268E+003  6.93624570E+000  -4.85343455E-008      19.76  <-- SCF
-      9  -7.80206268E+003  6.93623249E+000   9.53981598E-010      19.99  <-- SCF
------------------------------------------------------------------------- <-- SCF
- 
-Final energy, E             =  -7802.062679111     eV
-Final free energy (E-TS)    =  -7802.062679111     eV
-(energies not corrected for finite basis set)
- 
-NB est. 0K energy (E-0.5TS)      =  -7802.062679111     eV
- 
- For future reference: finite basis dEtot/dlog(Ecut) =    -140.298077eV
- Total energy corrected for finite basis set =   -7802.221094 eV
- 
- ***************** Symmetrised Forces *****************
- *                                                    *
- *            Cartesian components (eV/A)             *
- * -------------------------------------------------- *
- *                   x            y            z      *
- *                                                    *
- * O         1      0.00000      0.00000      0.00000 *
- * O         2      0.00000      0.00000      0.00000 *
- * O         3      0.00000      0.00000      0.00000 *
- * O         4      0.00000      0.00000      0.00000 *
- * Mg        1      0.00000      0.00000      0.00000 *
- * Mg        2      0.00000      0.00000      0.00000 *
- * Mg        3      0.00000      0.00000      0.00000 *
- * Ca        1      0.00000      0.00000      0.00000 *
- *                                                    *
- ******************************************************
- 
- *********** Symmetrised Stress Tensor ***********
- *                                               *
- *          Cartesian components (GPa)           *
- * --------------------------------------------- *
- *             x             y             z     *
- *                                               *
- *  x    -37.844348      0.000000      0.000000  *
- *  y      0.000000    -37.844348      0.000000  *
- *  z      0.000000      0.000000    -37.844348  *
- *                                               *
- *  Pressure:   37.8443                          *
- *                                               *
- *************************************************
- 
- Pseudo atomic calculation performed for O 2s2 2p4
- 
- Converged in 28 iterations to a total energy of -424.4682 eV
- 
- 
- Pseudo atomic calculation performed for Mg 2s2 2p6 3s2
- 
- Converged in 19 iterations to a total energy of -1684.3182 eV
- 
- 
- Pseudo atomic calculation performed for Ca 3s2 3p6 4s2
- 
- Converged in 24 iterations to a total energy of -1001.5365 eV
- 
-Charge spilling parameter for spin component 1 = 0.23%
- 
-     Atomic Populations (Mulliken)
-     -----------------------------
-Species   Ion     s      p      d      f     Total  Charge (e)
-==============================================================
-  O        1     1.86   5.09   0.00   0.00   6.95    -0.95
-  O        2     1.86   5.09   0.00   0.00   6.95    -0.95
-  O        3     1.87   5.11   0.00   0.00   6.98    -0.98
-  O        4     1.86   5.09   0.00   0.00   6.95    -0.95
-  Mg       1     2.38   6.67   0.00   0.00   9.04     0.96
-  Mg       2     2.38   6.67   0.00   0.00   9.04     0.96
-  Mg       3     2.38   6.67   0.00   0.00   9.04     0.96
-  Ca       1     2.13   5.99   0.94   0.00   9.06     0.94
-==============================================================
- 
-            Bond              Population      Length (A)
-============================================================
-          O 4 -- Ca 1              0.25        2.10000
-          O 4 -- Mg 2              0.60        2.10000
-          O 4 -- Mg 1              0.60        2.10000
-          O 3 -- Mg 3              0.58        2.10000
-          O 3 -- Mg 2              0.58        2.10000
-          O 3 -- Mg 1              0.58        2.10000
-          O 2 -- Ca 1              0.25        2.10000
-          O 2 -- Mg 3              0.60        2.10000
-          O 2 -- Mg 1              0.60        2.10000
-          O 1 -- Ca 1              0.25        2.10000
-          O 1 -- Mg 3              0.60        2.10000
-          O 1 -- Mg 2              0.60        2.10000
-         Mg 3 -- Ca 1             -0.58        2.96985
-         Mg 2 -- Ca 1             -0.58        2.96985
-         Mg 2 -- Mg 3             -0.38        2.96985
-         Mg 1 -- Ca 1             -0.58        2.96985
-         Mg 1 -- Mg 3             -0.38        2.96985
-         Mg 1 -- Mg 2             -0.38        2.96985
-          O 3 -- O 4              -0.15        2.96985
-          O 2 -- O 4              -0.11        2.96985
-          O 2 -- O 3              -0.15        2.96985
-          O 1 -- O 4              -0.11        2.96985
-          O 1 -- O 3              -0.15        2.96985
-          O 1 -- O 2              -0.11        2.96985
-============================================================
- 
-
-Writing analysis data to ../testcell1.castep_bin
-
-Writing model to ../testcell1.check
- 
- A BibTeX formatted list of references used in this run has been written to 
- ../testcell1.bib
- 
-Initialisation time =      9.62 s
-Calculation time    =     11.91 s
-Finalisation time   =      0.32 s
-Total time          =     21.85 s
-Peak Memory Use     = 604572 kB
+Total time          =     21.62 s
+Peak Memory Use     = 604576 kB
