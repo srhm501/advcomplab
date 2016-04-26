@@ -5,7 +5,7 @@ current="$(dirname "$0")"
 cd $current
 
 counter=1
-while [ $counter -le 2 ]
+while [ $counter -le 8 ]
 do
     file=../testcell$counter
     ./gencell.sh $file.cell
