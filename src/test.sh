@@ -4,6 +4,10 @@ old="$(pwd)"
 current="$(dirname "$0")"
 cd $current
 
+if [ -f ../energies.dat ] ; then
+    mv energies.dat energies.dat.bk
+fi
+
 counter=1
 while [ $counter -le 8 ]
 do
