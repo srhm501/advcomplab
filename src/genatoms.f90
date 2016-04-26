@@ -2,31 +2,52 @@ program genatoms
   use random
   implicit none
 
-  integer,  parameter :: num_atoms = 8
+  integer,  parameter :: side = 4
+  integer,  parameter :: num_atoms = side**3
   real(dp), parameter :: maxpos = 0.5_dp
-  integer,  parameter :: side = nint(num_atoms**(1./3.))
+
   real(dp) :: step = maxpos / (side-1)
 
-  real(dp) :: r
   integer  :: i, j, k, l
   real(dp) :: xc,yc,zc
-
-  real(dp) :: positions_frac(3,num_atoms)
+  character(2) :: atoms(num_atoms)
 
   10 format (4x,a2,3(4x,f12.10))
 
-  l = 0
+  call init_random_seed()
+
+  l=0
+  do i=1,num_atoms/side
+     k = l*side
+     if (mod(l,2)==0) then
+        do j=1,side,2
+           atoms(j+k) = rand_atom()
+        end do
+        do j=2,side,2
+           atoms(j+k) = ' O'
+        end do
+     else
+        do j=1,side,2
+           atoms(j+k) = ' O'
+        end do
+        do j=2,side,2
+           atoms(j+k) = rand_atom()
+        end do
+     end if
+     l = l + 1
+  end do
+
+  l  = 1
   xc = 0.0_dp
   yc = 0.0_dp
   zc = 0.0_dp
 
-  ! populate positions_frac
   do k=1,side
      do j=1,side
         do i=1,side
-           positions_frac(:,l) = (/ xc, yc, zc /)
-           xc = xc + step
+           write(*,10) atoms(l), xc, yc, zc
            l = l + 1
+           xc = xc + step
         end do
         xc = 0.0_dp
         yc = yc + step
@@ -35,22 +56,18 @@ program genatoms
      zc = zc + step
   end do
 
-  call init_random_seed()
+contains
 
-  do i=1,num_atoms
-     !if (mod(i,2)==0) then
-     !   write(*,10) ' O', positions_frac(:,i)
-     !   cycle
-     !end if
-
+  function rand_atom() result(atom)
+    character(2) :: atom
+    real(dp) :: r
+  
      call random_number(r)
 
-     if (r < 1.0_dp/3.0_dp) then
-        write(*,10) 'Mg', positions_frac(:,i)
-     else if (r < 2.0_dp/3.0_dp) then
-        write(*,10) 'Ca', positions_frac(:,i)
+     if (r < 0.5_dp) then
+        atom = 'Mg'
      else
-        write(*,10) ' O', positions_frac(:,i)
+        atom = 'Ca'
      end if
-  end do
+   end function rand_atom
 end program
