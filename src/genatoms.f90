@@ -9,9 +9,9 @@ program genatoms
 
   real(dp) :: positions_frac(3,num_atoms/2) = reshape((/ &
        0.0_dp, 0.0_dp, 0.0_dp, &
-       0.0_dp, 0.5_dp, 0.5_dp, &
-       0.5_dp, 0.0_dp, 0.5_dp, &
-       0.5_dp, 0.5_dp, 0.0_dp  &
+       0.0_dp, 1.0_dp, 1.0_dp, &
+       1.0_dp, 0.0_dp, 1.0_dp, &
+       1.0_dp, 1.0_dp, 0.0_dp  &
        /), shape(positions_frac))
 
   10 format (4x,a2,3(4x,f12.10))

@@ -19,7 +19,7 @@ do
 
     #if [ ! -f $file ] ; then
     time mpirun -np 1 $root/castep.mpi $conf
-   # fi
+    #fi
 
     if [[ plot -eq 0 ]] ; then
 	./jmol -I $file
