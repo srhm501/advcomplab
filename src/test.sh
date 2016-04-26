@@ -1,5 +1,9 @@
 #!/bin/bash
 
+old="$(pwd)"
+current="$(dirname "$0")"
+cd $current
+
 counter=1
 while [ $counter -le 2 ]
 do
@@ -11,9 +15,11 @@ do
     time mpirun -np 1 ../castep.mpi $file
 
     str=$(grep "Total energy corrected for finite basis" $file.castep)
-    echo $file $(echo $str | awk '{print $9}')
+    echo $file $(echo $str | awk '{print $9}') >> ../energies.dat
 
     mv $file.castep ../castep/
 
     counter=$(($counter+1))
 done
+
+cd $old
