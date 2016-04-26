@@ -56,6 +56,7 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Tue, 26 Apr 2016 13:02:00 +0100
  
  Atomic calculation performed for O: 1s2 2s2 2p4
@@ -557,3 +558,6 @@ Calculation time    =     12.13 s
 Finalisation time   =      0.33 s
 Total time          =     22.10 s
 Peak Memory Use     = 604576 kB
+=======
+ Run started: Tue, 26 Apr 2016 13:18:03 +0100
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad

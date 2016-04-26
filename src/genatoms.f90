@@ -11,7 +11,16 @@ program genatoms
   integer  :: i, j, k, l
   real(dp) :: xc,yc,zc
 
+<<<<<<< HEAD
   real(dp) :: positions_frac(3,num_atoms)
+=======
+  real(dp) :: positions_frac(3,num_atoms/2) = reshape((/ &
+       0.0_dp, 0.0_dp, 0.0_dp, &
+       0.0_dp, 1.0_dp, 1.0_dp, &
+       1.0_dp, 0.0_dp, 1.0_dp, &
+       1.0_dp, 1.0_dp, 0.0_dp  &
+       /), shape(positions_frac))
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
 
   10 format (4x,a2,3(4x,f12.10))
 
