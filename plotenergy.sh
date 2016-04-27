@@ -16,9 +16,7 @@ do
     STRING=$(grep "Total energy corrected for finite basis set" ./castep/$name.castep)
     energy=$(echo $STRING | awk '{print $9}')
 
-cat << EOF >> energyplot.dat
-$ratio $energy
-EOF
+echo $ratio $energy  >> energyplot.dat
 done
 
 gnuplot << EOF
@@ -34,4 +32,4 @@ gnuplot << EOF
     replot
 EOF
 
-#display "../dat/pos_$name.png" &
+display "./dat/pos_$name.png" &
