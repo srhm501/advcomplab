@@ -29,7 +29,7 @@ gnuplot << EOF
     set ylabel "Energy (eV)"
     set grid
     unset key
-    set title "Atom positions"
+    set title "Energy variation with Mg/Ca ratio"
     set term png
     set output "./dat/pos_$name.png"
     plot "energyplot.dat" using 1:2 with lines
