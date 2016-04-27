@@ -10,11 +10,11 @@ program genatoms
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
 
-  integer :: Mgmax = 1, Camax = 7
+  integer :: Mgmax, Camax
 
   10 format (4x,a2,3(4x,f12.10))
 
-  !read *, Mgmax, Camax
+  read *, Mgmax, Camax
 
   call init_random_seed()
 
