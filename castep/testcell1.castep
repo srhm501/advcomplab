@@ -56,7 +56,15 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Tue, 26 Apr 2016 13:03:25 +0100
+=======
+<<<<<<< HEAD
+ Run started: Tue, 26 Apr 2016 13:01:37 +0100
+=======
+ Run started: Tue, 26 Apr 2016 13:16:43 +0100
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  
  Atomic calculation performed for O: 1s2 2s2 2p4
  
@@ -215,7 +223,15 @@
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
+<<<<<<< HEAD
  random number generator seed                   : randomised (130325257)
+=======
+<<<<<<< HEAD
+ random number generator seed                   : randomised (130137968)
+=======
+ random number generator seed                   : randomised (131656215)
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -308,12 +324,36 @@
             x  O            2         0.500000   0.000000   0.000000   x 
             x  O            3         0.000000   0.500000   0.000000   x 
             x  O            4         0.000000   0.000000   0.500000   x 
+<<<<<<< HEAD
             x  Mg           1         0.000000   0.500000   0.500000   x 
             x  Ca           1         0.000000   0.000000   0.000000   x 
             x  Ca           2         0.500000   0.000000   0.500000   x 
             x  Ca           3         0.500000   0.500000   0.000000   x 
+=======
+<<<<<<< HEAD
+            x  Mg           1         0.000000   0.000000   0.000000   x 
+            x  Mg           2         0.000000   0.500000   0.500000   x 
+            x  Mg           3         0.500000   0.000000   0.500000   x 
+            x  Ca           1         0.500000   0.500000   0.000000   x 
+=======
+            x  Mg           1         0.000000   1.000000   1.000000   x 
+            x  Mg           2         1.000000   1.000000   0.000000   x 
+            x  Ca           1         0.000000   0.000000   0.000000   x 
+            x  Ca           2         1.000000   0.000000   1.000000   x 
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  
+       **********  Atom Position W A R N I N G: Overlapping atoms! *********
+       *                                                                   *
+       *   Atoms: Mg   1 and Mg   2 are VERY close: distance= 0.000 Bohr   *
+       *   Atoms: Mg   1 and Ca   1 are VERY close: distance= 0.000 Bohr   *
+       *   Atoms: Mg   1 and Ca   2 are VERY close: distance= 0.000 Bohr   *
+       *   Atoms: Mg   2 and Ca   1 are VERY close: distance= 0.000 Bohr   *
+       *   Atoms: Mg   2 and Ca   2 are VERY close: distance= 0.000 Bohr   *
+       *   Atoms: Ca   1 and Ca   2 are VERY close: distance= 0.000 Bohr   *
+       *                                                                   *
+       *********************************************************************
  
                          No user defined ionic velocities
  
@@ -341,20 +381,46 @@
                            -------------------------------
                        MP grid size for SCF calculation is  3  3  3
                             with an offset of   0.000  0.000  0.000
+<<<<<<< HEAD
                        Number of kpoints used =             4
+=======
+<<<<<<< HEAD
+                       Number of kpoints used =             4
+=======
+                       Number of kpoints used =            14
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  
                            -------------------------------
                                Symmetry and Constraints
                            -------------------------------
  
+<<<<<<< HEAD
                       Maximum deviation from symmetry = 0.940008E-15     ANG
  
                       Number of symmetry operations   =          48
                       Number of ionic constraints     =           3
                       Point group of crystal =    32: Oh, m-3m, 4/m -3 2/m
                       Space group of crystal =   221: Pm-3m, -P 4 2 3
+=======
+<<<<<<< HEAD
+                      Maximum deviation from symmetry = 0.940008E-15     ANG
  
-             Set iprint > 1 for details on symmetry rotations/translations
+                      Number of symmetry operations   =          48
+                      Number of ionic constraints     =           3
+                      Point group of crystal =    32: Oh, m-3m, 4/m -3 2/m
+                      Space group of crystal =   221: Pm-3m, -P 4 2 3
+=======
+                      Cell is a supercell containing 2 primitive cells
+                      Maximum deviation from symmetry =  0.00000         ANG
+ 
+         There are no symmetry operations specified or generated for this cell
+                      Number of ionic constraints     =           3
+                      Point group of crystal =     1: C1, 1, 1
+                      Space group of crystal =     0: , 
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
+ 
  
                          Centre of mass is constrained
              Set iprint > 1 for details of linear ionic constraints
@@ -371,12 +437,27 @@
 |                                                     Memory          Disk    |
 | Baseline code, static data and system overhead      146.0 MB         0.0 MB |
 | BLAS internal memory storage                          0.0 MB         0.0 MB |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
 | Model and support data                               98.2 MB         0.0 MB |
 | Electronic energy minimisation requirements           6.8 MB         0.0 MB |
 | Force calculation requirements                        1.8 MB         0.0 MB |
 | Stress calculation requirements                       2.1 MB         0.0 MB |
 |                                               ----------------------------- |
 | Approx. total storage required per process          251.0 MB         0.0 MB |
+<<<<<<< HEAD
+=======
+=======
+| Model and support data                              104.5 MB         0.0 MB |
+| Electronic energy minimisation requirements          17.5 MB         0.0 MB |
+| Force calculation requirements                        1.8 MB         0.0 MB |
+| Stress calculation requirements                       2.1 MB         0.0 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process          268.0 MB         0.0 MB |
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
 |                                                                             |
 | Requirements will fluctuate during execution and may exceed these estimates |
 +-----------------------------------------------------------------------------+
@@ -386,6 +467,7 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -5.17399871E+003  0.00000000E+000                        12.00  <-- SCF
       1  -6.27611621E+003  1.09245640E+001   1.37764687E+002      12.35  <-- SCF
       2  -6.43168592E+003  6.57207144E+000   1.94462137E+001      12.62  <-- SCF
@@ -405,12 +487,78 @@ Final free energy (E-TS)    =  -6428.290537086     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -6428.290537086     eV
+=======
+<<<<<<< HEAD
+Initial  -6.28588460E+003  0.00000000E+000                        11.06  <-- SCF
+      1  -7.65903606E+003  9.30249151E+000   1.71643933E+002      11.40  <-- SCF
+      2  -7.79994625E+003  4.57053950E+000   1.76137738E+001      11.66  <-- SCF
+      3  -7.80159821E+003  4.45904074E+000   2.06494762E-001      11.91  <-- SCF
+      4  -7.79816237E+003  7.86526393E+000  -4.29480683E-001      12.25  <-- SCF
+      5  -7.79650285E+003  6.60635753E+000  -2.07439024E-001      12.60  <-- SCF
+      6  -7.79642837E+003  6.96293027E+000  -9.30990582E-003      12.97  <-- SCF
+      7  -7.79642468E+003  6.94001998E+000  -4.61561713E-004      13.30  <-- SCF
+      8  -7.79642408E+003  6.94882284E+000  -7.53274711E-005      13.64  <-- SCF
+      9  -7.79642407E+003  6.94945617E+000  -1.62836751E-006      13.97  <-- SCF
+     10  -7.79642407E+003  6.94980683E+000   1.04920574E-008      14.22  <-- SCF
+     11  -7.79642407E+003  6.94982104E+000   1.66531080E-009      14.45  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7796.424065859     eV
+Final free energy (E-TS)    =  -7796.424065859     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7796.424065859     eV
+=======
+Initial  -1.61544582E+004  0.00000000E+000                        23.99  <-- SCF
+      1  -1.52353884E+004  9.57466283E+000  -1.14883728E+002      25.31  <-- SCF
+ Warning: There are no empty bands for at least one kpoint and spin; this may
+          slow the convergence and/or lead to an inaccurate groundstate.
+          If this warning persists, you should consider increasing nextra_bands
+          and/or reducing smearing_width in the param file.
+          Recommend using nextra_bands of 10 to 26.                             
+  
+      2  -1.54123652E+004  8.22523907E+000   2.21221029E+001      26.25  <-- SCF
+      3  -1.54222663E+004  7.87297735E+000   1.23763706E+000      27.44  <-- SCF
+      4  -1.53459259E+004  1.11420403E+001  -9.54254466E+000      28.67  <-- SCF
+      5  -1.53488501E+004  1.11747921E+001   3.65520472E-001      29.84  <-- SCF
+      6  -1.52772514E+004  5.48024812E+000  -8.94983719E+000      31.01  <-- SCF
+      7  -1.52778327E+004  5.41686489E+000   7.26662764E-002      32.01  <-- SCF
+      8  -1.52756127E+004  8.54036096E+000  -2.77499399E-001      33.00  <-- SCF
+      9  -1.52698748E+004  7.50559072E+000  -7.17237964E-001      34.01  <-- SCF
+     10  -1.52678681E+004  7.39489744E+000  -2.50844486E-001      35.18  <-- SCF
+     11  -1.52699889E+004  7.22432299E+000   2.65097468E-001      36.26  <-- SCF
+     12  -1.52676963E+004  7.19818256E+000  -2.86572166E-001      37.29  <-- SCF
+     13  -1.52678982E+004  6.96638126E+000   2.52432851E-002      38.37  <-- SCF
+     14  -1.52678388E+004  6.95338514E+000  -7.42813177E-003      39.44  <-- SCF
+     15  -1.52678402E+004  6.95382882E+000   1.74497626E-004      40.50  <-- SCF
+     16  -1.52675513E+004  6.96917106E+000  -3.61106865E-002      41.52  <-- SCF
+     17  -1.52675256E+004  7.05170364E+000  -3.21207080E-003      42.65  <-- SCF
+     18  -1.52675239E+004  7.04395992E+000  -2.20738675E-004      43.68  <-- SCF
+     19  -1.52675235E+004  7.04346868E+000  -4.30025717E-005      44.69  <-- SCF
+     20  -1.52675194E+004  7.03396884E+000  -5.15052622E-004      45.68  <-- SCF
+     21  -1.52675211E+004  7.00558896E+000   2.13666525E-004      46.73  <-- SCF
+     22  -1.52675173E+004  7.02178555E+000  -4.72329600E-004      47.69  <-- SCF
+     23  -1.52675175E+004  7.01119041E+000   2.62738760E-005      48.63  <-- SCF
+     24  -1.52675173E+004  7.01260536E+000  -2.38349955E-005      49.57  <-- SCF
+     25  -1.52675173E+004  7.01419076E+000  -6.84066755E-006      50.43  <-- SCF
+     26  -1.52675173E+004  7.01416361E+000   6.64562065E-008      51.24  <-- SCF
+     27  -1.52675173E+004  7.01413720E+000  -4.02744967E-008      51.87  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -15267.26415503     eV
+Final free energy (E-TS)    =  -15267.51728352     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -15267.39071927     eV
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  
 Calculating total energy with cut-off of  275.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -6.42829054E+003  0.00000000E+000                        15.63  <-- SCF
       1  -6.43153546E+003  8.47249673E+000   4.05615338E-001      15.89  <-- SCF
       2  -6.43154400E+003  8.47755553E+000   1.06717519E-003      16.25  <-- SCF
@@ -428,12 +576,57 @@ Final free energy (E-TS)    =  -6431.516024962     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -6431.516024962     eV
+=======
+<<<<<<< HEAD
+Initial  -7.79642407E+003  0.00000000E+000                        14.63  <-- SCF
+      1  -7.79969110E+003  6.71765240E+000   4.08379052E-001      14.88  <-- SCF
+      2  -7.79969724E+003  6.71768094E+000   7.67864859E-004      15.24  <-- SCF
+      3  -7.79968502E+003  6.96940138E+000  -1.52817701E-003      15.57  <-- SCF
+      4  -7.79967035E+003  6.84526995E+000  -1.83269644E-003      15.90  <-- SCF
+      5  -7.79967036E+003  6.85245486E+000   8.25635884E-007      16.24  <-- SCF
+      6  -7.79967036E+003  6.84975805E+000   3.55162670E-007      16.53  <-- SCF
+      7  -7.79967035E+003  6.85211917E+000  -1.42768721E-006      16.81  <-- SCF
+      8  -7.79967035E+003  6.85161221E+000  -5.62487581E-008      17.05  <-- SCF
+      9  -7.79967035E+003  6.85157995E+000   9.68676086E-010      17.27  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7799.670351788     eV
+Final free energy (E-TS)    =  -7799.670351788     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7799.670351788     eV
+=======
+Initial  -1.52672642E+004  0.00000000E+000                        52.12  <-- SCF
+      1  -1.52990607E+004  6.74151333E+000   3.97456447E+000      53.05  <-- SCF
+      2  -1.52992541E+004  6.73754004E+000   2.41821972E-002      54.07  <-- SCF
+      3  -1.53086666E+004  8.43173794E+000   1.17655922E+000      55.17  <-- SCF
+      4  -1.52995157E+004  6.98363856E+000  -1.14386278E+000      56.24  <-- SCF
+      5  -1.52989042E+004  7.03474839E+000  -7.64409684E-002      57.43  <-- SCF
+      6  -1.52989362E+004  6.93845206E+000   4.00427899E-003      58.57  <-- SCF
+      7  -1.52989097E+004  6.88563987E+000  -3.31914794E-003      59.66  <-- SCF
+      8  -1.52988814E+004  6.91249671E+000  -3.52930813E-003      60.82  <-- SCF
+      9  -1.52988828E+004  6.91219584E+000   1.72430273E-004      61.89  <-- SCF
+     10  -1.52988828E+004  6.90804807E+000  -5.88779113E-007      62.90  <-- SCF
+     11  -1.52988828E+004  6.90894788E+000   5.78240845E-007      63.65  <-- SCF
+     12  -1.52988828E+004  6.90913672E+000  -2.14839595E-007      64.32  <-- SCF
+     13  -1.52988828E+004  6.90938402E+000   5.06975288E-008      64.99  <-- SCF
+     14  -1.52988828E+004  6.90943641E+000   2.38042964E-008      65.66  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -15298.63569832     eV
+Final free energy (E-TS)    =  -15298.88279496     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -15298.75924664     eV
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  
 Calculating total energy with cut-off of  280.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -6.43151602E+003  0.00000000E+000                        18.57  <-- SCF
       1  -6.43383543E+003  8.61193391E+000   2.89925837E-001      18.81  <-- SCF
       2  -6.43383941E+003  8.61193391E+000   4.97293459E-004      19.14  <-- SCF
@@ -454,35 +647,113 @@ NB est. 0K energy (E-0.5TS)      =  -6433.826361799     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =    -137.843491eV
  Total energy corrected for finite basis set =   -6433.982005 eV
+=======
+<<<<<<< HEAD
+Initial  -7.79967035E+003  0.00000000E+000                        17.45  <-- SCF
+      1  -7.80207206E+003  6.85166604E+000   3.00213127E-001      17.68  <-- SCF
+      2  -7.80207538E+003  6.85166604E+000   4.15701964E-004      18.02  <-- SCF
+      3  -7.80206948E+003  7.01761206E+000  -7.38263094E-004      18.37  <-- SCF
+      4  -7.80206276E+003  6.92839432E+000  -8.39270043E-004      18.72  <-- SCF
+      5  -7.80206268E+003  6.93688951E+000  -9.79774523E-006      19.06  <-- SCF
+      6  -7.80206269E+003  6.93468688E+000   6.64855955E-007      19.37  <-- SCF
+      7  -7.80206268E+003  6.93670133E+000  -1.19981477E-006      19.66  <-- SCF
+      8  -7.80206268E+003  6.93624569E+000  -4.85300919E-008      19.90  <-- SCF
+      9  -7.80206268E+003  6.93623248E+000   9.53208204E-010      20.13  <-- SCF
+------------------------------------------------------------------------ <-- SCF
  
- ***************** Symmetrised Forces *****************
+Final energy, E             =  -7802.062679111     eV
+Final free energy (E-TS)    =  -7802.062679111     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7802.062679111     eV
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =    -140.298077eV
+ Total energy corrected for finite basis set =   -7802.221094 eV
+=======
+Initial  -1.52986357E+004  0.00000000E+000                        65.91  <-- SCF
+      1  -1.53206772E+004  6.65838940E+000   2.75518215E+000      66.83  <-- SCF
+      2  -1.53207801E+004  6.65495565E+000   1.28674399E-002      67.76  <-- SCF
+      3  -1.53241778E+004  7.33952956E+000   4.24712862E-001      68.88  <-- SCF
+      4  -1.53206579E+004  6.79395905E+000  -4.39988263E-001      69.98  <-- SCF
+      5  -1.53206884E+004  6.88000966E+000   3.80740200E-003      71.18  <-- SCF
+      6  -1.53206302E+004  6.75698113E+000  -7.26801874E-003      72.33  <-- SCF
+      7  -1.53206318E+004  6.76188884E+000   2.04991038E-004      73.44  <-- SCF
+      8  -1.53206305E+004  6.76915357E+000  -1.66026935E-004      74.57  <-- SCF
+      9  -1.53206304E+004  6.76750356E+000  -1.31005072E-005      75.55  <-- SCF
+     10  -1.53206304E+004  6.76769037E+000   1.64763875E-008      76.26  <-- SCF
+     11  -1.53206304E+004  6.76775726E+000  -5.04051858E-008      76.92  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -15320.44181687     eV
+Final free energy (E-TS)    =  -15320.63041274     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -15320.53611480     eV
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =   -1323.654321eV
+ Total energy corrected for finite basis set =  -15322.124987 eV
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+ 
+ *********************** Forces ***********************
  *                                                    *
  *            Cartesian components (eV/A)             *
  * -------------------------------------------------- *
  *                   x            y            z      *
  *                                                    *
- * O         1      0.00000      0.00000      0.00000 *
+ * O         1      0.00001      0.00000      0.00000 *
  * O         2      0.00000      0.00000      0.00000 *
+<<<<<<< HEAD
  * O         3      0.00000      0.00000      0.00000 *
  * O         4      0.00000      0.00000      0.00000 *
  * Mg        1      0.00000      0.00000      0.00000 *
+<<<<<<< HEAD
  * Ca        1      0.00000      0.00000      0.00000 *
  * Ca        2      0.00000      0.00000      0.00000 *
  * Ca        3      0.00000      0.00000      0.00000 *
+=======
+ * Mg        2      0.00000      0.00000      0.00000 *
+ * Mg        3      0.00000      0.00000      0.00000 *
+ * Ca        1      0.00000      0.00000      0.00000 *
+=======
+ * O         3      0.00000      0.00001     -0.00001 *
+ * O         4     -0.00001      0.00000     -0.00001 *
+ * Mg        1     -0.00001     -0.00001     -0.00001 *
+ * Mg        2     -0.00001     -0.00001     -0.00001 *
+ * Ca        1      0.00001      0.00001      0.00001 *
+ * Ca        2      0.00001      0.00001      0.00001 *
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  *                                                    *
  ******************************************************
  
- *********** Symmetrised Stress Tensor ***********
+ ***************** Stress Tensor *****************
  *                                               *
  *          Cartesian components (GPa)           *
  * --------------------------------------------- *
  *             x             y             z     *
  *                                               *
+<<<<<<< HEAD
  *  x    -83.489596      0.000000      0.000000  *
  *  y      0.000000    -83.489596      0.000000  *
  *  z      0.000000      0.000000    -83.489596  *
  *                                               *
  *  Pressure:   83.4896                          *
+=======
+<<<<<<< HEAD
+ *  x    -37.844345      0.000000      0.000000  *
+ *  y      0.000000    -37.844345      0.000000  *
+ *  z      0.000000      0.000000    -37.844345  *
+ *                                               *
+ *  Pressure:   37.8443                          *
+=======
+ *  x     81.146017      0.000039      0.000166  *
+ *  y      0.000039     81.145911      0.000030  *
+ *  z      0.000166      0.000030     81.146126  *
+ *                                               *
+ *  Pressure:  -81.1460                          *
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  *                                               *
  *************************************************
  
@@ -500,12 +771,21 @@ NB est. 0K energy (E-0.5TS)      =  -6433.826361799     eV
  
  Converged in 24 iterations to a total energy of -1001.5365 eV
  
+<<<<<<< HEAD
 Charge spilling parameter for spin component 1 = 0.20%
+=======
+<<<<<<< HEAD
+Charge spilling parameter for spin component 1 = 0.23%
+=======
+Charge spilling parameter for spin component 1 =-5.56%
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
  
      Atomic Populations (Mulliken)
      -----------------------------
 Species   Ion     s      p      d      f     Total  Charge (e)
 ==============================================================
+<<<<<<< HEAD
   O        1     1.85   5.07   0.00   0.00   6.92    -0.92
   O        2     1.85   5.01   0.00   0.00   6.87    -0.87
   O        3     1.85   5.07   0.00   0.00   6.92    -0.92
@@ -514,10 +794,32 @@ Species   Ion     s      p      d      f     Total  Charge (e)
   Ca       1     2.12   5.99   0.99   0.00   9.09     0.91
   Ca       2     2.12   5.99   0.99   0.00   9.09     0.91
   Ca       3     2.12   5.99   0.99   0.00   9.09     0.91
+=======
+<<<<<<< HEAD
+  O        1     1.86   5.09   0.00   0.00   6.95    -0.95
+  O        2     1.86   5.09   0.00   0.00   6.95    -0.95
+  O        3     1.86   5.09   0.00   0.00   6.95    -0.95
+  O        4     1.87   5.11   0.00   0.00   6.98    -0.98
+  Mg       1     2.38   6.67   0.00   0.00   9.04     0.96
+  Mg       2     2.38   6.67   0.00   0.00   9.04     0.96
+  Mg       3     2.38   6.67   0.00   0.00   9.04     0.96
+  Ca       1     2.13   5.99   0.94   0.00   9.06     0.94
+=======
+  O        1     1.86   4.58   0.00   0.00   6.44    -0.44
+  O        2     2.38   5.10   0.00   0.00   7.49    -1.49
+  O        3     2.05   5.63   0.00   0.00   7.68    -1.68
+  O        4     1.56   5.51   0.00   0.00   7.08    -1.08
+  Mg       1  **************   0.00   0.00*******   ******
+  Mg       2  **************   0.00   0.00*******   ******
+  Ca       1  *********************   0.00*******   ******
+  Ca       2  *********************   0.00*******   ******
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
 ==============================================================
  
             Bond              Population      Length (A)
 ============================================================
+<<<<<<< HEAD
           O 4 -- Ca 2              0.21        2.10000
           O 4 -- Ca 1              0.21        2.10000
           O 4 -- Mg 1              0.52        2.10000
@@ -542,6 +844,59 @@ Species   Ion     s      p      d      f     Total  Charge (e)
           O 1 -- O 4              -0.11        2.96985
           O 1 -- O 3              -0.11        2.96985
           O 1 -- O 2              -0.05        2.96985
+=======
+<<<<<<< HEAD
+          O 4 -- Mg 3              0.58        2.10000
+          O 4 -- Mg 2              0.58        2.10000
+          O 4 -- Mg 1              0.58        2.10000
+          O 3 -- Ca 1              0.25        2.10000
+          O 3 -- Mg 2              0.60        2.10000
+          O 3 -- Mg 1              0.60        2.10000
+          O 2 -- Ca 1              0.25        2.10000
+          O 2 -- Mg 3              0.60        2.10000
+          O 2 -- Mg 1              0.60        2.10000
+          O 1 -- Ca 1              0.25        2.10000
+          O 1 -- Mg 3              0.60        2.10000
+          O 1 -- Mg 2              0.60        2.10000
+         Mg 3 -- Ca 1             -0.58        2.96985
+         Mg 2 -- Ca 1             -0.58        2.96985
+         Mg 2 -- Mg 3             -0.38        2.96985
+         Mg 1 -- Ca 1             -0.58        2.96985
+         Mg 1 -- Mg 3             -0.38        2.96985
+         Mg 1 -- Mg 2             -0.38        2.96985
+          O 3 -- O 4              -0.15        2.96985
+          O 2 -- O 4              -0.15        2.96985
+          O 2 -- O 3              -0.10        2.96985
+          O 1 -- O 4              -0.15        2.96985
+          O 1 -- O 3              -0.10        2.96985
+          O 1 -- O 2              -0.10        2.96985
+=======
+         Ca 1 -- Ca 2         *********        0.00000
+         Mg 2 -- Ca 2         *********        0.00000
+         Mg 2 -- Ca 1         *********        0.00000
+         Mg 1 -- Ca 2         *********        0.00000
+         Mg 1 -- Ca 1         *********        0.00000
+         Mg 1 -- Mg 2         *********        0.00000
+          O 4 -- Ca 2         *********        2.10000
+          O 4 -- Ca 1         *********        2.10000
+          O 4 -- Mg 2         *********        2.10000
+          O 4 -- Mg 1         *********        2.10000
+          O 3 -- Ca 2         *********        2.10000
+          O 3 -- Ca 1         *********        2.10000
+          O 3 -- Mg 2         *********        2.10000
+          O 3 -- Mg 1         *********        2.10000
+          O 2 -- Ca 2         *********        2.10000
+          O 2 -- Ca 1         *********        2.10000
+          O 2 -- Mg 2         *********        2.10000
+          O 2 -- Mg 1         *********        2.10000
+          O 3 -- O 4              -0.02        2.96985
+          O 2 -- O 4              -0.04        2.96985
+          O 2 -- O 3              -0.22        2.96985
+          O 1 -- O 4              -0.18        2.96985
+          O 1 -- O 3              -0.06        2.96985
+          O 1 -- O 2              -0.14        2.96985
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08
 ============================================================
  
 
@@ -552,8 +907,24 @@ Writing model to ../testcell1.check
  A BibTeX formatted list of references used in this run has been written to 
  ../testcell1.bib
  
+<<<<<<< HEAD
 Initialisation time =     10.55 s
 Calculation time    =     12.34 s
 Finalisation time   =      0.33 s
 Total time          =     23.22 s
 Peak Memory Use     = 604572 kB
+=======
+<<<<<<< HEAD
+Initialisation time =      9.68 s
+Calculation time    =     11.98 s
+Finalisation time   =      0.33 s
+Total time          =     21.99 s
+Peak Memory Use     = 604576 kB
+=======
+Initialisation time =     22.56 s
+Calculation time    =     56.37 s
+Finalisation time   =      0.79 s
+Total time          =     79.71 s
+Peak Memory Use     = 604600 kB
+>>>>>>> 3c12fc1219b5913b2b69cfcc513b8f2f9a520bad
+>>>>>>> 41b0ae021e15d6ffbcc7988110513937f57efa08

@@ -10,7 +10,7 @@ if [ ! -f $root/genatoms ] ; then
     exit 1
 fi
 
-head -n11 $root/cell.master > $1
+head -n7 $root/cell.master > $1
 
 $root/genatoms >> $1
 
