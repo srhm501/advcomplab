@@ -10,7 +10,11 @@ program genatoms
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
 
+  integer :: Mgmax = 1, Camax = 7
+
   10 format (4x,a2,3(4x,f12.10))
+
+  !read *, Mgmax, Camax
 
   call init_random_seed()
 
@@ -36,13 +40,25 @@ contains
   function rand_atom() result(atom)
     character(2) :: atom
     real(dp) :: r
+    integer, save :: counterMg = 0
+    integer, save :: counterCa = 0
   
      call random_number(r)
 
      if (r < 0.5_dp) then
-        atom = 'Mg'
+        if (counterMg >= Mgmax) then
+           atom = "Ca"
+        else
+           atom = "Mg"
+           counterMg = counterMg + 1
+        end if
      else
-        atom = 'Ca'
+        if (counterCa >= Camax) then
+           atom = "Mg"
+        else
+           atom = "Ca"
+           counterCa = counterCa + 1
+        end if
      end if
    end function rand_atom
 end program
