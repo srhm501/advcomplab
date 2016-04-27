@@ -6,14 +6,21 @@ root=..
 cd $current
 
 if [ ! -f $root/genatoms ] ; then
-    echo "genatoms doesn't exist: run \"make\" in the top directory"
-    exit 1
+    exec ../make
 fi
 
-head -n7 $root/cell.master > $1
+for i in {0..8..1}
+do
 
-$root/genatoms >> $1
+head -n7 $root/cell.master > $i.cell
+../genatoms <<EOF >> $i.cell
+$i
+$((8-$i))
+EOF
 
-tail -n19 $root/cell.master | head -n10 >> $1
-
+#$root/genatoms >> $1
+tail -n19 $root/cell.master | head -n10 >> $i.cell
+done
+mv *.cell ../
 cd $old
+
