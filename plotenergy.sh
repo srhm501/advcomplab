@@ -11,20 +11,24 @@ do
 
     numg=$(grep -c "Mg" $file)
     numca=$(grep -c "Ca" $file)
+    if [ $numca -eq 0 ]; then
+    echo
+    else #mg/ca
     ratio=$(echo $numg $numca | awk '{print $1/$2}')
+    fi
 
     STRING=$(grep "Total energy corrected for finite basis set" ./castep/$name.castep)
     energy=$(echo $STRING | awk '{print $9}')
 
-#echo $ratio $energy  >> energyplot.dat
-echo $numg $energy  >> energyplot.dat
+echo $ratio $energy  >> energyplot.dat
+
 done
 
 gnuplot << EOF
-    set xlabel "X"
-    set ylabel "Y"
-    set zlabel "Z"
+    set xlabel "Ratio of Mg/Ca"
+    set ylabel "Energy (eV)"
     set grid
+    unset key
     set title "Atom positions"
     set term png
     set output "./dat/pos_$name.png"

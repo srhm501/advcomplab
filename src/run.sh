@@ -8,7 +8,7 @@ cd $current
 
 # check if we can plot
 [ -f ./Jmol.jar ] && [ $(type -p java) ]
-plot=$?
+plot=1
 
 for cell in $root/*.cell
 do
@@ -25,7 +25,7 @@ do
 	./jmol -I $file
     fi
 
-    ./cleanup.sh
+    ../cleanup.sh
 done
 
 #STRING=$(grep "Total energy corrected for finite basis set" $FILE)
@@ -33,3 +33,4 @@ done
 #echo $ENERGY
 
 cd $old
+./plotenergy.sh
