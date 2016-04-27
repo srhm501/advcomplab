@@ -4,7 +4,7 @@
 #       we should write to specific .dat files using $name, but will
 #       need to fix the gnuplot call
 rm ./energyplot.dat
-for file in ./test*.cell
+for file in ./*.cell
 do
     name=${file::-5}
     name=${name:2}
