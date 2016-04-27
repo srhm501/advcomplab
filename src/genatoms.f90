@@ -43,22 +43,23 @@ contains
     integer, save :: counterMg = 0
     integer, save :: counterCa = 0
   
-     call random_number(r)
+    call random_number(r)
 
-     if (r < 0.5_dp) then
-        if (counterMg >= Mgmax) then
-           atom = "Ca"
-        else
-           atom = "Mg"
-           counterMg = counterMg + 1
-        end if
-     else
-        if (counterCa >= Camax) then
-           atom = "Mg"
-        else
-           atom = "Ca"
-           counterCa = counterCa + 1
-        end if
-     end if
+    if (counterMg >= Mgmax) then
+       atom = 'Ca'
+       return
+    else if (counterCa >= Camax) then
+       atom = 'Mg'
+       return
+    end if
+
+    if (r < 0.5_dp) then
+       atom = 'Mg'
+       counterMg = counterMg + 1
+    else
+       atom = 'Ca'
+       counterCa = counterCa + 1
+    end if
+
    end function rand_atom
 end program
