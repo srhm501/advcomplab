@@ -2,19 +2,31 @@ program genatoms
   use random
   implicit none
 
-  integer,  parameter :: side = 2
-  real(dp), parameter :: maxpos = 0.5_dp
+  ! number of atoms on each side of cube
+  integer, parameter :: sidex = 4
+  integer, parameter :: sidey = 4
+  integer, parameter :: sidez = 2
 
-  real(dp) :: step = maxpos / (side-1)
+  ! max 'coord' along each axis
+  real(dp), parameter :: maxposx = 1.0_dp
+  real(dp), parameter :: maxposy = 1.0_dp
+  real(dp), parameter :: maxposz = 0.5_dp
+
+  ! distance between each atom along the axis directions
+  real(dp), parameter :: stepx = maxposx / (sidex-1)
+  real(dp), parameter :: stepy = maxposy / (sidey-1)
+  real(dp), parameter :: stepz = maxposz / (sidez-1)
 
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
-
+  
+  ! maximum amount of Mg and Ca
   integer :: Mgmax, Camax
 
   10 format (4x,a2,3(4x,f12.10))
 
   read *, Mgmax, Camax
+  if (Mgmax + Camax /= sidex*sidey*sidez) stop 'Mgmax + Camax must equal side'
 
   call init_random_seed()
 
@@ -22,17 +34,17 @@ program genatoms
   yc = 0.0_dp
   zc = 0.0_dp
 
-  do k=1,side
-     do j=1,side
-        do i=1,side
+  do k=1,sidez
+     do j=1,sidey
+        do i=1,sidex
            write(*,10) rand_atom(), xc, yc, zc
-           xc = xc + step
+           xc = xc + stepx
         end do
         xc = 0.0_dp
-        yc = yc + step
+        yc = yc + stepy
      end do
      yc = 0.0_dp
-     zc = zc + step
+     zc = zc + stepz
   end do
 
 contains
