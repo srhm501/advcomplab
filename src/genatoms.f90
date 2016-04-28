@@ -21,8 +21,7 @@ program genatoms
 
   10 format (4x,a2,3(4x,f12.10))
 
-  axes(1:2) = axis(4, 1.0_dp)
-  axes(3)   = axis(2, 0.5_dp)
+  axes(:) = axis(2, 0.5_dp)
 
   where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
