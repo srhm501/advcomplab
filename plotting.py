@@ -2,10 +2,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def fixy(x,y,coeff, n):
-    #subtract mx+c
-    #yfixed=y-(coeff[n-1]*x+coeff[n])
-    #subtract ax^2 +mx + c
-    yfixed=y-(coeff[n-2]*x**2+coeff[n-1]*x+coeff[n])
+
+    cheating =False
+    
+    if(cheating == True):
+        emg=y[0]
+        eca=y[len(x)-1]
+    else:
+	emg =coeff[n]
+        eca =coeff[n-1]+coeff[n]
+    yfixed=[]
+    for i in range(0,len(x)):
+	#where emg is the intercept,c
+	#eca is the value at 100%, m+c
+	eform= y[i]-emg -eca*x[i] + emg*x[i]  
+	yfixed.append(eform)
+ 
     return yfixed
 
 datafile=raw_input('enter data file name: ')
@@ -16,12 +28,8 @@ n=raw_input('enter degrees of freedom for fit')
 
 #Calculate best fit order n 
 p = np.polyfit(x,y,n)
-#print coefficients
-#p[0]=ax^n, p[1]=bx^(n-1) etc
 print p
 
-p2=np.polyfit(x,y,1)
-print p2
 #rewrite fit as a function
 fit =np.poly1d(p)
 #generate smooth points to plot the fit
