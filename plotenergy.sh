@@ -24,17 +24,20 @@ echo $ratio $energy  >> energyplot.dat
 
 done
 
-gnuplot << EOF
-    set xlabel "Ratio of Mg/Ca"
-    set ylabel "Energy (eV)"
-    set grid
-    unset key
-    set title "Energy variation with Mg/Ca ratio"
-    set term png
-    set output "./dat/pos_$name.png"
-    plot "energyplot.dat" using 1:2 with lines
-    set term wxt
-    replot
+# gnuplot << EOF
+#     set xlabel "Ratio of Mg/Ca"
+#     set ylabel "Energy (eV)"
+#     set grid
+#     unset key
+#     set title "Energy variation with Mg/Ca ratio"
+#     set term png
+#     set output "./dat/pos_$name.png"
+#     plot "energyplot.dat" using 1:2 with lines
+#     set term wxt
+#     replot
+# EOF
+# 
+# display "./dat/pos_$name.png" &
+python plotting.py << EOF 
+$name
 EOF
-
-display "./dat/pos_$name.png" &

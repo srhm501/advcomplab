@@ -1,4 +1,0 @@
-ERROR: cell_read - failure to open freeform cell file cutoff.cell
-Current trace stack:
- cell_read
- castep
