@@ -14,7 +14,7 @@ program genatoms
      real(dp) :: step=0.0_dp
   end type axis
 
-  type (axis) :: axes(3)
+  type(axis) :: axes(3)
 
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
@@ -28,9 +28,8 @@ program genatoms
   where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
   read *, Mgmax, Camax
-  if (Mgmax + Camax /= (axes(1)%numatm * &
-                        axes(2)%numatm * &
-                        axes(3)%numatm)) stop 'Mgmax + Camax must equal total number of atoms'
+  if (Mgmax + Camax /= product(axes(:)%numatm)) &
+       stop 'Mgmax + Camax must equal total number of atoms'
 
   call init_random_seed()
 
