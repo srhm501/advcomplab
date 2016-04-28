@@ -35,6 +35,7 @@ plt.clf()
 
 #plot fixed energy of formation
 plt.plot(xp, fixy(xp,fit(xp), p), 'r-')
+#plt.plot(xp, p[0]*xp**2, 'r-')
 plt.ylabel('Energy, eV')
 plt.xlabel('Percentage composition of Mg/Ca')
 plt.title('Formation Energy for Composition of Mg/Ca')
