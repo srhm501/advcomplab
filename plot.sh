@@ -7,3 +7,4 @@ $file
 $freedom
 EOF
 done
+display $file.png &
