@@ -2,6 +2,9 @@
 
 Please use the teesting branch, you can use push origin master to push to the master branch when the code is 100% working.
 
+for information on how to use the branch.
+https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
+
 
 To run code: Goto src directory
 
