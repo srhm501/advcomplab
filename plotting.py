@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-datafile=raw_input()
+datafile=raw_input('enter data file name: ')
 x, y = np.genfromtxt(datafile, unpack=True)
 
 #order of fit
