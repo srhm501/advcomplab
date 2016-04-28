@@ -1,6 +1,6 @@
 #!/bin/bash
 freedom=2
-for file in ./epl*.dat
+for file in ./e*.dat
 do 
 python plotting.py << EOF
 $file
