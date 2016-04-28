@@ -6,16 +6,17 @@ def fixy(x,y,coeff, n):
     cheating =False
     
     if(cheating == True):
-        emg=y[0]
-        eca=y[len(x)-1]
+        eca=y[0]
+        emg=y[len(x)-1]
     else:
-	emg =coeff[n]
-        eca =coeff[n-1]+coeff[n]
+	eca =coeff[n]
+        emg =coeff[n-1]+coeff[n]
     yfixed=[]
     for i in range(0,len(x)):
-	#where emg is the intercept,c
-	#eca is the value at 100%, m+c
-	eform= y[i]-emg -eca*x[i] + emg*x[i]  
+	#eca is the intercept, 0%mg, c
+	#emg is the value at 100%mg, m+c
+	#y[i] is the value of Etot
+	eform= y[i] -eca*(1.0-x[i]) - emg*(x[i])  
 	yfixed.append(eform)
  
     return yfixed
