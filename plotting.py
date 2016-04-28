@@ -5,15 +5,19 @@ datafile=raw_input('enter data file name: ')
 x, y = np.genfromtxt(datafile, unpack=True)
 
 #order of fit
-n=2
+n=raw_input('enter degrees of freedom for fit')
 
 #Calculate best fit order n 
 p = np.polyfit(x,y,n)
+#print coefficients
 print p
 
-fit= np.polyval(p, x)
+#rewrite fit as a function
+fit =np.poly1d(p)
+#generate smooth points to plot the fit
+xp=np.linspace(min(x),max(x), 100)
 
-plt.plot(x, y, 'ro', x, np.polyval(p, x), 'r-')
+plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
 
 plt.ylabel('Energy, eV')
 plt.xlabel('Percentage composition of Mg/Ca')
