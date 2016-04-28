@@ -24,10 +24,8 @@ program genatoms
   axes(1) = axis(4, 1.0_dp)
   axes(2) = axis(4, 1.0_dp)
   axes(3) = axis(2, 0.5_dp)
-  
-  do i=1,3
-     if (axes(i)%numatm /= 1) axes(i)%step = axes(i)%maxpos / (axes(i)%numatm-1)
-  end do
+
+  where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
   read *, Mgmax, Camax
   if (Mgmax + Camax /= (axes(1)%numatm * &
