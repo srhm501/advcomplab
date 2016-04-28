@@ -1,5 +1,5 @@
 #!/bin/bash
-freedom=3
+freedom=2
 for file in ./e*.dat
 do 
 python plotting.py << EOF
