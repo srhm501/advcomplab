@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def fixy(x,y,coeff, n):
 
-    cheating =False
+    cheating =True
     
     if(cheating == True):
         eca=y[0]
