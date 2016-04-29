@@ -48,21 +48,29 @@ fit =np.poly1d(p)
 xp=np.linspace(min(x),max(x), 100)
 
 plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
+if(case==0):
+    plt.ylabel('Energy, eV')
+    plt.xlabel('Cutoff energy, eV')
+    plt.title('Energy')
+    #save graph 
+    d_name = datafile + '.png'
+    plt.savefig(d_name, format='png')
 
-plt.ylabel('Energy, eV')
-plt.xlabel('Percentage composition of Mg/Ca')
-plt.title('Energy against Composition of Mg/Ca')
-#save graph 
-d_name = datafile + '.png'
-plt.savefig(d_name, format='png')
-plt.clf()
+elif (case==1):
+    plt.ylabel('Energy, eV')
+    plt.xlabel('Percentage composition of Mg/Ca')
+    plt.title('Energy against Composition of Mg/Ca')
+    #save graph 
+    d_name = datafile + '.png'
+    plt.savefig(d_name, format='png')
+    plt.clf()
 
-#plot fixed energy of formation
-#plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
-#print fixy(x,fit(x), line, n)
+    #plot fixed energy of formation
+    #plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
+    #print fixy(x,fit(x), line, n)
 
-plt.ylabel('Energy, eV')
-plt.xlabel('Percentage composition of Mg/Ca')
-plt.title('Formation Energy for Composition of Mg/Ca')
-#save graph
-plt.savefig('eform.png',format='png')
+    plt.ylabel('Energy, eV')
+    plt.xlabel('Percentage composition of Mg/Ca')
+    plt.title('Formation Energy for Composition of Mg/Ca')
+    #save graph
+    #plt.savefig('eform.png',format='png')

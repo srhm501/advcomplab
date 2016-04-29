@@ -19,8 +19,8 @@ rm $data/$cutoff.dat
 #if ! [ -s $data/$cutoff.dat ] ; then
 
 ########### CHANGE ME ##########
-incr=20
-i=200
+incr=50
+i=250
 
 ######## DON'T TOUTCH #########
 energy=100000
@@ -30,7 +30,7 @@ exitcond=1
 
 while [ $exitcond -ne 0 ]
 do
-exitcond=$(echo $energy $oldenergy | awk '{if (sqrt(($1-$2)^2) > 0.001) print 1; else print 0;}')
+exitcond=$(echo $energy $oldenergy | awk '{if (sqrt(($1-$2)^2) > 0.01) print 1; else print 0;}')
 if [ $exitcond -eq 0 ]; then
 break
 fi 
@@ -40,7 +40,8 @@ rm $file2
 file=$cell/$cutoff.param
 
 sed -i "/cut_off_energy/c\cut_off_energy     : "$i" eV." $file
-echo 'calculating energy using a cutoff energy of' $i
+echo ''
+echo 'calculating energy using a cutoff energy of' $i 'eV'
 time mpirun -np 1 $cell/castep.mpi $cell/$cutoff
 
 oldenergy=$energy

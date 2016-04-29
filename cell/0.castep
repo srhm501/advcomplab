@@ -56,7 +56,7 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
- Run started: Fri, 29 Apr 2016 16:53:14 +0100
+ Run started: Fri, 29 Apr 2016 17:05:38 +0100
  
  Atomic calculation performed for Ca: 1s2 2s2 2p6 3s2 3p6 4s2
  
@@ -139,7 +139,7 @@
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
- random number generator seed                   : randomised (165314961)
+ random number generator seed                   : randomised (170538680)
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -305,62 +305,62 @@ Calculating total energy with cut-off of  540.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -6.38799866E+003  0.00000000E+000                         6.15  <-- SCF
-      1  -7.81230862E+003  1.87023110E+001   1.78038745E+002       7.39  <-- SCF
-      2  -7.97972971E+003  1.75483746E+001   2.09276357E+001       8.40  <-- SCF
-      3  -7.98381945E+003  1.74951060E+001   5.11217891E-001       9.47  <-- SCF
-      4  -7.98378754E+003  1.75231383E+001  -3.98896487E-003      10.71  <-- SCF
-      5  -7.98378349E+003  1.75481159E+001  -5.06543360E-004      12.00  <-- SCF
-      6  -7.98378351E+003  1.75462175E+001   2.73485527E-006      13.27  <-- SCF
-      7  -7.98378351E+003  1.75466745E+001   3.67571971E-007      14.46  <-- SCF
-      8  -7.98378351E+003  1.75465234E+001   3.56747354E-009      15.39  <-- SCF
-      9  -7.98378351E+003  1.75465576E+001   3.45301122E-009      16.30  <-- SCF
+Initial  -6.39196372E+003  0.00000000E+000                         6.28  <-- SCF
+      1  -7.81668175E+003  1.92082764E+001   1.78089754E+002       7.57  <-- SCF
+      2  -7.98019431E+003  1.75555296E+001   2.04390699E+001       8.62  <-- SCF
+      3  -7.98383824E+003  1.74988109E+001   4.55491444E-001       9.71  <-- SCF
+      4  -7.98378793E+003  1.75236764E+001  -6.28916312E-003      11.00  <-- SCF
+      5  -7.98378349E+003  1.75478975E+001  -5.54441767E-004      12.34  <-- SCF
+      6  -7.98378351E+003  1.75461964E+001   2.76484207E-006      13.65  <-- SCF
+      7  -7.98378351E+003  1.75466814E+001   2.88966517E-007      14.90  <-- SCF
+      8  -7.98378351E+003  1.75465259E+001  -2.75656985E-009      15.86  <-- SCF
+      9  -7.98378351E+003  1.75465541E+001   3.32772138E-009      16.81  <-- SCF
 ------------------------------------------------------------------------ <-- SCF
  
-Final energy, E             =  -7983.687898527     eV
-Final free energy (E-TS)    =  -7983.783513150     eV
+Final energy, E             =  -7983.687899602     eV
+Final free energy (E-TS)    =  -7983.783514377     eV
 (energies not corrected for finite basis set)
  
-NB est. 0K energy (E-0.5TS)      =  -7983.735705839     eV
+NB est. 0K energy (E-0.5TS)      =  -7983.735706989     eV
  
 Calculating total energy with cut-off of  545.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -7.98368790E+003  0.00000000E+000                        16.69  <-- SCF
-      1  -7.98378359E+003  1.75465395E+001   1.19614492E-002      17.59  <-- SCF
-      2  -7.98378359E+003  1.75465395E+001   1.40371026E-009      18.47  <-- SCF
-      3  -7.98378359E+003  1.75465515E+001   4.09898863E-010      19.35  <-- SCF
-      4  -7.98378359E+003  1.75465512E+001   1.56418953E-010      20.20  <-- SCF
+Initial  -7.98368790E+003  0.00000000E+000                        17.22  <-- SCF
+      1  -7.98378359E+003  1.75465417E+001   1.19614681E-002      18.13  <-- SCF
+      2  -7.98378359E+003  1.75465417E+001   1.36426716E-009      19.04  <-- SCF
+      3  -7.98378359E+003  1.75465512E+001   4.82984603E-010      19.97  <-- SCF
+      4  -7.98378359E+003  1.75465515E+001   1.41337768E-010      20.80  <-- SCF
 ------------------------------------------------------------------------ <-- SCF
  
-Final energy, E             =  -7983.687974684     eV
-Final free energy (E-TS)    =  -7983.783590135     eV
+Final energy, E             =  -7983.687975924     eV
+Final free energy (E-TS)    =  -7983.783591362     eV
 (energies not corrected for finite basis set)
  
-NB est. 0K energy (E-0.5TS)      =  -7983.735782410     eV
+NB est. 0K energy (E-0.5TS)      =  -7983.735783643     eV
  
 Calculating total energy with cut-off of  550.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -7.98368797E+003  0.00000000E+000                        20.62  <-- SCF
-      1  -7.98378368E+003  1.75465511E+001   1.19629699E-002      21.66  <-- SCF
-      2  -7.98378368E+003  1.75465511E+001   7.79774582E-010      22.58  <-- SCF
-      3  -7.98378368E+003  1.75465515E+001   5.66704512E-010      23.49  <-- SCF
-      4  -7.98378368E+003  1.75465520E+001   4.93038726E-011      24.39  <-- SCF
+Initial  -7.98368798E+003  0.00000000E+000                        21.24  <-- SCF
+      1  -7.98378368E+003  1.75465506E+001   1.19629682E-002      22.24  <-- SCF
+      2  -7.98378368E+003  1.75465506E+001   7.81321370E-010      23.14  <-- SCF
+      3  -7.98378368E+003  1.75465515E+001   5.69024695E-010      24.02  <-- SCF
+      4  -7.98378368E+003  1.75465519E+001   3.78963099E-011      24.90  <-- SCF
 ------------------------------------------------------------------------ <-- SCF
  
-Final energy, E             =  -7983.688063712     eV
-Final free energy (E-TS)    =  -7983.783678454     eV
+Final energy, E             =  -7983.688064937     eV
+Final free energy (E-TS)    =  -7983.783679681     eV
 (energies not corrected for finite basis set)
  
-NB est. 0K energy (E-0.5TS)      =  -7983.735871083     eV
+NB est. 0K energy (E-0.5TS)      =  -7983.735872309     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =      -0.010846eV
- Total energy corrected for finite basis set =   -7983.783706 eV
+ Total energy corrected for finite basis set =   -7983.783708 eV
  
  ***************** Symmetrised Forces *****************
  *                                                    *
@@ -385,9 +385,9 @@ NB est. 0K energy (E-0.5TS)      =  -7983.735871083     eV
  * --------------------------------------------- *
  *             x             y             z     *
  *                                               *
- *  x   -176.432393      0.000000      0.000000  *
- *  y      0.000000   -176.432393      0.000000  *
- *  z      0.000000      0.000000   -176.432393  *
+ *  x   -176.432449      0.000000      0.000000  *
+ *  y      0.000000   -176.432449      0.000000  *
+ *  z      0.000000      0.000000   -176.432449  *
  *                                               *
  *  Pressure:  176.4324                          *
  *                                               *
@@ -427,18 +427,18 @@ Species   Ion     s      p      d      f     Total  Charge (e)
          Ca 1 -- Ca 5             -0.53        2.10000
          Ca 1 -- Ca 3             -0.53        2.10000
          Ca 1 -- Ca 2             -0.53        2.10000
-         Ca 6 -- Ca 7              0.33        2.96985
-         Ca 5 -- Ca 8              0.33        2.96985
-         Ca 4 -- Ca 7              0.33        2.96985
-         Ca 4 -- Ca 6              0.33        2.96985
-         Ca 3 -- Ca 8              0.33        2.96985
-         Ca 3 -- Ca 5              0.33        2.96985
-         Ca 2 -- Ca 8              0.33        2.96985
-         Ca 2 -- Ca 5              0.33        2.96985
-         Ca 2 -- Ca 3              0.33        2.96985
-         Ca 1 -- Ca 7              0.33        2.96985
-         Ca 1 -- Ca 6              0.33        2.96985
-         Ca 1 -- Ca 4              0.33        2.96985
+         Ca 6 -- Ca 7              0.34        2.96985
+         Ca 5 -- Ca 8              0.34        2.96985
+         Ca 4 -- Ca 7              0.34        2.96985
+         Ca 4 -- Ca 6              0.34        2.96985
+         Ca 3 -- Ca 8              0.34        2.96985
+         Ca 3 -- Ca 5              0.34        2.96985
+         Ca 2 -- Ca 8              0.34        2.96985
+         Ca 2 -- Ca 5              0.34        2.96985
+         Ca 2 -- Ca 3              0.34        2.96985
+         Ca 1 -- Ca 7              0.34        2.96985
+         Ca 1 -- Ca 6              0.34        2.96985
+         Ca 1 -- Ca 4              0.34        2.96985
 ============================================================
  
 
@@ -449,8 +449,8 @@ Writing model to ../cell/0.check
  A BibTeX formatted list of references used in this run has been written to 
  ../cell/0.bib
  
-Initialisation time =      5.10 s
-Calculation time    =     25.87 s
-Finalisation time   =      0.97 s
-Total time          =     31.94 s
-Peak Memory Use     = 454984 kB
+Initialisation time =      5.24 s
+Calculation time    =     26.13 s
+Finalisation time   =      0.94 s
+Total time          =     32.31 s
+Peak Memory Use     = 455792 kB
