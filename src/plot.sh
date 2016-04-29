@@ -1,8 +1,6 @@
 #!/bin/bash
-freedom=$2
 file=$1
-#for file in ./dat/*.dat
-#do 
+freedom=$2
 
 #pass in file to plt
 #degrees of freedom for fit
@@ -12,7 +10,6 @@ $file
 $freedom
 1
 EOF
-#done
 
 display $file.png &
 display eform.png &

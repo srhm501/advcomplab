@@ -31,6 +31,7 @@ x, y = np.genfromtxt(datafile, unpack=True)
 
 #order of fit
 n=int(raw_input('enter degrees of freedom for fit'))
+case=int(raw_input('0 Cutoff, 1 Formation Energy'))
 print n
 
 #Calculate best fit order n 
@@ -49,6 +50,7 @@ fit =np.poly1d(p)
 xp=np.linspace(min(x),max(x), 100)
 
 plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
+
 
 #CASE 0 FOR CUT OFF ENERGIES
 if(case==0):
