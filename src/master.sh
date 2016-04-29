@@ -58,7 +58,7 @@ $data/energyplot.dat
 EOF
 #done
 
-#display $file.png &
-#display eform.png &
+display $file.png &
+display eform.png &
 
 cd $old
