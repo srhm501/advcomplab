@@ -2,7 +2,7 @@ comment            : MgO
 task               : SinglePoint  ! don't change the geometry
 xc_functional      : LDA
 spin_polarized     : false
-cut_off_energy     : 280 eV       ! is this good enough?
+cut_off_energy     : 550 eV.
 grid_scale         : 2.0000000000
 
 ! Set convergence criteria and max. iterations
