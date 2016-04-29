@@ -12,21 +12,22 @@ data=$root/dat
 [ -f ./Jmol.jar ] && [ $(type -p java) ]
 plot=1
 
-for cell in $cell/Mg*.cell
+for celf in $cell/Mg*.cell
 do
+    echo $celf
     conf=${cell::-5}
     conf=${conf:8}
-    file=$root/$conf.castep
+    casf=$cell/$conf.castep
     echo $conf
     cp ../param.master $conf.param
     
-    numg=$(grep -c "Mg" $file)
-    numca=$(grep -c "Ca" $file)
-    if [ $numca -eq 0 ]; then
+    numg=$(grep -c "Mg" $celf)
+    numca=$(grep -c "Ca" $celf)
+    #if [ $numca -eq 0 ]; then
     echo
-    else #mg/ca
+    #else #mg/total atoms
     ratio=$(echo $numg $numca | awk '{print $1/($1+$2)}')
-    fi
+    #fi
 
     #if [ ! -f $file ] ; then
     time mpirun -np 1 $cell/castep.mpi $cell/$conf
@@ -37,7 +38,7 @@ do
     fi
 
     #../cleanup.sh
-    energy=$((./findenergy.sh $file))
+    energy=$(exec ./findenergy.sh $casf)
     echo $ratio $energy  >> energyplot.dat
 done
 
@@ -57,7 +58,7 @@ $data/energyplot.dat
 EOF
 #done
 
-display $file.png &
-display eform.png &
+#display $file.png &
+#display eform.png &
 
 cd $old
