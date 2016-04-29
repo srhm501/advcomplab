@@ -56,12 +56,17 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 27 Apr 2016 12:35:23 +0100
+=======
+ Run started: Fri, 29 Apr 2016 13:05:54 +0100
+>>>>>>> test
  
  Atomic calculation performed for Ca: 1s2 2s2 2p6 3s2 3p6 4s2
  
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 27-04-2016   |                
    ------------------------------------------------------------                
@@ -460,6 +465,7 @@ Calculation time    =     11.62 s
 Finalisation time   =      0.38 s
 Total time          =     16.80 s
 Peak Memory Use     = 437216 kB
+=======
  +-------------------------------------------------+
  |                                                 |
  |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
@@ -518,14 +524,141 @@ Peak Memory Use     = 437216 kB
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+ Run started: Fri, 29 Apr 2016 13:07:13 +0100
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+ Run started: Fri, 29 Apr 2016 13:07:48 +0100
+>>>>>>> test
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Academic Release CASTEP version 9.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ | T. Green, I. J. Bush, C. J. Armstrong,          |
+ | E. J. Higgins, M. D. Hodgson                    |
+ |                                                 |
+ | Copyright (c) 2000 - 2015                       |
+ |                                                 |
+ |     Distributed under the terms of an           |
+ |     Agreement between the United Kingdom        |
+ |     Car-Parrinello (UKCP) Consortium,           |
+ |     Daresbury Laboratory and Accelrys, Inc.     |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ Compiled for linux_x86_64_ifort12 on Fri, 09 Oct 2015 16:14:59 +0100
+ from code version 01cdeb6dcbec+  Thu, 01 Oct 2015 17:06:55 +0100
+ Compiler: Intel Fortran 12.1.5.339; Optimisation: fast
+ MATHLIBS: Intel MKL(11.0.5) (LAPACK version 3.4.1)
+ FFT Lib : default
+ Fundamental constants values: CODATA 2010
+ 
+<<<<<<< HEAD
  Run started: Wed, 27 Apr 2016 12:36:03 +0100
+=======
+ Run started: Fri, 29 Apr 2016 13:09:03 +0100
+>>>>>>> test
  
  Atomic calculation performed for Ca: 1s2 2s2 2p6 3s2 3p6 4s2
  
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
    ============================================================                
+<<<<<<< HEAD
    | Pseudopotential Report - Date of generation 27-04-2016   |                
+=======
+   | Pseudopotential Report - Date of generation 29-04-2016   |                
+>>>>>>> test
    ------------------------------------------------------------                
    | Element: Ca Ionic charge: 10.00 Level of theory: LDA     |                
    | Atomic Solver: Koelling-Harmon                           |                
@@ -601,7 +734,11 @@ Peak Memory Use     = 437216 kB
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
+<<<<<<< HEAD
  random number generator seed                   : randomised (123604068)
+=======
+ random number generator seed                   : randomised (130903879)
+>>>>>>> test
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -767,6 +904,7 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -6.38782119E+003  0.00000000E+000                         5.52  <-- SCF
       1  -7.81353602E+003  1.92215132E+001   1.78214353E+002       6.01  <-- SCF
       2  -7.97925603E+003  1.74982403E+001   2.07150009E+001       6.40  <-- SCF
@@ -784,12 +922,32 @@ Final free energy (E-TS)    =  -7983.197608284     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7983.148629342     eV
+=======
+Initial  -6.38902985E+003  0.00000000E+000                         6.37  <-- SCF
+      1  -7.80709971E+003  1.89975039E+001   1.77258732E+002       6.87  <-- SCF
+      2  -7.97887788E+003  1.75674420E+001   2.14722711E+001       7.24  <-- SCF
+      3  -7.98324239E+003  1.74980171E+001   5.45563491E-001       7.64  <-- SCF
+      4  -7.98320107E+003  1.75239310E+001  -5.16540788E-003       8.10  <-- SCF
+      5  -7.98319763E+003  1.75502980E+001  -4.29526211E-004       8.57  <-- SCF
+      6  -7.98319761E+003  1.75483324E+001  -2.83525226E-006       9.03  <-- SCF
+      7  -7.98319761E+003  1.75486879E+001   4.03601888E-007       9.45  <-- SCF
+      8  -7.98319761E+003  1.75485684E+001  -2.24690315E-009       9.77  <-- SCF
+      9  -7.98319761E+003  1.75485913E+001   2.61445869E-009      10.09  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7983.099651363     eV
+Final free energy (E-TS)    =  -7983.197609509     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7983.148630436     eV
+>>>>>>> test
  
 Calculating total energy with cut-off of  275.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -7.98309965E+003  0.00000000E+000                         9.52  <-- SCF
       1  -7.98334031E+003  1.75481293E+001   3.00827536E-002       9.89  <-- SCF
       2  -7.98334039E+003  1.75481293E+001   9.71437625E-006      10.30  <-- SCF
@@ -805,12 +963,30 @@ Final free energy (E-TS)    =  -7983.340241634     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7983.291763067     eV
+=======
+Initial  -7.98309965E+003  0.00000000E+000                        10.24  <-- SCF
+      1  -7.98334031E+003  1.75481347E+001   3.00828622E-002      10.59  <-- SCF
+      2  -7.98334039E+003  1.75481346E+001   9.59046189E-006      10.99  <-- SCF
+      3  -7.98334025E+003  1.75507488E+001  -1.78559651E-005      11.40  <-- SCF
+      4  -7.98334025E+003  1.75493796E+001  -3.22287234E-007      11.83  <-- SCF
+      5  -7.98334024E+003  1.75499945E+001  -3.19204872E-007      12.21  <-- SCF
+      6  -7.98334024E+003  1.75498923E+001  -1.82499735E-008      12.51  <-- SCF
+      7  -7.98334024E+003  1.75498870E+001   4.23433259E-010      12.78  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7983.243285726     eV
+Final free energy (E-TS)    =  -7983.340242860     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7983.291764293     eV
+>>>>>>> test
  
 Calculating total energy with cut-off of  280.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -7.98324328E+003  0.00000000E+000                        12.28  <-- SCF
       1  -7.98342135E+003  1.75482385E+001   2.22577025E-002      12.57  <-- SCF
       2  -7.98342138E+003  1.75482379E+001   4.79573201E-006      12.92  <-- SCF
@@ -829,6 +1005,26 @@ NB est. 0K energy (E-0.5TS)      =  -7983.372720159     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =      -5.603675eV
  Total energy corrected for finite basis set =   -7983.427657 eV
+=======
+Initial  -7.98324329E+003  0.00000000E+000                        12.92  <-- SCF
+      1  -7.98342135E+003  1.75482386E+001   2.22577031E-002      13.22  <-- SCF
+      2  -7.98342139E+003  1.75482379E+001   4.79506302E-006      13.56  <-- SCF
+      3  -7.98342133E+003  1.75494871E+001  -6.57543998E-006      13.98  <-- SCF
+      4  -7.98342133E+003  1.75486939E+001  -1.34237624E-007      14.35  <-- SCF
+      5  -7.98342133E+003  1.75490831E+001  -8.41259411E-008      14.63  <-- SCF
+      6  -7.98342133E+003  1.75489829E+001  -1.61171459E-008      14.90  <-- SCF
+      7  -7.98342133E+003  1.75489757E+001   1.54485468E-010      15.17  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7983.324111538     eV
+Final free energy (E-TS)    =  -7983.421331234     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7983.372721386     eV
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =      -5.603675eV
+ Total energy corrected for finite basis set =   -7983.427658 eV
+>>>>>>> test
  
  ***************** Symmetrised Forces *****************
  *                                                    *
@@ -853,9 +1049,15 @@ NB est. 0K energy (E-0.5TS)      =  -7983.372720159     eV
  * --------------------------------------------- *
  *             x             y             z     *
  *                                               *
+<<<<<<< HEAD
  *  x   -177.254001      0.000000      0.000000  *
  *  y      0.000000   -177.254001      0.000000  *
  *  z      0.000000      0.000000   -177.254001  *
+=======
+ *  x   -177.254005      0.000000      0.000000  *
+ *  y      0.000000   -177.254005      0.000000  *
+ *  z      0.000000      0.000000   -177.254005  *
+>>>>>>> test
  *                                               *
  *  Pressure:  177.2540                          *
  *                                               *
@@ -883,6 +1085,7 @@ Species   Ion     s      p      d      f     Total  Charge (e)
  
             Bond              Population      Length (A)
 ============================================================
+<<<<<<< HEAD
          Ca 7 -- Ca 8             -0.47        2.10000
          Ca 6 -- Ca 8             -0.47        2.10000
          Ca 5 -- Ca 7             -0.47        2.10000
@@ -895,6 +1098,20 @@ Species   Ion     s      p      d      f     Total  Charge (e)
          Ca 1 -- Ca 5             -0.47        2.10000
          Ca 1 -- Ca 3             -0.47        2.10000
          Ca 1 -- Ca 2             -0.47        2.10000
+=======
+         Ca 7 -- Ca 8             -0.48        2.10000
+         Ca 6 -- Ca 8             -0.48        2.10000
+         Ca 5 -- Ca 7             -0.48        2.10000
+         Ca 5 -- Ca 6             -0.48        2.10000
+         Ca 4 -- Ca 8             -0.48        2.10000
+         Ca 3 -- Ca 7             -0.48        2.10000
+         Ca 3 -- Ca 4             -0.48        2.10000
+         Ca 2 -- Ca 6             -0.48        2.10000
+         Ca 2 -- Ca 4             -0.48        2.10000
+         Ca 1 -- Ca 5             -0.48        2.10000
+         Ca 1 -- Ca 3             -0.48        2.10000
+         Ca 1 -- Ca 2             -0.48        2.10000
+>>>>>>> test
          Ca 6 -- Ca 7              0.30        2.96985
          Ca 5 -- Ca 8              0.30        2.96985
          Ca 4 -- Ca 7              0.30        2.96985
@@ -917,8 +1134,15 @@ Writing model to ../0.check
  A BibTeX formatted list of references used in this run has been written to 
  ../0.bib
  
+<<<<<<< HEAD
 Initialisation time =      4.86 s
 Calculation time    =     11.68 s
 Finalisation time   =      2.63 s
 Total time          =     19.17 s
+=======
+Initialisation time =      5.61 s
+Calculation time    =     11.69 s
+Finalisation time   =      0.39 s
+Total time          =     17.69 s
+>>>>>>> test
 Peak Memory Use     = 437220 kB

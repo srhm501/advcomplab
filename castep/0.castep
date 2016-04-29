@@ -56,14 +56,22 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 27 Apr 2016 12:02:41 +0100
+=======
+ Run started: Thu, 28 Apr 2016 19:34:33 +0100
+>>>>>>> test
  
  Atomic calculation performed for Ca: 1s2 2s2 2p6 3s2 3p6 4s2
  
  Converged in 44 iterations to an ae energy of -18468.059 eV
  
    ============================================================                
+<<<<<<< HEAD
    | Pseudopotential Report - Date of generation 27-04-2016   |                
+=======
+   | Pseudopotential Report - Date of generation 28-04-2016   |                
+>>>>>>> test
    ------------------------------------------------------------                
    | Element: Ca Ionic charge: 10.00 Level of theory: LDA     |                
    | Atomic Solver: Koelling-Harmon                           |                
@@ -139,7 +147,11 @@
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
+<<<<<<< HEAD
  random number generator seed                   : randomised (120241831)
+=======
+ random number generator seed                   : randomised (193433596)
+>>>>>>> test
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -288,14 +300,22 @@
   
 +---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
 |                                                     Memory          Disk    |
+<<<<<<< HEAD
 | Baseline code, static data and system overhead      146.0 MB         0.0 MB |
+=======
+| Baseline code, static data and system overhead      173.0 MB         0.0 MB |
+>>>>>>> test
 | BLAS internal memory storage                          0.0 MB         0.0 MB |
 | Model and support data                               47.4 MB         0.0 MB |
 | Electronic energy minimisation requirements           8.4 MB         0.0 MB |
 | Force calculation requirements                        1.8 MB         0.0 MB |
 | Stress calculation requirements                       2.1 MB         0.0 MB |
 |                                               ----------------------------- |
+<<<<<<< HEAD
 | Approx. total storage required per process          201.8 MB         0.0 MB |
+=======
+| Approx. total storage required per process          228.8 MB         0.0 MB |
+>>>>>>> test
 |                                                                             |
 | Requirements will fluctuate during execution and may exceed these estimates |
 +-----------------------------------------------------------------------------+
@@ -305,6 +325,7 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -6.38685886E+003  0.00000000E+000                         7.81  <-- SCF
       1  -7.81862686E+003  1.88631277E+001   1.78970999E+002       8.32  <-- SCF
       2  -7.98000993E+003  1.75671003E+001   2.01728840E+001       8.74  <-- SCF
@@ -322,12 +343,32 @@ Final free energy (E-TS)    =  -7983.197608281     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7983.148629266     eV
+=======
+Initial  -6.38491043E+003  0.00000000E+000                         5.94  <-- SCF
+      1  -7.81736181E+003  1.89707843E+001   1.79056422E+002       6.46  <-- SCF
+      2  -7.97962235E+003  1.75309726E+001   2.02825676E+001       6.85  <-- SCF
+      3  -7.98325553E+003  1.75027432E+001   4.54147315E-001       7.25  <-- SCF
+      4  -7.98320118E+003  1.75236427E+001  -6.79392212E-003       7.71  <-- SCF
+      5  -7.98319763E+003  1.75504082E+001  -4.42785753E-004       8.19  <-- SCF
+      6  -7.98319761E+003  1.75483341E+001  -3.46857752E-006       8.65  <-- SCF
+      7  -7.98319761E+003  1.75486966E+001   4.30218439E-007       9.06  <-- SCF
+      8  -7.98319761E+003  1.75485726E+001  -1.45050060E-009       9.38  <-- SCF
+      9  -7.98319761E+003  1.75485960E+001   2.97892065E-009       9.71  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7983.099651551     eV
+Final free energy (E-TS)    =  -7983.197609509     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7983.148630530     eV
+>>>>>>> test
  
 Calculating total energy with cut-off of  275.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -7.98309965E+003  0.00000000E+000                        11.99  <-- SCF
       1  -7.98334031E+003  1.75481324E+001   3.00828460E-002      12.36  <-- SCF
       2  -7.98334039E+003  1.75481324E+001   9.61543652E-006      12.79  <-- SCF
@@ -343,12 +384,30 @@ Final free energy (E-TS)    =  -7983.340241634     eV
 (energies not corrected for finite basis set)
  
 NB est. 0K energy (E-0.5TS)      =  -7983.291763067     eV
+=======
+Initial  -7.98309965E+003  0.00000000E+000                         9.86  <-- SCF
+      1  -7.98334031E+003  1.75481314E+001   3.00828080E-002      10.21  <-- SCF
+      2  -7.98334039E+003  1.75481313E+001   9.65091946E-006      10.61  <-- SCF
+      3  -7.98334025E+003  1.75507493E+001  -1.78845792E-005      11.03  <-- SCF
+      4  -7.98334025E+003  1.75493791E+001  -3.22448487E-007      11.45  <-- SCF
+      5  -7.98334024E+003  1.75499945E+001  -3.19889906E-007      11.83  <-- SCF
+      6  -7.98334024E+003  1.75498923E+001  -1.82337322E-008      12.11  <-- SCF
+      7  -7.98334024E+003  1.75498870E+001   4.29040366E-010      12.39  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7983.243285727     eV
+Final free energy (E-TS)    =  -7983.340242860     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7983.291764293     eV
+>>>>>>> test
  
 Calculating total energy with cut-off of  280.000eV.
 ------------------------------------------------------------------------ <-- SCF
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
+<<<<<<< HEAD
 Initial  -7.98324328E+003  0.00000000E+000                        14.82  <-- SCF
       1  -7.98342135E+003  1.75482386E+001   2.22577040E-002      15.12  <-- SCF
       2  -7.98342138E+003  1.75482380E+001   4.79362141E-006      15.47  <-- SCF
@@ -367,6 +426,26 @@ NB est. 0K energy (E-0.5TS)      =  -7983.372720160     eV
  
  For future reference: finite basis dEtot/dlog(Ecut) =      -5.603675eV
  Total energy corrected for finite basis set =   -7983.427657 eV
+=======
+Initial  -7.98324329E+003  0.00000000E+000                        12.53  <-- SCF
+      1  -7.98342135E+003  1.75482385E+001   2.22577054E-002      12.85  <-- SCF
+      2  -7.98342139E+003  1.75482379E+001   4.79257347E-006      13.21  <-- SCF
+      3  -7.98342133E+003  1.75494871E+001  -6.57535297E-006      13.64  <-- SCF
+      4  -7.98342133E+003  1.75486939E+001  -1.34164731E-007      14.03  <-- SCF
+      5  -7.98342133E+003  1.75490831E+001  -8.41211074E-008      14.31  <-- SCF
+      6  -7.98342133E+003  1.75489829E+001  -1.61132790E-008      14.59  <-- SCF
+      7  -7.98342133E+003  1.75489757E+001   1.67246470E-010      14.88  <-- SCF
+------------------------------------------------------------------------ <-- SCF
+ 
+Final energy, E             =  -7983.324111539     eV
+Final free energy (E-TS)    =  -7983.421331234     eV
+(energies not corrected for finite basis set)
+ 
+NB est. 0K energy (E-0.5TS)      =  -7983.372721386     eV
+ 
+ For future reference: finite basis dEtot/dlog(Ecut) =      -5.603675eV
+ Total energy corrected for finite basis set =   -7983.427658 eV
+>>>>>>> test
  
  ***************** Symmetrised Forces *****************
  *                                                    *
@@ -391,9 +470,15 @@ NB est. 0K energy (E-0.5TS)      =  -7983.372720160     eV
  * --------------------------------------------- *
  *             x             y             z     *
  *                                               *
+<<<<<<< HEAD
  *  x   -177.253999      0.000000      0.000000  *
  *  y      0.000000   -177.253999      0.000000  *
  *  z      0.000000      0.000000   -177.253999  *
+=======
+ *  x   -177.253994      0.000000      0.000000  *
+ *  y      0.000000   -177.253994      0.000000  *
+ *  z      0.000000      0.000000   -177.253994  *
+>>>>>>> test
  *                                               *
  *  Pressure:  177.2540                          *
  *                                               *
@@ -455,8 +540,16 @@ Writing model to ../0.check
  A BibTeX formatted list of references used in this run has been written to 
  ../0.bib
  
+<<<<<<< HEAD
 Initialisation time =      6.65 s
 Calculation time    =     12.27 s
 Finalisation time   =      0.41 s
 Total time          =     19.32 s
 Peak Memory Use     = 437220 kB
+=======
+Initialisation time =      5.22 s
+Calculation time    =     11.69 s
+Finalisation time   =      0.02 s
+Total time          =     16.93 s
+Peak Memory Use     = 466164 kB
+>>>>>>> test

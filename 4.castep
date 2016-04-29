@@ -56,12 +56,17 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 27 Apr 2016 12:37:49 +0100
+=======
+ Run started: Fri, 29 Apr 2016 13:05:57 +0100
+>>>>>>> test
  
  Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
  
  Converged in 47 iterations to an ae energy of -5427.407 eV
  
+<<<<<<< HEAD
    ============================================================                
    | Pseudopotential Report - Date of generation 27-04-2016   |                
    ------------------------------------------------------------                
@@ -513,3 +518,5 @@ Calculation time    =     20.94 s
 Finalisation time   =      0.47 s
 Total time          =     29.64 s
 Peak Memory Use     = 520940 kB
+=======
+>>>>>>> test

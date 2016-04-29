@@ -56,6 +56,7 @@
  FFT Lib : default
  Fundamental constants values: CODATA 2010
  
+<<<<<<< HEAD
  Run started: Wed, 27 Apr 2016 12:39:39 +0100
  
  Atomic calculation performed for Mg: 1s2 2s2 2p6 3s2
@@ -459,3 +460,6 @@ Calculation time    =     10.41 s
 Finalisation time   =      0.38 s
 Total time          =     14.87 s
 Peak Memory Use     = 424352 kB
+=======
+ Run started: Fri, 29 Apr 2016 13:05:58 +0100
+>>>>>>> test
