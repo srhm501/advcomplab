@@ -5,7 +5,7 @@ def fixy(x,y,coeff, n):
     
     #cheating=True
     #cheating=False
-    cheating ='wrong'
+    cheating ='False'
 	
     if(cheating == True):
         eca=y[0]
