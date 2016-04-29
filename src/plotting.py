@@ -32,15 +32,16 @@ x, y = np.genfromtxt(datafile, unpack=True)
 #order of fit
 n=int(raw_input('enter degrees of freedom for fit'))
 print n
+
 #Calculate best fit order n 
-#p[0] = ax^2
-#p[1] = bx
-#p[2] = c
+#p[0] = ax^2 ,p[1] = bx, p[2] = c
 p = np.polyfit(x,y,n)
 line=np.polyfit(x,y,1)
+
+#don't worry about this line
 line[1]=p[2]
-print p
-print line
+#print p
+#print line
 
 #rewrite fit as a function
 fit =np.poly1d(p)
@@ -48,6 +49,8 @@ fit =np.poly1d(p)
 xp=np.linspace(min(x),max(x), 100)
 
 plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
+
+#CASE 0 FOR CUT OFF ENERGIES
 if(case==0):
     plt.ylabel('Energy, eV')
     plt.xlabel('Cutoff energy, eV')
@@ -56,6 +59,7 @@ if(case==0):
     d_name = datafile + '.png'
     plt.savefig(d_name, format='png')
 
+#CASE 1 FOR FORMATION ENERGY!!!!!!!
 elif (case==1):
     plt.ylabel('Energy, eV')
     plt.xlabel('Percentage composition of Mg/Ca')
@@ -66,11 +70,11 @@ elif (case==1):
     plt.clf()
 
     #plot fixed energy of formation
-    #plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
+    plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
     #print fixy(x,fit(x), line, n)
 
     plt.ylabel('Energy, eV')
     plt.xlabel('Percentage composition of Mg/Ca')
     plt.title('Formation Energy for Composition of Mg/Ca')
     #save graph
-    #plt.savefig('eform.png',format='png')
+    plt.savefig('eform.png',format='png')

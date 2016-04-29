@@ -7,8 +7,6 @@ cd $current
 cell=$root/cell
 data=$root/dat
 
-
-
 for system in $cell/0.cell
 do
 
