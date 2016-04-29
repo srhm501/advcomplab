@@ -1,5 +1,0 @@
-ERROR in cell constraints: attempt to fix a=b, but a /= b
-Current trace stack:
- cell_check_cell_constraints
- cell_read
- castep
