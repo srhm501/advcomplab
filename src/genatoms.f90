@@ -1,4 +1,5 @@
 program genatoms
+  use interface_t
   implicit none
   
   integer, parameter :: dp = selected_real_kind(15,300)
@@ -7,8 +8,8 @@ program genatoms
      ! number of atoms along axis
      integer  :: numatm
      
-     ! maximum position of atom along axis
-     real(dp) :: maxpos
+     ! maximum position of atom along axis (1.0 == no vacuum gap)
+     real(dp) :: maxpos=1.0
      
      ! distance between atoms along axis
      ! doesn't matter what the default is, as long as there is one
@@ -18,7 +19,7 @@ program genatoms
   type(axis) :: axes(3)
   
   integer  :: intercase
-  character(2) :: intertype(2,4,2) = 'Mg'
+  character(2) :: intertype(2,4,2)
 
   integer  :: purelines = 2
 
@@ -28,40 +29,13 @@ program genatoms
   10 format (4x,a2,3(4x,f12.10))
 
   read *, intercase
+  intertype = get_intertype(intercase)
 
-  axes(1) = axis(2, 1.0_dp)
-  axes(2) = axis(2, 1.0_dp)
-  axes(3) = axis(2, 1.0_dp)
+  axes(1) = axis(2)
+  axes(2) = axis(4)
+  axes(3) = axis(6)
 
-  select case (intercase)
-     case(1)
-     case(2)
-        intertype(1,1,2)  = 'Ca'
-     case(3)
-        intertype(1:2,1,2) = 'Ca'
-     case(4)
-        intertype(1,1:2,2) = 'Ca'
-     case(5)
-        intertype(1,1:3,2) = 'Ca'
-     case(6)
-        intertype(1,1:4,2) = 'Ca'
-     case(7)
-        intertype(1,1:4,2) = 'Ca'
-        intertype(2,1,2)   = 'Ca'
-     case(8)
-        intertype(1,1:4,2) = 'Ca'
-        intertype(2,1:2,2) = 'Ca'
-     case(9)
-        intertype(1,1:4,2) = 'Ca'
-        intertype(2,1:3,2) = 'Ca'
-     case(10)
-        intertype(1:2,1:4,2) = 'Ca'
-     case(11)
-        intertype(1:2,1:4,2) = 'Ca'
-        intertype(1,1,1)     = 'Ca'
-     case default
-        stop "ERROR"
-  end select
+
 
   where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
@@ -69,7 +43,7 @@ program genatoms
   yc = 0.0_dp
   zc = 0.0_dp
 
-  ! upper layer
+  ! upper layer (all Mg)
   do k=1,purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
@@ -83,11 +57,11 @@ program genatoms
      zc = zc + axes(3)%step
   end do
 
-  ! middle layer
+  ! middle layer (interface)
   do k=1,axes(3)%numatm-2*purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-           write(*,10) 'Mg', xc, yc, zc
+           write(*,10) intertype(i,j,k), xc, yc, zc
            xc = xc + axes(1)%step
         end do
         xc = 0.0_dp
@@ -97,7 +71,7 @@ program genatoms
      zc = zc + axes(3)%step
   end do
 
-  ! bottom layer
+  ! bottom layer (all Ca)
   do k=1,purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
