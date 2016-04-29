@@ -1,0 +1,5 @@
+Error - symmetry related atoms do not form a group: num ops = 4
+ Internal error in SYMMETRY_GENERATE. Please submit a bug report.
+Current trace stack:
+ cell_read
+ castep
