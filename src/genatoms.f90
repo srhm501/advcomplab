@@ -30,8 +30,8 @@ program genatoms
   read *, intercase
 
   axes(1) = axis(2, 1.0_dp)
-  axes(2) = axis(4, 1.0_dp)
-  axes(3) = axis(6, 1.0_dp)
+  axes(2) = axis(2, 1.0_dp)
+  axes(3) = axis(2, 1.0_dp)
 
   select case (intercase)
      case(1)
@@ -87,7 +87,7 @@ program genatoms
   do k=1,axes(3)%numatm-2*purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-           write(*,10) intertype(i,j,k), xc, yc, zc
+           write(*,10) 'Mg', xc, yc, zc
            xc = xc + axes(1)%step
         end do
         xc = 0.0_dp
