@@ -14,4 +14,4 @@ echo
 echo ' /\_/\ '
 echo '( o.o )'
 echo ' > ^ < '
-echo I'm watching you
+echo "I'm watching you"
