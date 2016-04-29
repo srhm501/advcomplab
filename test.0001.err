@@ -1,5 +1,5 @@
-Error - symmetry related atoms do not form a group: num ops = 4
- Internal error in SYMMETRY_GENERATE. Please submit a bug report.
+ERROR in cell constraints: attempt to fix a=b, but a /= b
 Current trace stack:
+ cell_check_cell_constraints
  cell_read
  castep

@@ -18,7 +18,7 @@ program genatoms
   type(axis) :: axes(3)
   
   integer  :: intercase
-  character(2) :: intertype(3,4,2) = 'Mg'
+  character(2) :: intertype(2,4,2) = 'Mg'
 
   integer  :: purelines = 2
 
@@ -29,40 +29,39 @@ program genatoms
 
   read *, intercase
 
+  axes(1) = axis(2, 1.0_dp)
+  axes(2) = axis(4, 1.0_dp)
+  axes(3) = axis(6, 1.0_dp)
 
   select case (intercase)
+     case(1)
      case(2)
         intertype(1,1,2)  = 'Ca'
      case(3)
         intertype(1:2,1,2) = 'Ca'
      case(4)
-        intertype(1:3,1,2) = 'Ca'
-     case(5)
         intertype(1,1:2,2) = 'Ca'
-     case(6)
+     case(5)
         intertype(1,1:3,2) = 'Ca'
+     case(6)
+        intertype(1,1:4,2) = 'Ca'
      case(7)
         intertype(1,1:4,2) = 'Ca'
+        intertype(2,1,2)   = 'Ca'
      case(8)
         intertype(1,1:4,2) = 'Ca'
-        intertype(2,1,2)   = 'Ca'
+        intertype(2,1:2,2) = 'Ca'
      case(9)
         intertype(1,1:4,2) = 'Ca'
-        intertype(2,1:2,2) = 'Ca'
-     case(10)
-        intertype(1,1:4,2) = 'Ca'
         intertype(2,1:3,2) = 'Ca'
+     case(10)
+        intertype(1:2,1:4,2) = 'Ca'
      case(11)
         intertype(1:2,1:4,2) = 'Ca'
-     case(12)
-        intertype(1,1:4,2)
+        intertype(1,1,1)     = 'Ca'
      case default
         stop "ERROR"
   end select
-
-  axes(1) = axis(3, 1.0_dp)
-  axes(2) = axis(4, 1.0_dp)
-  axes(3) = axis(6, 1.0_dp)
 
   where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
