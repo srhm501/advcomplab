@@ -14,8 +14,7 @@ fi
 i=$1
 head -n7 $root/cell.master > $i.cell
 ../genatoms <<EOF >> $i.cell
-0
-24
+5
 EOF
 
 #$root/genatoms >> $1
