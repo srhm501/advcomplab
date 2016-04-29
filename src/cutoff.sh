@@ -8,6 +8,9 @@ cell=$root/cell
 data=$root/dat
 rm $data/cutoff.dat
 
+for system in $cell/*.cell
+do
+
 if ! [ -s $data/cutoff.dat ] ; then
 for i in {250..400..10}
 do
@@ -19,9 +22,9 @@ echo 'calculating energy using a cutoff energy of' $i
 mpirun -np 1 $cell/castep.mpi $cell/cutoff
 
 energy=$(exec ./findenergy.sh $file2)
- 
 echo $i $energy >> $data/cutoff.dat
 
+oldenergy=$enery
 done
 cd $old
 
@@ -30,3 +33,4 @@ echo "data file aready there!"
 fi
 
 ./plot.sh $data/cutoff.dat 4
+done
