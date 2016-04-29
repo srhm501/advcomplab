@@ -7,6 +7,9 @@ root=..
 cd $current
 cell=$root/cell
 data=$root/dat
+#name of ratio an energy dat file to be plotted
+pltdata=energyplot.dat
+rm ./$pltdata
 
 # check if we can plot
 [ -f ./Jmol.jar ] && [ $(type -p java) ]
@@ -14,51 +17,52 @@ plot=1
 
 for celf in $cell/Mg*.cell
 do
-    echo $celf
+    #remove.cell
     conf=${cell::-5}
+    #remove path (../cell) for castep
     conf=${conf:8}
+    #set end .castep filename
     casf=$cell/$conf.castep
+    
+    #print which cell file we are investigating
     echo $conf
+    #generate param file, copy master in root dir
     cp ../param.master $conf.param
     
+    #Find how many Mg and Ca lines in cell file
     numg=$(grep -c "Mg" $celf)
     numca=$(grep -c "Ca" $celf)
-    #if [ $numca -eq 0 ]; then
-    echo
-    #else #mg/total atoms
+    
+    #mg/total atoms
     ratio=$(echo $numg $numca | awk '{print $1/($1+$2)}')
-    #fi
 
-    #if [ ! -f $file ] ; then
+    #If castep file exsists dont run again
+    if [ ! -f $casf ] ; then
     time mpirun -np 1 $cell/castep.mpi $cell/$conf
-    #fi
+    fi
 
+    #DONT PLOT IN JAVA UNLESS YOU NEED TO.
     if [[ plot -eq 0 ]] ; then
 	./jmol -I $file
     fi
-
-    #../cleanup.sh
+    
+    #Find energy from .castep file
     energy=$(exec ./findenergy.sh $casf)
-    echo $ratio $energy  >> energyplot.dat
+    #Write the percentage of Mg and total energy
+    echo $ratio $energy  >> $pltdata
 done
 
-#!/bin/bash
-#freedom=$2
-#file=$1
-#for file in ./dat/*.dat
-#do 
-
-#pass in file to plt
-#degrees of freedom for fit
-#0 for 
+#pass in file name to plt
+#degrees of freedom for fit use 2 !!!!!!!!!!
+#0 for cut off energy plot, #1 for formation energy calc
 python plotting.py << EOF
-$data/energyplot.dat
+$pltdata
 2
 1
 EOF
-#done
 
-display $file.png &
-display eform.png &
+
+display $pltdata.png &
+display $eform.png &
 
 cd $old

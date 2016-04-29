@@ -17,7 +17,9 @@ rm $data/$cutoff.dat
 #if ! [ -s $data/$cutoff.dat ] ; then
 
 ########### CHANGE ME ##########
+#increments to go up in
 incr=50
+#startvalue
 i=250
 
 ######## DON'T TOUTCH #########
@@ -55,5 +57,5 @@ cd $old
 echo "data file aready there!"
 #fi
 
-./plot.sh $data/$cutoff.dat 4
+./plot.sh $data/$cutoff.dat 2
 done
