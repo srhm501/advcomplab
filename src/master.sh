@@ -56,12 +56,12 @@ do
 done
 
 sort -n tmp.dat > $pltdata
-rm./tmp.dat
+rm ./tmp.dat
 
 #pass in file name to plt
 #degrees of freedom for fit use 2 !!!!!!!!!!
 #0 for cut off energy plot, #1 for formation energy calc
-python plotting.py << EOF
+python2 plotting.py << EOF
 $pltdata
 2
 1
