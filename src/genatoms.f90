@@ -43,7 +43,8 @@ program genatoms
   do k=1,purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-	   if((mod(k,2)==0).and.(mod(j,2)==0)) then
+!	   if((mod(k,2)==0).and.(mod(j,2)==0)) then
+	   if(mod(k+j+i,2)==0) then
              write(*,10) 'Mg', xc, yc, zc
 	   else
 	     write(*,10) 'O', xc, yc, zc
