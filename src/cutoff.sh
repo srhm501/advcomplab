@@ -16,13 +16,13 @@ cutoff=${cutoff:8}
 rm $data/$cutoff.dat
 #if ! [ -s $data/$cutoff.dat ] ; then
 
-########### CHANGE ME ##########
+########################### CHANGE ME ###########################
 #increments to go up in
 incr=50
 #startvalue
 i=250
 
-######## DON'T TOUTCH #########
+######################## DON'T TOUTCH ########################
 energy=100000
 oldenergy=0
 oldi=1
@@ -57,5 +57,16 @@ cd $old
 echo "data file aready there!"
 #fi
 
-./plot.sh $data/$cutoff.dat 2
+#pass in file name to plt
+#degrees of freedom for fit use 2 !!!!!!!!!!
+#0 for cut off energy plot, #1 for formation energy calc
+python plotting.py << EOF
+$cutoff.dat
+0
+0
+EOF
+
+
+display $cutoff.dat.png &
+
 done

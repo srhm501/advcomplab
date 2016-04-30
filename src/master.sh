@@ -1,74 +1,71 @@
 #!/bin/bash
+########## Put test as the prefix of cell-   #################################
+########## files you want to run castep for  #################################
 
-# set up directory map
+test=Mg			#eg, for all cell files Mg0, Mg25 etc use test=Mg
+
+pltdata=energyplot.dat	#name of ratio an energy dat file to be plotted
+
+################# Don't change!! ###################################
+
 old="$(pwd)"
-current="$(dirname "$0")"
+current="$(dirname "$0")"	# set up directory map
 root=..
 cd $current
-cell=$root/cell
-data=$root/dat
-castepdir=$root/castep
-#name of ratio an energy dat file to be plotted
-pltdata=energyplot.dat
+cell=$root/cell			#set path to cell files
+data=$root/dat			#set path to data files
+castepdir=$root/castep		#set path to .castep output 
 rm ./$pltdata
 
-# check if we can plot
-[ -f ./Jmol.jar ] && [ $(type -p java) ]
-plot=1
+[ -f ./Jmol.jar ] && [ $(type -p java) ]	# check if we can plot
+plot=1						#plot=1 means DONT plot ever
 
-for celf in $cell/Mg*.cell
+############### Running CASTEP FOR ALL CELL FILES $test*.cell#################
+
+for celf in $cell/$test*.cell
 do
-    #remove.cell
-    conf=${celf::-5}
-    #remove path (../cell) for castep
-    conf=${conf:8}
-    #set end .castep filename
-    casf=$castepdir/$conf.castep
-    echo $casf
+  conf=${celf::-5}			#remove.cell
+  conf=${conf:8}			#remove path (../cell) for castep
+  casf=$castepdir/$conf.castep		#set end .castep filename
     
-    #print which cell file we are investigating
-    echo $conf
-    #generate param file, copy master in root dir
-    cp ../param.master $conf.param
+  echo $conf				#print which cell file we are investigating
+  cp ../param.master $conf.param 	#generate param file, copy master in root dir
     
-    #Find how many Mg and Ca lines in cell file
-    numg=$(grep -c "Mg" $celf)
-    numca=$(grep -c "Ca" $celf)
+  numg=$(grep -c "Mg" $celf)		#Find how many Mg and Ca lines in cell file
+  numca=$(grep -c "Ca" $celf)		#Then write Mg/total atoms
+  ratio=$(echo $numg $numca | awk '{print $1/($1+$2)}')
     
-    #mg/total atoms
-    ratio=$(echo $numg $numca | awk '{print $1/($1+$2)}')
-
-    #If castep file exsists dont run again
-    if [ ! -f $casf ] ; then
-    echo
-    #time mpirun -np 1 $cell/castep.mpi $cell/$conf
-    fi
-
-    #DONT PLOT IN JAVA UNLESS YOU NEED TO.
-    #if [[ plot -eq 0 ]] ; then
-#	./jmol -I $file
- #   fi
+  if [ ! -f $casf ] ; then		#If castep file exsists dont run again
+    echo "Running castep for system" $conf
+    time mpirun -np 1 $cell/castep.mpi $cell/$conf
+  else					#Can skip running castep
+      echo "Didn't run castep"		
+  fi 
+  if [[ plot -eq 0 ]] ; then		#DONT PLOT IN JAVA UNLESS YOU NEED TO.
+      ./jmol -I $file			#plot is set to false at top of script
+  fi
     
-    #Find energy from .castep file
-    energy=$(exec ./findenergy.sh $casf)
-    #Write the percentage of Mg and total energy
-    echo $ratio $energy  >> tmp.dat
-done
+  energy=$(exec ./findenergy.sh $casf)  #Find energy from .castep file
+  echo $ratio $energy  >> tmp.dat  	#Write the percentage of Mg and total energy
+done					#write to temporary file
 
-sort -n tmp.dat > $pltdata
-rm./tmp.dat
+################ END OF MAIN LOOP FOR RUNNING CASTEP ##################################
 
-#pass in file name to plt
-#degrees of freedom for fit use 2 !!!!!!!!!!
-#0 for cut off energy plot, #1 for formation energy calc
+sort -n tmp.dat > $pltdata	#sort the percentage composition and energies
+				#from the temp file into accending order for data analysis
+rm./tmp.dat			#Remove Temp file
+
+filetoplot=$pltdata	  	#pass in file name to plt
+DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!
+system=1	         	#0 for cut off energy plot, #1 for formation energy calc
+
 python plotting.py << EOF
-$pltdata
-2
-1
+$filetoplot
+$DOF
+$system
 EOF
 
-
-display $pltdata.png &
-display eform.png &
-
+display $filetoplot.png &	#Show percentage to total energy
+display eform.png &		#Show Formation energy plot
+wait
 cd $old
