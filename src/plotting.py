@@ -22,7 +22,7 @@ def fixy(x,y,coeff, n):
 	    eform= y[i] -eca*(1.0-x[i]) - emg*(x[i])  
             yfixed.append(eform)
     else:
- 	yfixed = -y+(coeff[0]*x + coeff[1])
+ 	yfixed = y-(coeff[0]*x + coeff[1])
 
     return yfixed
 
@@ -48,7 +48,6 @@ x, y = np.genfromtxt(datafile, unpack=True)
 #order of fit
 n=int(raw_input('enter degrees of freedom for fit: \n'))
 case=int(raw_input('0 Cutoff, 1 Formation Energy: \n'))
-print n
 
 #Calculate best fit order n 
 #p[0] = ax^2 ,p[1] = bx, p[2] = c

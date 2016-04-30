@@ -52,8 +52,11 @@ do
     #Find energy from .castep file
     energy=$(exec ./findenergy.sh $casf)
     #Write the percentage of Mg and total energy
-    echo $ratio $energy  >> $pltdata
+    echo $ratio $energy  >> tmp.dat
 done
+
+sort -n tmp.dat > $pltdata
+rm./tmp.dat
 
 #pass in file name to plt
 #degrees of freedom for fit use 2 !!!!!!!!!!
