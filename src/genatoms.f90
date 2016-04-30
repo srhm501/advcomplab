@@ -45,9 +45,9 @@ program genatoms
         do i=1,axes(1)%numatm
 !	   if((mod(k,2)==0).and.(mod(j,2)==0)) then
 	   if(mod(k+j+i,2)==0) then
-             write(*,10) 'Mg', xc, yc, zc
+               write(*,10) 'Mg', xc, yc, zc
 	   else
-	     write(*,10) 'O', xc, yc, zc
+	       write(*,10) 'O', xc, yc, zc
  	   end if
            xc = xc + axes(1)%step
         end do
@@ -62,7 +62,11 @@ program genatoms
   do k=1,axes(3)%numatm-2*purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-           write(*,10) intertype(i,j,k), xc, yc, zc
+	   if(mod(k+j+i,2)==0) then
+               write(*,10) intertype(i,j,k), xc, yc, zc
+	   else
+	       write(*,10) 'O', xc, yc, zc
+ 	   end if
            xc = xc + axes(1)%step
         end do
         xc = 0.0_dp
@@ -76,7 +80,11 @@ program genatoms
   do k=1,purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-           write(*,10) 'Ca', xc, yc, zc
+	   if(mod(k+j+i,2)==0) then
+               write(*,10) 'Ca', xc, yc, zc
+	   else
+	       write(*,10) 'O', xc, yc, zc
+ 	   end if
            xc = xc + axes(1)%step
         end do
         xc = 0.0_dp
