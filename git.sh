@@ -1,5 +1,5 @@
 #!/bin/bash
-
+./cleanup.sh
 git add * 
 echo added
 git commit -a
