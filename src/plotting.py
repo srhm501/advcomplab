@@ -26,12 +26,28 @@ def fixy(x,y,coeff, n):
 
     return yfixed
 
-datafile=raw_input('enter data file name: ')
+datafile=raw_input('enter data file name: \n')
 x, y = np.genfromtxt(datafile, unpack=True)
 
+"""
+#dt = [('col1', data.dtype),('col2', data.dtype)]
+#assert data.flags['C_CONTIGUOUS']
+#b = data.ravel().view(dt)
+#b.sort(order=['col1','col2'])
+#print b[0][1]
+#print data
+#max=3
+#x=np.array(b[][0])
+#y=np.array(b[][1])
+#for i in range(0,len(data)):
+#    x.append(b[i][0])
+#    y.append(b[i][1])
+#print max(x)
+#print y
+""" 
 #order of fit
-n=int(raw_input('enter degrees of freedom for fit'))
-case=int(raw_input('0 Cutoff, 1 Formation Energy'))
+n=int(raw_input('enter degrees of freedom for fit: \n'))
+case=int(raw_input('0 Cutoff, 1 Formation Energy: \n'))
 print n
 
 #Calculate best fit order n 
@@ -50,7 +66,6 @@ fit =np.poly1d(p)
 xp=np.linspace(min(x),max(x), 100)
 
 plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
-
 
 #CASE 0 FOR CUT OFF ENERGIES
 if(case==0):

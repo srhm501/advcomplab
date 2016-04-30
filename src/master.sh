@@ -66,6 +66,6 @@ EOF
 
 
 display $pltdata.png &
-display $eform.png &
+display eform.png &
 
 cd $old
