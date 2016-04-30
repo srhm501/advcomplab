@@ -20,9 +20,7 @@ program genatoms
   
   integer  :: intercase
   character(2) :: intertype(2,4,2)
-
   integer  :: purelines = 2
-
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
 
@@ -34,8 +32,6 @@ program genatoms
   axes(1) = axis(2)
   axes(2) = axis(4)
   axes(3) = axis(6)
-
-
 
   where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
