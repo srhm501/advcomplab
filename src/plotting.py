@@ -30,6 +30,9 @@ datafile=raw_input('enter data file name: \n')
 x, y = np.genfromtxt(datafile, unpack=True)
 
 """
+obsolete, trying to sort data but 
+is done in bash with sort -n $file
+
 #dt = [('col1', data.dtype),('col2', data.dtype)]
 #assert data.flags['C_CONTIGUOUS']
 #b = data.ravel().view(dt)
@@ -56,15 +59,16 @@ line=np.polyfit(x,y,1)
 
 #don't worry about this line
 line[1]=p[2]
-#print p
-#print line
 
 #rewrite fit as a function
 fit =np.poly1d(p)
 #generate smooth points to plot the fit
 xp=np.linspace(min(x),max(x), 100)
 
+#PLOT ENERGY DATA
 plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
+
+########## Then change title and axis respectively #################
 
 #CASE 0 FOR CUT OFF ENERGIES
 if(case==0):
@@ -87,7 +91,6 @@ elif (case==1):
 
     #plot fixed energy of formation
     plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
-    #print fixy(x,fit(x), line, n)
 
     plt.ylabel('Energy, eV')
     plt.xlabel('Percentage composition of Mg/Ca')
