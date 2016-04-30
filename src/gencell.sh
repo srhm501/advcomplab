@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 old="$(pwd)"
@@ -9,17 +10,15 @@ if [ ! -f $root/genatoms ] ; then
     exec $root/make
 fi
 
-for i in {0..5}
+for i in {1..17}
 do
-    file=27_$i.cell
-    echo $i
-    head -n7 $root/cell.master > $file
-    $root/genatoms $i >> $file
+echo $i
+head -n7 $root/cell.master > $i.cell
+$root/genatoms <<EOF >> $i.cell
+$i
+EOF
 
-    tail -n19 $root/cell.master | head -n10 >> $file
+tail -n19 $root/cell.master | head -n10 >> $i.cell
 done
-
 mv *.cell ../
-
 cd $old
-
