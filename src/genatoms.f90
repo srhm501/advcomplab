@@ -8,7 +8,7 @@ program genatoms
   integer,  parameter :: N = 3
 
   ! distance between atoms
-  real(dp), parameter :: step = 1.0_dp/N
+  real(dp), parameter :: step = 1.0_dp/(N-1)
 
   type atom
      character(2) :: atom_type = "XX"
@@ -32,16 +32,16 @@ program genatoms
 
   l = 1
   do k=1,N
-     zc = zc + (k-1)*step
      do j=1,N
-        yc = yc + (j-1)*step
         do i=1,N
-           xc = xc + (i-1)*step
            lattice(l)%coord = [ xc, yc, zc ]
+           xc = xc + step
            l = l + 1
         end do
+        yc = yc + step
         xc = 0.0_dp
      end do
+     zc = zc + step
      yc = 0.0_dp
   end do
 
