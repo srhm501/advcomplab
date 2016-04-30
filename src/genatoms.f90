@@ -62,9 +62,9 @@ program genatoms
         do i=1,axes(1)%numatm
 !	   if((mod(k,2)==0).and.(mod(j,2)==0)) then
 	   if(mod(k+j+i,2)==0) then
-             write(*,10) 'Mg', xc, yc, zc
+               write(*,10) 'Mg', xc, yc, zc
 	   else
-	     write(*,10) 'O', xc, yc, zc
+	       write(*,10) 'O', xc, yc, zc
  	   end if
            xc = xc + axes(1)%step
 >>>>>>> a6f4a8471331ab9e5157518026ccb8a7980b6132
@@ -74,6 +74,42 @@ program genatoms
      yc = 0.0_dp
   end do
 
+<<<<<<< HEAD
+  ! middle layer (interface)
+  do k=1,axes(3)%numatm-2*purelines
+     do j=1,axes(2)%numatm
+        do i=1,axes(1)%numatm
+	   if(mod(k+j+i,2)==0) then
+               write(*,10) intertype(i,j,k), xc, yc, zc
+	   else
+	       write(*,10) 'O', xc, yc, zc
+ 	   end if
+           xc = xc + axes(1)%step
+        end do
+        xc = 0.0_dp
+        yc = yc + axes(2)%step
+     end do
+     yc = 0.0_dp
+     zc = zc + axes(3)%step
+  end do
+
+  ! bottom layer (all Ca)
+  do k=1,purelines
+     do j=1,axes(2)%numatm
+        do i=1,axes(1)%numatm
+	   if(mod(k+j+i,2)==0) then
+               write(*,10) 'Ca', xc, yc, zc
+	   else
+	       write(*,10) 'O', xc, yc, zc
+ 	   end if
+           xc = xc + axes(1)%step
+        end do
+        xc = 0.0_dp
+        yc = yc + axes(2)%step
+     end do
+     yc = 0.0_dp
+     zc = zc + axes(3)%step
+=======
   ! create pure top and bottom layers and init middle
   lattice(01:09)%atom_type = gen_layer(0,"Mg")
   lattice(10:18)%atom_type = gen_layer(1,"Mg")
@@ -106,6 +142,7 @@ program genatoms
   
   do i=1,N**3
      write(*,'(a2,3(1x,f4.2))') lattice(i)
+>>>>>>> c89e95c8239fe25abe655cad8f198ed517c775c5
   end do
 
 contains
