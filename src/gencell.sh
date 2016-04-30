@@ -4,9 +4,9 @@ old="$(pwd)"
 current="$(dirname "$0")"
 root=..
 cd $current
-
+echo $old
 if [ ! -f $root/genatoms ] ; then
-    exec ../make
+    exec $root/make
 fi
 
 for i in {0..5}
