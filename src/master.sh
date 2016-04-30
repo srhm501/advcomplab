@@ -55,6 +55,7 @@ sort -n tmp.dat > $pltdata	#sort the percentage composition and energies
 				#from the temp file into accending order for data analysis
 rm./tmp.dat			#Remove Temp file
 
+<<<<<<< HEAD
 filetoplot=$pltdata	  	#pass in file name to plt
 DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!
 system=1	         	#0 for cut off energy plot, #1 for formation energy calc
@@ -63,6 +64,18 @@ python plotting.py << EOF
 $filetoplot
 $DOF
 $system
+=======
+sort -n tmp.dat > $pltdata
+rm ./tmp.dat
+
+#pass in file name to plt
+#degrees of freedom for fit use 2 !!!!!!!!!!
+#0 for cut off energy plot, #1 for formation energy calc
+python2 plotting.py << EOF
+$pltdata
+2
+1
+>>>>>>> 0a9c4e05150a07646fced8f980a1bf964beff9e1
 EOF
 
 display $filetoplot.png &	#Show percentage to total energy
