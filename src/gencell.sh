@@ -9,16 +9,17 @@ if [ ! -f $root/genatoms ] ; then
     exec $root/make
 fi
 
-for i in {1..17}
+for i in {0..5}
 do
-echo $i
-head -n7 $root/cell.master > $i.cell
-$root/genatoms <<EOF >> $i.cell
-$i
-EOF
+    file=27_$i.cell
+    echo $i
+    head -n7 $root/cell.master > $file
+    $root/genatoms $i >> $file
 
-tail -n19 $root/cell.master | head -n10 >> $i.cell
+    tail -n19 $root/cell.master | head -n10 >> $file
 done
+
 mv *.cell ../
+
 cd $old
 
