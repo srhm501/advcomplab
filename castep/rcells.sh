@@ -7,3 +7,4 @@ seed=${file::-5}
 qsub run_castep $seed
 #qsub run_castep 27_1
 done
+./cleanup.sh
