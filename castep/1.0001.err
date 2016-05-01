@@ -1,0 +1,9 @@
+Error, norm_sq is negative in wave_Snormalise_slice_b
+Current trace stack:
+ wave_Snormalise_slice_b
+ wave_Sorthonormalise_slice
+ hamiltonian_diagonalise_ks
+ electronic_minimisation
+ calculate_finite_basis_corr
+ check_elec_ground_state
+ castep
