@@ -67,3 +67,4 @@ function get_intertype(intercase) result(intertype)
 end function get_intertype
 
 end module interface_t
+
