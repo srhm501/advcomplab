@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 ERROR in cell constraints: attempt to fix a=b, but a /= b
 Current trace stack:
  cell_check_cell_constraints
  cell_read
+=======
+Error, norm_sq is negative in wave_Snormalise_slice_b
+Current trace stack:
+ wave_Snormalise_slice_b
+ wave_Sorthonormalise_slice
+ hamiltonian_diagonalise_ks
+ electronic_minimisation
+ calculate_finite_basis_corr
+ check_elec_ground_state
+>>>>>>> 3eb93cd01ab0a89664c5232b674e980a73355507
  castep
