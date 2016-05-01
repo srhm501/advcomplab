@@ -5,6 +5,7 @@
 #cd $current
 
 rm ./*.bib ./*_bin ./*.bands ./*.check ./*.cst_esp 2>/dev/null
+rm ./*.err
 rm ./CQM*
 
 
