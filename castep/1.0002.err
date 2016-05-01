@@ -1,8 +1,0 @@
-wave_orthonormalise_overlap_wv_ks: ztrtri failed in inversion
-Current trace stack:
- wave_orthonormalise_over_wv_ks
- wave_Sorthonormalise_wv_ks
- wave_Sorthonormalise_wv
- wave_initialise_wv
- model_initialise
- castep

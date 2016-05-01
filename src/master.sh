@@ -21,7 +21,7 @@ plot=1						#plot=1 means DONT plot ever
 
 ############### Running CASTEP FOR ALL CELL FILES $test*.cell#################
 
-for celf in $cell/$test*.cell
+for celf in $cell/*.cell
 do
   conf=${celf::-5}			#remove.cell
   conf=${conf:8}			#remove path (../cell) for castep
@@ -52,7 +52,7 @@ done					#write to temporary file
 
 sort -n tmp.dat > $pltdata	#sort the percentage composition and energies
 				#from the temp file into accending order for data analysis
-rm./tmp.dat			#Remove Temp file
+rm ./tmp.dat			#Remove Temp file
 
 filetoplot=$pltdata	  	#pass in file name to plt
 DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!
