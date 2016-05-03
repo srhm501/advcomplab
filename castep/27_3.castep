@@ -57,7 +57,7 @@
  Converged in 60 iterations to an ae energy of -2027.926 eV
 
    ============================================================                
-   | Pseudopotential Report - Date of generation  1-05-2016   |                
+   | Pseudopotential Report - Date of generation  3-05-2016   |                
    ------------------------------------------------------------                
    | Element: O Ionic charge:  6.00 Level of theory: LDA      |                
    |                                                          |                
@@ -89,7 +89,7 @@
  Identity difference:   5.17267234911703770E-004
 
    ============================================================                
-   | Pseudopotential Report - Date of generation  1-05-2016   |                
+   | Pseudopotential Report - Date of generation  3-05-2016   |                
    ------------------------------------------------------------                
    | Element: Mg Ionic charge:  8.00 Level of theory: LDA     |                
    |                                                          |                
@@ -135,7 +135,7 @@
  Converged in 44 iterations to an ae energy of -18468.058 eV
 
    ============================================================                
-   | Pseudopotential Report - Date of generation  1-05-2016   |                
+   | Pseudopotential Report - Date of generation  3-05-2016   |                
    ------------------------------------------------------------                
    | Element: Ca Ionic charge: 10.00 Level of theory: LDA     |                
    |                                                          |                
@@ -217,7 +217,7 @@
  output        entropy unit                     : J/mol/K
   
  wavefunctions paging                           : none
- random number generator seed                   : randomised (120210252)
+ random number generator seed                   : randomised (123758369)
  data distribution                              : optimal for this architecture
  optimization strategy                          : maximize speed(+++)
 
@@ -523,4 +523,4 @@ Calculating total energy with cut-off of  270.000eV.
 SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
                                energy          per atom          (sec)   <-- SCF
 ------------------------------------------------------------------------ <-- SCF
-Initial  -7.64843194E+004  0.00000000E+000                        67.41  <-- SCF
+Initial  -7.64684205E+004  0.00000000E+000                        69.36  <-- SCF
