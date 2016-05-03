@@ -8,7 +8,7 @@ program genatoms
   integer,  parameter :: N = 3
 
   ! distance between atoms
-  real(dp), parameter :: step = 1.0_dp/(N-1)
+  real(dp), parameter :: step = 0.67_dp/(N-1)
 
   type atom
      character(2) :: atom_type = "XX"
