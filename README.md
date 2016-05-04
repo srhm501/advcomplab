@@ -5,10 +5,21 @@ DEPENDENCIES (tested with version)
 ----------------------------------
 
 - gfortran (4.8.4, 5.3.0)
+    https://gcc.gnu.org/fortran/
+
 - GNU Make (3.81, 4.1)
+    https://www.gnu.org/software/make/
+
 - python 2.7, numpy, matplotlib
+    https://www.python.org/
+    http://www.numpy.org/
+    http://matplotlib.org/
+
 - BASH (4.3.11, 4.3.42)
+    https://www.gnu.org/software/bash/
+
 - Java (Oracle, 1.8.0_91)
+    https://www.oracle.com/uk/java/index.html
 
 INSTALLATION AND RUNNING
 ------------------------
