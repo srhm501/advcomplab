@@ -9,7 +9,7 @@ if [ ! -f $root/genatoms ] ; then
     exec make -C ..
 fi
 
-for i in {0..5}
+for i in {0..6}
 do
     file=27_$i.cell
     head -n7 $root/cell.master > $file

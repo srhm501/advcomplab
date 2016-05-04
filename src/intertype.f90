@@ -37,6 +37,10 @@ function get_intertype(intercase) result(intertype)
   case (5)
      intertype(1,1) = 'Ca'
      intertype(3,3) = 'Ca'
+  case (6)
+     intertype(1,1) = 'Ca'
+     intertype(2,2) = 'Ca'
+     intertype(3,3) = 'Ca'
 case default
         stop "ERROR: interface type not valid"
   end select
