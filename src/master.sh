@@ -20,6 +20,16 @@ rm ./$pltdata
 plot=1						#plot=1 means DONT plot ever
                                                 # set to $? to plot when able
 
+if [ ! -d $cell ] ; then
+    mkdir $cell
+fi
+if [ ! -d $data ] ; then
+    mkdir $data
+fi
+fi [ ! -d $castepdir ] ; then
+    mkdir $castepdir
+fi
+
 ############### Running CASTEP FOR ALL CELL FILES $*.cell#################
 
 for celf in $cell/$*.cell
