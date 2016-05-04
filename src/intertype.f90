@@ -46,17 +46,14 @@ function get_intertype(intercase) result(intertype)
      intertype(1,1) = 'Ca'    ! 2
      intertype(2,2) = 'Ca'
   case (7)
-     intertype(1,1) = 'Ca'    ! 2
+     intertype(1,1) = 'Ca'    ! 3
+     intertype(2,2) = 'Ca'
      intertype(3,3) = 'Ca'
   case (8)
      intertype(1,1) = 'Ca'    ! 3
-     intertype(2,2) = 'Ca'
-     intertype(3,3) = 'Ca'
-  case (9)
-     intertype(1,1) = 'Ca'    ! 3
      intertype(1,3) = 'Ca'
      intertype(2,2) = 'Ca'
-  case (10)
+  case (9)
      intertype(1,1) = 'Ca'    ! 4
      intertype(1,3) = 'Ca'
      intertype(3,3) = 'Ca'
