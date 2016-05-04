@@ -19,8 +19,8 @@ program genatoms
   type(axis) :: axes(3)
   
   integer  :: intercase
-  character(2) :: intertype(2,4,2)
-  integer  :: purelines = 2
+  character(2) :: intertype(3,3)
+  integer  :: purelines = 1
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
 
@@ -29,9 +29,9 @@ program genatoms
   read *, intercase
   intertype = get_intertype(intercase)
 
-  axes(1) = axis(2)
-  axes(2) = axis(4)
-  axes(3) = axis(6)
+  axes(1) = axis(3)
+  axes(2) = axis(3)
+  axes(3) = axis(3)
 
   where (axes(:)%numatm /= 1) axes(:)%step = axes(:)%maxpos / (axes(:)%numatm-1)
 
@@ -43,7 +43,6 @@ program genatoms
   do k=1,purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-!	   if((mod(k,2)==0).and.(mod(j,2)==0)) then
 	   if(mod(k+j+i,2)==0) then
                write(*,10) 'Mg', xc, yc, zc
 	   else
@@ -62,11 +61,7 @@ program genatoms
   do k=1,axes(3)%numatm-2*purelines
      do j=1,axes(2)%numatm
         do i=1,axes(1)%numatm
-	   if(mod(k+j+i,2)==0) then
-               write(*,10) intertype(i,j,k), xc, yc, zc
-	   else
-	       write(*,10) 'O', xc, yc, zc
- 	   end if
+               write(*,10) intertype(i,j), xc, yc, zc
            xc = xc + axes(1)%step
         end do
         xc = 0.0_dp

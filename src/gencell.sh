@@ -10,10 +10,10 @@ if [ ! -f $root/genatoms ] ; then
     exec $root/make
 fi
 
-for i in {1..17}
+for i in {0..5}
 do
     echo $i
-    file=48_$i.cell
+    file=27_$i.cell
     head -n7 $root/cell.master > $file
     $root/genatoms <<EOF >> $file
 $i
