@@ -1,22 +1,27 @@
-# AdvCompLab
+# Group 6 Project
 
-Please use the teesting branch, you can use push origin master to push to the master branch when the code is 100% working.
+DEPENDENCIES (tested with version)
 
-for information on how to use the branch.
-https://www.digitalocean.com/community/tutorials/how-to-use-git-branches
+- gfortran (4.8.4, 5.3.0)
+- GNU Make (3.81)
+- python 2.7, numpy, matplotlib
+- BASH (4.3.11)
+- Java (Oracle, 1.8.0_91)
 
+INSTALLATION AND RUNNING
 
-To run code: Goto src directory
+Assuming gfortran and GNU Make are in your PATH,
+inside the top level directory, run
 
-getc.sh goes through all the cell files and saves the coordinates of Oxygen, Magnesium and Calcium into data files in the dat folder. The CELL files are named with the composition of Mg and Ca in, e.g. Mg50Ca50 for 50% of each. 
+$ make
 
-run.sh calls CASTEP for all files ending in *.cell it then calls cleanup.sh to delete all log files and error files.
+or alternatively compile manually with the equivalent of
 
-cleanup.sh deletes unwanted files from directory
+$ gfortran src/intertype.f90 src/genatoms.f90 -o genatoms
 
-jmol script opens Jmol to view the arrangement of atoms 
+where the output executable must be called "genatoms" and be located
+inside the top level directory.
 
-Source files moved to src
-Data files are written to dat
+To run the program, run
 
-Castep now
+$ src/master.sh

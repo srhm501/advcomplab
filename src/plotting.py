@@ -2,52 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def fixy(x,y,coeff, n):
-    
-    #cheating=True
-    #cheating=False
-    cheating ='wrong'
-	
-    if(cheating == True):
-        eca=y[0]
-        emg=y[len(x)-1]
-
-    elif (cheating == False):
-	eca =coeff[n]
-        emg =coeff[n-1]+coeff[n]
-    	yfixed=[]
-    	for i in range(0,len(x)):
- 	    #eca is the intercept, 0%mg, c
-	    #emg is the value at 100%mg, m+c
-	    #y[i] is the value of Etot
-	    eform= y[i] -eca*(1.0-x[i]) - emg*(x[i])  
-            yfixed.append(eform)
-    else:
- 	yfixed = y-(coeff[0]*x + coeff[1])
-
+    yfixed = y-(coeff[0]*x + coeff[1])
     return yfixed
 
 datafile=raw_input('enter data file name: \n')
 x, y = np.genfromtxt(datafile, unpack=True)
 
-"""
-obsolete, trying to sort data but 
-is done in bash with sort -n $file
-
-#dt = [('col1', data.dtype),('col2', data.dtype)]
-#assert data.flags['C_CONTIGUOUS']
-#b = data.ravel().view(dt)
-#b.sort(order=['col1','col2'])
-#print b[0][1]
-#print data
-#max=3
-#x=np.array(b[][0])
-#y=np.array(b[][1])
-#for i in range(0,len(data)):
-#    x.append(b[i][0])
-#    y.append(b[i][1])
-#print max(x)
-#print y
-""" 
 #order of fit
 n=int(raw_input('enter degrees of freedom for fit: \n'))
 case=int(raw_input('0 Cutoff, 1 Formation Energy: \n'))

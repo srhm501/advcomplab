@@ -17,10 +17,16 @@ program genatoms
   end type axis
 
   type(axis) :: axes(3)
-  
+
+  ! which interface to use
   integer  :: intercase
+
+  ! the interface layer
   character(2) :: intertype(3,3)
+
+  ! how many lines of pure MgO and CaO
   integer  :: purelines = 1
+
   integer  :: i, j, k
   real(dp) :: xc,yc,zc
 

@@ -18,28 +18,31 @@ rm ./$pltdata
 
 [ -f ./Jmol.jar ] && [ $(type -p java) ]	#check if we can plot
 plot=1						#plot=1 means DONT plot ever
+                                                # set to $? to plot when able
 
-############### Running CASTEP FOR ALL CELL FILES $test*.cell#################
+############### Running CASTEP FOR ALL CELL FILES $*.cell#################
 
-for celf in $cell/$test*.cell
+for celf in $cell/$*.cell
 do
   conf=${celf::-5}			#remove.cell
   conf=${conf:8}			#remove path (../cell) for castep
   casf=$castepdir/$conf.castep		#set end .castep filename
     
   echo $conf				#print which cell file we are investigating
-  cp ../param.master $conf.param 	#generate param file, copy master in root dir
+  cp ../param.master $cell/$conf.param 	#generate param file, copy master in root dir
     
   numg=$(grep -c "Mg" $celf)		#Find how many Mg and Ca lines in cell file
   numca=$(grep -c "Ca" $celf)		#Then write Mg/total atoms
   ratio=$(echo $numg $numca | awk '{print $1/($1+$2)}')
     
-  if [ ! -f $casf ] ; then		#If castep file exsists dont run again
+  if [ ! -f $casf ] ; then		#If castep file exists dont run again
     echo "Running castep for system" $conf
     time mpirun -np 1 $cell/castep.mpi $cell/$conf
+    mv $cell/$conf.castep $castepdir
   else					#Can skip running castep
-      echo "Didn't run castep"		
-  fi 
+      echo "Didn't run castep, file already exists"		
+  fi
+
   if [[ plot -eq 0 ]] ; then		#DONT PLOT IN JAVA UNLESS YOU NEED TO.
       ./jmol -I $file			#plot is set to false at top of script
   fi
@@ -52,7 +55,7 @@ done					#write to temporary file
 
 sort -n tmp.dat > $pltdata	#sort the percentage composition and energies
 				#from the temp file into accending order for data analysis
-rm./tmp.dat			#Remove Temp file
+rm ./tmp.dat			#Remove Temp file
 
 filetoplot=$pltdata	  	#pass in file name to plt
 DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!

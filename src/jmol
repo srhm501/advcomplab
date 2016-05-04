@@ -1,4 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+
+old="$(pwd)"
+current="$(dirname "$0")"
+cd $current
 
 # Collect -D & -m options as java arguments
 command=java
@@ -15,3 +19,5 @@ else
   echo Jmol.jar not found
 fi
 $command -Xmx512m -jar $jarpath $@
+
+cd $old

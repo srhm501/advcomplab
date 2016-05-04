@@ -33,27 +33,27 @@ exitcond=1
 
 while [ $exitcond -ne 0 ]
 do
-  exitcond=$(echo $energy $oldenergy | awk '{if (sqrt(($1-$2)^2) > 0.01) print 1; else print 0;}')
-if [ $exitcond -eq 0 ]; then
-  break				#Exit loop, energy has converged
-fi 
+    exitcond=$(echo $energy $oldenergy | awk '{if (sqrt(($1-$2)^2) > 0.01) print 1; else print 0;}')
+    if [ $exitcond -eq 0 ]; then
+	break				#Exit loop, energy has converged
+    fi 
 
-file2=$cell/$cutoff.castep	#Castep path, Clear old castep to calculate
-rm $file2			#For new cutoff energy
-file=$cell/$cutoff.param
+    file2=$cell/$cutoff.castep	#Castep path, Clear old castep to calculate
+    rm $file2			#For new cutoff energy
+    file=$cell/$cutoff.param
 
-sed -i "/cut_off_energy/c\cut_off_energy     : "$i" eV." $file	
-echo ''				#Update cutoff in param file
-echo 'calculating energy using a cutoff energy of' $i 'eV'
+    sed -i "/cut_off_energy/c\cut_off_energy     : "$i" eV." $file	
+    echo ''				#Update cutoff in param file
+    echo 'calculating energy using a cutoff energy of' $i 'eV'
 
-time mpirun -np 1 $cell/castep.mpi $cell/$cutoff	#Run Castep
+    time mpirun -np 1 $cell/castep.mpi $cell/$cutoff	#Run Castep
 
-oldenergy=$energy
-energy=$(exec ./findenergy.sh $file2)	#Find energy from castep file
-echo $i $energy >> $data/$cutoff.dat	#Write cutoff eV and converged eV
+    oldenergy=$energy
+    energy=$(exec ./findenergy.sh $file2)	#Find energy from castep file
+    echo $i $energy >> $data/$cutoff.dat	#Write cutoff eV and converged eV
 
-oldi=$i				#Update previous values 
-i=$((i+incr))			#Update cutoff eV
+    oldi=$i				#Update previous values 
+    i=$((i+incr))			#Update cutoff eV
 done
 cd $old
 
