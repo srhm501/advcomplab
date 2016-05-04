@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in 27*.cell
+for file in dan*.cell
 do
 seed=${file::-5}
 #echo $seed
