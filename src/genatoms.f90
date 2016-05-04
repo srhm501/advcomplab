@@ -8,8 +8,8 @@ program genatoms
      ! number of atoms along axis
      integer  :: numatm
      
-     ! maximum position of atom along axis (1.0 == no vacuum gap)
-     real(dp) :: maxpos=1.0
+     ! maximum position of atom along axis
+     real(dp) :: maxpos=0.67_dp
      
      ! distance between atoms along axis
      ! doesn't matter what the default is, as long as there is one
