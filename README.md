@@ -16,15 +16,15 @@ INSTALLATION AND RUNNING
 Assuming gfortran and GNU Make are in your $PATH,
 inside the top level directory, run
 
-$ make
+`$ make`
 
 or alternatively compile manually with the equivalent of
 
-$ gfortran src/intertype.f90 src/genatoms.f90 -o genatoms
+`$ gfortran src/intertype.f90 src/genatoms.f90 -o genatoms`
 
 where the output executable must be called "genatoms" and be located
 inside the top level directory.
 
 To run the program, run
 
-$ src/master.sh
+`$ src/master.sh`
