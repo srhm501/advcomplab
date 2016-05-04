@@ -6,7 +6,7 @@ root=..
 cd $current
 
 if [ ! -f $root/genatoms ] ; then
-    exec ../make
+    exec make -C ..
 fi
 
 for i in {0..5}
