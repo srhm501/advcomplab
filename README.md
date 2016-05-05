@@ -1,6 +1,12 @@
 Group 6 Project
 ===============
 
+This program calculates the energy of different configurations of a lattice
+made up of a 3x3x3 unit cell of MgO and CaO. Each unit cell has a layer of
+pure MgO and one of pure CaO. The interface between them changes over the
+simulation. The Oxygen sublattice is assumed to be constant. The energy of
+formation of the lattices are then plotted.
+
 DEPENDENCIES (tested with version)
 ----------------------------------
 
@@ -15,10 +21,10 @@ DEPENDENCIES (tested with version)
     http://www.numpy.org/
     http://matplotlib.org/
 
-- BASH (4.3.11, 4.3.42)
+- BASH (4.3.11)
     https://www.gnu.org/software/bash/
 
-- Java (Oracle, 1.8.0_91)
+- Java (1.8.0_91)
     https://www.oracle.com/uk/java/index.html
 
 INSTALLATION AND RUNNING
@@ -39,3 +45,11 @@ inside the top level directory.
 To run the program, run
 
 `$ src/master.sh`
+
+To view each unit cell, run
+
+`$ src/jmol -I path/to/cell.cell`
+
+where path/to/cell.cell has to be the relative path from the src directory, e.g.
+
+`$ src/jmol -I ../cell/27_0.cell`
