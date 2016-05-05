@@ -30,8 +30,8 @@ DEPENDENCIES (tested with version)
 - OpenMPI (1.6.5)
     https://www.open-mpi.org/
 
-INSTALLATION AND RUNNING
-------------------------
+INSTALLATION
+------------
 
 Assuming gfortran and GNU Make are in your $PATH,
 inside the top level directory, run
@@ -46,16 +46,23 @@ where the output executable must be called "genatoms" and be located inside
 the top level directory. This step is optional as all relevant scripts call
 make if they can't find the executable.
 
+RUNNING
+-------
+
 To run the program, run
 
 `$ src/master.sh`
+
 
 If you want to plot each cell file as the program runs, before running the 
 program edit line 21 in src/master.sh to one of the following:
 
 `plot=1`    # never plot
+
 `plot=$?`   # always plot if able to
+
 `plot=0`    # always attempt to plot (even if not able, not recommended)
+
 
 To view each unit cell, run
 
