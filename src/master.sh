@@ -54,7 +54,7 @@ do
       echo "Didn't run castep, file already exists"		
   fi
 
-  if [[ plot -eq 0 ]] ; then		#DONT PLOT IN JAVA UNLESS YOU NEED TO.
+  if [ $plot -eq 0 ] ; then		#DONT PLOT IN JAVA UNLESS YOU NEED TO.
       ./jmol.sh -I $file	       	#plot is set to false at top of script
   fi
     
