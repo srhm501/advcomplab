@@ -30,6 +30,10 @@ fi
 fi [ ! -d $castepdir ] ; then
     mkdir $castepdir
 fi
+if [ ! -f $root/genatoms ] ; then
+    make -C $root
+fi
+./gencell.sh
 
 ############### Running CASTEP FOR ALL CELL FILES $*.cell#################
 
