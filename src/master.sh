@@ -55,7 +55,7 @@ do
   fi
 
   if [[ plot -eq 0 ]] ; then		#DONT PLOT IN JAVA UNLESS YOU NEED TO.
-      ./jmol -I $file			#plot is set to false at top of script
+      ./jmol.sh -I $file	       	#plot is set to false at top of script
   fi
     
   energy=$(exec ./findenergy.sh $casf)  #Find energy from .castep file
