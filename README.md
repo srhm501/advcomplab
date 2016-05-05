@@ -50,6 +50,13 @@ To run the program, run
 
 `$ src/master.sh`
 
+If you want to plot each cell file as the program runs, before running the 
+program edit line 21 in src/master.sh to one of the following:
+
+`plot=1`    # never plot
+`plot=$?`   # always plot if able to
+`plot=0`    # always attempt to plot (even if not able, not recommended)
+
 To view each unit cell, run
 
 `$ src/jmol.sh -I path/to/cell.cell`
