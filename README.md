@@ -33,6 +33,9 @@ DEPENDENCIES (tested with version)
 INSTALLATION
 ------------
 
+This step is optional as all relevant scripts call make if they can't find
+the executable.
+
 Assuming gfortran and GNU Make are in your $PATH,
 inside the top level directory, run
 
@@ -43,8 +46,7 @@ or alternatively compile manually with the equivalent of
 `$ gfortran src/intertype.f90 src/genatoms.f90 -o genatoms`
 
 where the output executable must be called "genatoms" and be located inside 
-the top level directory. This step is optional as all relevant scripts call
-make if they can't find the executable.
+the top level directory.
 
 RUNNING
 -------
