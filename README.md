@@ -7,8 +7,11 @@ pure MgO and one of pure CaO. The interface between them changes over the
 simulation. The Oxygen sublattice is assumed to be constant. The energy of
 formation of the lattices are then plotted.
 
-DEPENDENCIES (tested with version)
-----------------------------------
+DEPENDENCIES
+------------
+
+format:
+  PROGRAM required-version (tested-with-version)
 
 - gfortran (4.8.4, 5.3.0)
     https://gcc.gnu.org/fortran/
@@ -27,7 +30,7 @@ DEPENDENCIES (tested with version)
 - Java (1.8.0_91)
     https://www.oracle.com/uk/java/index.html
 
-- OpenMPI (1.6.5)
+- OpenMPI 1.6.5
     https://www.open-mpi.org/
 
 INSTALLATION
