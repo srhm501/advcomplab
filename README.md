@@ -27,6 +27,9 @@ DEPENDENCIES (tested with version)
 - Java (1.8.0_91)
     https://www.oracle.com/uk/java/index.html
 
+- OpenMPI (1.6.5)
+    https://www.open-mpi.org/
+
 INSTALLATION AND RUNNING
 ------------------------
 
