@@ -10,7 +10,11 @@
 #$ -pe openmpi 1
 
 #select max run-time
+<<<<<<< HEAD
+#$ -l h_rt=10:00:00
+=======
 #$ -l h_rt=12:00:00
+>>>>>>> be327888ba10f26679ddb4819ed781d58ba30750
 
 #number of cores (up to 6x number of nodes)
 NUM_CORES=2

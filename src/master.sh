@@ -2,7 +2,7 @@
 ########## Put test as the prefix of cell-   #################################
 ########## files you want to run castep for  #################################
 
-test=Mg			#eg, for all cell files Mg0, Mg25 etc use test=Mg
+test=dat			#eg, for all cell files Mg0, Mg25 etc use test=Mg
 pltdata=energyplot.dat	#name of ratio an energy dat file to be plotted
 
 ################# Don't change!! ###################################
