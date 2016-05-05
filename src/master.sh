@@ -9,11 +9,12 @@ pltdata=energyplot.dat	#name of ratio an energy dat file to be plotted
 
 old="$(pwd)"
 current="$(dirname "$0")"	# set up directory map
-root=..
 cd $current
+root=..
 cell=$root/cell			#set path to cell files
 data=$root/dat			#set path to data files
 castepdir=$root/castep		#set path to .castep output 
+
 rm ./$pltdata
 
 [ -f ./Jmol.jar ] && [ $(type -p java) ]	#check if we can plot
