@@ -9,6 +9,10 @@ if [ ! -f $root/genatoms ] ; then
     exec make -C $root
 fi
 
+if [ ! -f $root/cell ] ; then
+    mkdir $root/cell
+fi
+
 for i in {0..10}
 do
     file=$root/cell/27_$i.cell
