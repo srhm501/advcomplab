@@ -10,11 +10,18 @@ test=Mg		#Put test as the prefix of cell-files you want to run
 
 old="$(pwd)"
 current="$(dirname "$0")"	# set up directory map
-root=..
 cd $current
+root=..
 cell=$root/cell			#set path to cell files
 data=$root/dat			#set path to data files
-castepdir=$root/castep		#set path to .castep output 
+castepdir=$root/castep		#set path to .castep output
+
+if [ -d $cell ] ; then
+    mkdir $cell
+fi
+if [ -d $data ] ; then
+    mkdir $data
+fi
 
 ############### Running CASTEP FOR ALL CELL FILES $test*.cell#################
 for system in $cell/$test*.cell
