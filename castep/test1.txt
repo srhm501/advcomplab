@@ -1,0 +1,8 @@
+Final energy, E             =  -19363.38068604     eV
+Final free energy (E-TS)    =  -19364.10291807     eV
+Final energy, E             =  -19363.76477682     eV
+Final free energy (E-TS)    =  -19364.48682298     eV
+Final energy, E             =  -19364.10900148     eV
+Final free energy (E-TS)    =  -19364.83132293     eV
+Final energy, E             =  -19366.85208958     eV
+Final free energy (E-TS)    =  -19367.53059177     eV
