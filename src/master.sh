@@ -35,7 +35,7 @@ if [ ! -f $root/genatoms ] ; then
 fi
 ./gencell.sh
 
-############### Running CASTEP FOR ALL CELL FILES $*.cell#################
+############### Running CASTEP FOR ALL CELL FILES *.cell#################
 
 for celf in $cell/*.cell
 do
@@ -52,7 +52,7 @@ do
     
   if [ ! -f $casf ] ; then		#If castep file exists dont run again
     echo "Running castep for system" $conf
-    #time mpirun -np 1 $cell/castep.mpi $cell/$conf
+    time mpirun -np 1 $cell/castep.mpi $cell/$conf
     mv $cell/$conf.castep $castepdir
   else					#Can skip running castep
       echo "Didn't run castep, file already exists"		
