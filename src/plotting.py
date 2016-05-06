@@ -4,15 +4,6 @@ from operator import itemgetter
 
 def fixy(x,y,coeff, n):
     yfixed = y-(coeff[0]*x + coeff[1])
-
-    # print lowest formation energy
-    print 'lowest formation energy', min(yfixed)
-
-    # print corresponding total energy
-    print 'lowest total energy', min(y*27)
-    
-    # print percentage for minimum formation energy
-    print 'lowest energy percentage', x[min(enumerate(yfixed), key=itemgetter(1))[0]]
     return yfixed
 
 num_atoms=int(raw_input('enter total number of atoms: \n'))
@@ -64,7 +55,18 @@ elif (case==1):
     plt.clf()
 
     #plot fixed energy of formation
-    plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
+    form_en=fixy(x, fit(x), line, int(n))
+
+    # print lowest formation energy
+    print 'lowest formation energy', min(form_en)
+
+    # print corresponding total energy
+    print 'lowest total energy', min(y*num_atoms)
+    
+    # print percentage for minimum formation energy
+    print 'lowest energy percentage', x[min(enumerate(form_en), key=itemgetter(1))[0]]
+
+    plt.plot(x, form_en, 'ro-')
 
     plt.ylabel('Energy, eV')
     plt.xlabel('Percentage composition of Mg/(Mg+Ca)')
