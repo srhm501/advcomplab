@@ -5,6 +5,8 @@ def fixy(x,y,coeff, n):
     yfixed = y-(coeff[0]*x + coeff[1])
     return yfixed
 
+num_atoms=int(raw_input('enter total number of atoms: \n'))
+
 datafile=raw_input('enter data file name: \n')
 x, y = np.genfromtxt(datafile, unpack=True)
 
@@ -26,7 +28,7 @@ fit =np.poly1d(p)
 xp=np.linspace(min(x),max(x), 100)
 
 #PLOT ENERGY DATA
-plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
+plt.plot(x, y/num_atoms, 'ro', xp, fit(xp), 'r-')
 
 ########## Then change title and axis respectively #################
 

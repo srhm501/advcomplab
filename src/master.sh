@@ -72,11 +72,13 @@ sort -n tmp.dat > $pltdata	#sort the percentage composition and energies
 				#from the temp file into accending order for data analysis
 rm ./tmp.dat			#Remove Temp file
 
+num_atoms=$(($numg + $numca))
 filetoplot=$pltdata	  	#pass in file name to plt
 DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!
 system=1	         	#0 for cut off energy plot, #1 for formation energy calc
 
 python2 plotting.py << EOF
+$num_atoms
 $filetoplot
 $DOF
 $system
