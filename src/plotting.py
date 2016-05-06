@@ -64,7 +64,7 @@ elif (case==1):
     print 'lowest total energy', min(y*num_atoms)
     
     # print percentage for minimum formation energy
-    print 'lowest energy percentage', x[min(enumerate(form_en), key=itemgetter(1))[0]]
+    print 'lowest formation energy percentage', x[min(enumerate(form_en), key=itemgetter(1))[0]]
 
     plt.plot(x, form_en, 'ro-')
 
