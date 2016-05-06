@@ -4,6 +4,12 @@ from operator import itemgetter
 
 def fixy(x,y,coeff, n):
     yfixed = y-(coeff[0]*x + coeff[1])
+
+    # print lowest formation energy
+    print 'lowest formation energy', min(yfixed)
+
+    # print corresponding total energy
+    print 'lowest total energy', min(y*27)
     
     # print percentage for minimum formation energy
     print 'lowest energy percentage', x[min(enumerate(yfixed), key=itemgetter(1))[0]]
