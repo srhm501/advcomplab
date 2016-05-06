@@ -9,7 +9,7 @@ if [ ! -f $root/genatoms ] ; then
     exec make -C $root
 fi
 
-if [ ! -f $root/cell ] ; then
+if [ ! -d $root/cell ] ; then
     mkdir $root/cell
 fi
 

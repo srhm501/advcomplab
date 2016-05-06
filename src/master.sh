@@ -27,7 +27,7 @@ fi
 if [ ! -d $data ] ; then
     mkdir $data
 fi
-fi [ ! -d $castepdir ] ; then
+if [ ! -d $castepdir ] ; then
     mkdir $castepdir
 fi
 if [ ! -f $root/genatoms ] ; then
