@@ -65,13 +65,13 @@ elif (case==1):
     np.savetxt('formation_energies.dat',np.column_stack((x,form_en)))
 
     # print lowest formation energy
-    print 'lowest formation energy', min(form_en)
+    print 'lowest formation energy', min(form_en), 'eV'
 
     # print corresponding total energy
-    print 'lowest total energy', min(y*num_atoms)
+    print 'lowest total energy', min(y*num_atoms), 'eV'
     
     # print percentage for minimum formation energy
-    print 'lowest formation energy percentage', x[min(enumerate(form_en), key=itemgetter(1))[0]]
+    print 'lowest formation energy percentage', x[min(enumerate(form_en), key=itemgetter(1))[0]], '%'
 
     plt.plot(x, form_en, 'ro-')
 
