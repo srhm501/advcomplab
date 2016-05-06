@@ -77,6 +77,8 @@ filetoplot=$pltdata	  	#pass in file name to plt
 DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!
 system=1	         	#0 for cut off energy plot, #1 for formation energy calc
 
+emacs $filetoplot
+
 python2 plotting.py << EOF
 $num_atoms
 $filetoplot

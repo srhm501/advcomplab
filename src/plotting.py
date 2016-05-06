@@ -1,8 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from operator import itemgetter
 
 def fixy(x,y,coeff, n):
     yfixed = y-(coeff[0]*x + coeff[1])
+    
+    # print percentage for minimum formation energy
+    print 'lowest energy percentage', x[min(enumerate(yfixed), key=itemgetter(1))[0]]
     return yfixed
 
 num_atoms=int(raw_input('enter total number of atoms: \n'))
