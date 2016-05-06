@@ -5,7 +5,8 @@ This program calculates the energy of different configurations of a lattice
 made up of a 3x3x3 unit cell of MgO and CaO. Each unit cell has a layer of
 pure MgO and one of pure CaO. The interface between them changes over the
 simulation. The Oxygen sublattice is assumed to be constant. The energy of
-formation of the lattices are then plotted.
+formation of the lattices are then plotted as a function of percentage
+composition of magnesium.
 
 DEPENDENCIES
 ------------
