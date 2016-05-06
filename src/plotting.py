@@ -57,6 +57,8 @@ elif (case==1):
     #plot fixed energy of formation
     form_en=fixy(x, fit(x), line, int(n))
 
+    np.savetxt('formation_energies.dat',np.column_stack((x,form_en)))
+
     # print lowest formation energy
     print 'lowest formation energy', min(form_en)
 
