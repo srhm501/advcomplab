@@ -37,7 +37,7 @@ fi
 
 ############### Running CASTEP FOR ALL CELL FILES $*.cell#################
 
-for celf in $cell/$*.cell
+for celf in $cell/*.cell
 do
   conf=${celf::-5}			#remove.cell
   conf=${conf:8}			#remove path (../cell) for castep
@@ -52,7 +52,7 @@ do
     
   if [ ! -f $casf ] ; then		#If castep file exists dont run again
     echo "Running castep for system" $conf
-    time mpirun -np 1 $cell/castep.mpi $cell/$conf
+    #time mpirun -np 1 $cell/castep.mpi $cell/$conf
     mv $cell/$conf.castep $castepdir
   else					#Can skip running castep
       echo "Didn't run castep, file already exists"		
