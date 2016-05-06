@@ -14,6 +14,8 @@ x, y = np.genfromtxt(datafile, unpack=True)
 n=int(raw_input('enter degrees of freedom for fit: \n'))
 case=int(raw_input('0 Cutoff, 1 Formation Energy: \n'))
 
+y /= num_atoms
+
 #Calculate best fit order n 
 #p[0] = ax^2 ,p[1] = bx, p[2] = c
 p = np.polyfit(x,y,n)
@@ -28,7 +30,7 @@ fit =np.poly1d(p)
 xp=np.linspace(min(x),max(x), 100)
 
 #PLOT ENERGY DATA
-plt.plot(x, y/num_atoms, 'ro', xp, fit(xp), 'r-')
+plt.plot(x, y, 'ro', xp, fit(xp), 'r-')
 
 ########## Then change title and axis respectively #################
 
