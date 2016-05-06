@@ -77,7 +77,9 @@ filetoplot=$pltdata	  	#pass in file name to plt
 DOF=2		      	 	#degrees of freedom for fit use 2 !!!!!!!!!!
 system=1	         	#0 for cut off energy plot, #1 for formation energy calc
 
-emacs $filetoplot
+# if grep couldn't find total energy line (i.e. error with castep) remove line
+awk 'NF > 1' $filetoplot > tmp.dat
+mv tmp.dat $filetoplot
 
 python2 plotting.py << EOF
 $num_atoms
