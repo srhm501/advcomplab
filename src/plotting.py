@@ -42,8 +42,8 @@ if(case==0):
 #CASE 1 FOR FORMATION ENERGY!!!!!!!
 elif (case==1):
     plt.ylabel('Energy, eV')
-    plt.xlabel('Percentage composition of Mg/Ca')
-    plt.title('Energy against Composition of Mg/Ca')
+    plt.xlabel('Percentage composition of Mg/(Mg+Ca)')
+    plt.title('Energy against Composition of Mg/(Mg+Ca)')
     #save graph 
     d_name = datafile + '.png'
     plt.savefig(d_name, format='png')
@@ -53,7 +53,7 @@ elif (case==1):
     plt.plot(x, fixy(x,fit(x), line, int(n)), 'ro-')
 
     plt.ylabel('Energy, eV')
-    plt.xlabel('Percentage composition of Mg/Ca')
-    plt.title('Formation Energy for Composition of Mg/Ca')
+    plt.xlabel('Percentage composition of Mg/(Mg+Ca)')
+    plt.title('Formation Energy for Composition of Mg/(Mg+Ca)')
     #save graph
     plt.savefig('eform.png',format='png')
