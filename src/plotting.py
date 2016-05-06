@@ -17,7 +17,8 @@ x, y = np.genfromtxt(datafile, unpack=True)
 n=int(raw_input('enter degrees of freedom for fit: \n'))
 case=int(raw_input('0 Cutoff, 1 Formation Energy: \n'))
 
-#y /= num_atoms
+# get the energy per number of atoms (all have the same total number of atoms)
+y /= num_atoms
 
 #Calculate best fit order n 
 #p[0] = ax^2 ,p[1] = bx, p[2] = c
