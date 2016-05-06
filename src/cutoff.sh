@@ -4,7 +4,7 @@
 incr=50			#increments to go up in
 istart=250		#startvalue
 
-test=Mg		#Put test as the prefix of cell-files you want to run
+cutoff=Mg		#Put test as the prefix of cell-files you want to run
 		#eg, for all cell files Mg0, Mg25 etc use test=Mg
 ################# Don't change!! ###################################
 
