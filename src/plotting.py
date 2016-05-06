@@ -2,7 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from operator import itemgetter
 
+#produce convex hull plot from Total energy data
 def fixy(x,y,coeff, n):
+    #minus the straight line fit from the data
     yfixed = y-(coeff[0]*x + coeff[1])
     return yfixed
 
@@ -15,14 +17,16 @@ x, y = np.genfromtxt(datafile, unpack=True)
 n=int(raw_input('enter degrees of freedom for fit: \n'))
 case=int(raw_input('0 Cutoff, 1 Formation Energy: \n'))
 
-y /= num_atoms
+#y /= num_atoms
 
 #Calculate best fit order n 
 #p[0] = ax^2 ,p[1] = bx, p[2] = c
 p = np.polyfit(x,y,n)
+#linear fit 
 line=np.polyfit(x,y,1)
 
-#don't worry about this line
+#set the gradient of the linear fit to the gradient of the quadratic fit
+#Without this the x=1 point does not reach zero but ends up at negative energies
 line[1]=p[2]
 
 #rewrite fit as a function
